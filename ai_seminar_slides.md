@@ -852,6 +852,22 @@ Computer Vision & Multimodality
 
 ---
 
+# Exemples concrets d’IA sur du code legacy (automobile & embarqué)
+
+| Cas d’usage | Entreprise / Auteur(s) | Description | Source |
+|-------------|-------------------------|-------------|--------|
+| **Compréhension & documentation de code legacy** | Thoughtworks – CodeConcise | Utilisation de LLMs pour résumer et expliquer du code C++ legacy, accélérant la prise en main par les ingénieurs. | [Thoughtworks – CodeConcise](https://www.thoughtworks.com/codeconcise) |
+| **Migration automatisée (REXX → Java)** | IBM + AWS | Conversion de 100 000+ lignes de REXX en Java en deux semaines via un pipeline LLM, avec génération de documentation et diagrammes. | [IBM – Accelerating code modernization with generative AI (Automotive)](https://www.ibm.com/products/blog/accelerating-code-modernization-gen-ai-automotive) |
+| **Test-driven development assisté par IA** | Sibros (via Cursor/Claude Code) | Génération automatique de tests unitaires pour fonctions critiques (ex. contrôleurs de frein), puis refactorisation guidée par LLM. | [Thoughtworks – Claude Code experiment](https://www.thoughtworks.com/insights/blog/generative-ai/claude-code-codeconcise-experiment) |
+| **Documentation & revue de code legacy** | MITRE (Macke, Doyle) | Étude empirique montrant que GPT-4 produit des commentaires complets et utiles sur du code ancien (MUMPS, assembleur). | [arXiv:2404.03114](https://arxiv.org/abs/2404.03114) |
+| **Génération de code embarqué automobile** | Sven Kirchner, Alois C. Knoll et al. | Cadre de génération de code C++ automobile par LLMs, avec vérification et simulation pour systèmes de sûreté critique. | [arXiv:2506.04038](https://arxiv.org/abs/2506.04038) |
+| **Spec2Code (automobile Scania)** | Scania + chercheurs | Génération de code embarqué à partir de spécifications, avec validation formelle et outils de critique. | [PapersWithCode – Spec2Code](https://paperswithcode.com/paper/towards-specification-driven-llm-based) |
+| **Analyse des hallucinations dans le code auto** | Pavel, Petrovic et al. | Étude des hallucinations dans la génération de code automobile par LLMs, avec métriques de validité syntaxique et fonctionnelle. | [arXiv:2508.11257](https://arxiv.org/abs/2508.11257) |
+
+
+---
+
+
 ### Challenges in Legacy Code
 
 - **Sparse Documentation:** Outdated or missing documentation complicates understanding.
