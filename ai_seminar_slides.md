@@ -1,6 +1,350 @@
 # AI Seminar for Automotive Experts
 
 ---
+14:00-14:30 Introduction to AI & fundamental concepts​
+
+14:30-14:50 Presentation Natural Language Processing (NLP) & Large Language Model (LLM)​
+
+14:50-15:10 Computer Vision and Multimodality​
+
+15:10-15:30 Data, Technical Documentation and Legacy Code​
+
+15:30-15:50 AI applied to the automative industry​
+
+15:50-16:00 Summary
+
+---
+
+Introduction to AI & fundamental concepts​
+
+---
+## AI VS GENERATIVE AI​
+ARTIFICIAL INTELLIGENCE Artificial Intelligence is a field of computer science that aims to create systems capable of imitating or simulating human intelligence.​
+
+MACHINE LEARNING Machine Learning focuses on building systems that learn and improve from experience without being explicitly programmed.​
+
+DEEP LEARNING Deep Learning uses neural networks with many layers to model complex patterns in data.​
+
+GENERATIVE AI Generative AI can create or generate new content, ideas, or data that resemble human creativity.​
+
+---
+
+## ML: Supervised Learning​
+
+Using Labeled Data​
+
+Classification and Regression Tasks​
+
+---
+
+## ML: Supervised Learning​
+- Predictive maintenance for vehicle components (e.g., brake pads, tires).
+- Driver behavior analysis and risk assessment.
+- Traffic sign recognition and classification.
+- Lane departure warning systems.
+
+---
+
+## ML: Unsupervised Learning​
+Discovering hidden structures​
+
+Clustering and dimensionality reduction techniques​
+
+---
+## ML: Unsupervised Learning​
+- Clustering driver behavior patterns for personalized insurance plans.
+- Grouping traffic patterns to optimize navigation and route planning.
+- Segmenting vehicle usage data to design targeted marketing strategies.
+
+---
+## ML: Reinforcement Learning​
+Agents learning through trial and error​
+
+Reward systems​
+
+### Video: Reinforcement Learning in Action
+
+<iframe
+  width="720"
+  height="405"
+  src="https://www.youtube.com/watch?v=spfpBrBjntg"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
+---
+
+## ML: Reinforcement Learning​
+- Autonomous driving systems learning optimal driving strategies through simulation.
+- Adaptive cruise control systems optimizing fuel efficiency and safety.
+- Parking assistance systems learning to navigate complex parking scenarios.
+
+---
+
+| Mode            | Labeled Training Data | Definition                                                                                     | Use Cases                                                                                     |
+|-----------------|-----------------------|------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| Supervised      | YES                   | During the training phase, the desired outcome is known                                       | Image recognition, value prediction, diagnostics, fraud detection                          |
+| Unsupervised    | NO                    | During the training phase, the desired outcome is unknown                                     | Customer segmentation, KPI determination, grouping objects that appear to share similarities |
+| Reinforcement   | Depends               | The expected result is evaluated on a case-by-case basis                                      | Recommendation engines, AI in gaming                                                        |
+
+---
+
+## Biological Neurons  
+Structure: dendrites, soma, axon  
+
+Functioning of synapses  
+
+Transmission of electrical signals  
+
+---
+
+Artificial Neurons  
+Mathematical model of the artificial neuron  
+
+Activation functions: ReLU, Sigmoid, Tanh  
+
+Similarities and differences with biological neurons?  
+
+---
+### Artificial Neural Networks
+
+Artificial neural networks (ANNs) are computational models inspired by the structure and functioning of biological neural networks. They consist of interconnected layers of artificial neurons, where each neuron processes inputs, applies an activation function, and passes the output to the next layer. ANNs are widely used for tasks such as pattern recognition, classification, and regression in various domains.
+
+
+---
+
+### Multi-Layer Perceptron (MLP)
+
+A Multi-Layer Perceptron (MLP) is a type of artificial neural network composed of an input layer, one or more hidden layers, and an output layer. Each layer consists of interconnected nodes (neurons) where inputs are processed through weighted connections, activation functions, and biases. MLPs are widely used for supervised learning tasks such as classification and regression, leveraging their ability to model complex, non-linear relationships in data.
+
+The concept of the MLP was first introduced in 1969 by Marvin Minsky and Seymour Papert in their book *Perceptrons*, which laid the groundwork for neural network research.
+
+--- 
+
+### Backpropagation
+
+Backpropagation, is a supervised learning algorithm used to train artificial neural networks. It adjusts the weights of the network by propagating the error from the output layer back to the input layer. The process involves two main steps:
+
+1. **Forward Pass:** Compute the output of the network and the error by comparing the predicted output to the actual target.
+2. **Backward Pass:** Calculate the gradient of the error with respect to each weight using the chain rule and update the weights to minimize the error.
+
+This iterative process continues until the network converges to an optimal solution, making it a cornerstone of deep learning.
+
+---
+### Gradient Descent
+
+Gradient Descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of the steepest descent, as defined by the negative of the gradient. It is widely used in machine learning to optimize model parameters by reducing the error between predicted and actual values.
+
+**Steps:**
+1. Initialize parameters (e.g., weights) with random values.
+2. Compute the gradient of the loss function with respect to the parameters.
+3. Update the parameters by subtracting the gradient scaled by a learning rate.
+4. Repeat until convergence or a stopping criterion is met.
+
+**Key Concepts:**
+- **Learning Rate:** Controls the step size in each iteration.
+- **Convergence:** Achieved when the gradient approaches zero or the loss stops decreasing.
+
+--- 
+
+### Building an AI Model: Key Steps
+
+Building an AI model involves several critical steps to ensure its effectiveness and reliability. Here's a concise overview:
+
+1. **Define the Problem:**
+  - Clearly identify the objective and the problem you want to solve.
+  - Example: Predict brake pad wear or classify traffic signs.
+
+2. **Collect the Data:**
+  - Gather relevant and high-quality data for training and testing.
+  - Example: Sensor data, images, or historical logs.
+
+3. **Choose a Model:**
+  - Select an appropriate algorithm or architecture based on the problem.
+  - Example: Use YOLO for real-time object detection or LSTM for time-series predictions.
+
+4. **Train the Model:**
+  - Split the data into training, validation, and test sets.
+  - Train the model using the training data and evaluate its performance on the validation set.
+  - Fine-tune hyperparameters to optimize accuracy and generalization.
+
+5. **Evaluate and Deploy:**
+  - Test the model on unseen data to ensure robustness.
+  - Deploy the model in the target environment (e.g., embedded systems, cloud).
+
+```mermaid
+graph TD
+   A[Define the Problem] --> B[Collect the Data]
+   B --> C[Choose a Model]
+   C --> D[Train the Model]
+   D --> E[Evaluate and Deploy]
+   E --> F[Monitor and Improve]
+```
+
+---
+### Quiz: Neural Networks
+
+#### What is the primary advantage of using artificial neural networks (ANNs) in AI applications?
+  - A) They are inspired by biological neurons.
+  - B) They can model complex, non-linear relationships in data.
+  - C) They require no training data.
+  - D) They are faster than all other machine learning models.
+
+#### What is the purpose of backpropagation in training neural networks?
+  - A) To initialize the weights of the network.
+  - B) To propagate the input data forward through the network.
+  - C) To adjust the weights by minimizing the error using gradient descent.
+  - D) To add more layers to the network.
+
+#### What does the gradient descent algorithm aim to achieve in neural network training?
+  - A) Maximize the loss function.
+  - B) Minimize the loss function by iteratively updating the weights.
+  - C) Increase the learning rate.
+  - D) Reduce the number of neurons in the network.
+
+#### Which of the following is a key advantage of using reinforcement learning in neural networks?
+  - A) It requires labeled training data.
+  - B) It learns optimal strategies through trial and error.
+  - C) It is only applicable to supervised learning tasks.
+  - D) It does not use reward systems.
+
+---
+### MNIST Dataset: Handwritten Digit Recognition
+
+The MNIST (Modified National Institute of Standards and Technology) dataset is a widely used benchmark in machine learning and computer vision. It consists of 70,000 grayscale images of handwritten digits (0–9), each of size 28x28 pixels. The dataset is used to train and evaluate models for digit recognition tasks.
+
+**Significance:**
+- MNIST serves as a starting point for testing and comparing machine learning algorithms.
+- It helps in understanding how neural networks can classify numbers based on pixel patterns.
+
+**History:**
+- MNIST was introduced in 1998 by Yann LeCun, Corinna Cortes, and Christopher J.C. Burges as part of their research on neural networks and machine learning.
+
+**Applications:**
+- Digit recognition in postal systems.
+- Foundational experiments in deep learning.
+
+![MNIST Dataset Example](IMGs\0___9_MNIST.gif)
+<small>Example of handwritten digits recognition from the MNIST dataset</small>
+
+---
+### Tokenization
+
+Tokens in natural language processing (NLP) are like syllables in poetry. Just as syllables are the building blocks of rhythm and structure in a poem, tokens are the fundamental units that allow AI models to process and understand text. 
+
+#### Example:
+
+"Winter is Coming" → 
+-> 5 tokens
+- **Syllables in a poem:** Win / ter / is / com / ing.
+- **Tokens in NLP:** ["Win", "##ter", "is", "Com", "##ing"].
+
+---
+### Token in AI Models
+
+The token limit defines the maximum number of tokens a model can process in a single input. Higher token limits enable handling longer contexts, making models more effective for tasks like summarization, code analysis, and document generation.
+
+| Model          | Max Size (tokens)  | Approx. Paperback Pages |
+|----------------|---------------------|--------------------------|
+| GPT-5          | 128,000            | ~512                    |
+| Llama 3.1 (400B)| 128,000           | ~512                    |
+| Mistral Large  | 64,000             | ~256                    |
+
+---
+### Embedding: Transforming Tokens into Numerical Representations
+Embedding transforms tokens into vectors, which serve as the true input points for the LLM.
+
+#### How Tokenization and Embedding Work Together:
+1. **Tokenization:**
+  - Splits text into tokens (e.g., words, subwords, or characters).
+    - Example: "Winter is coming" → ["Win", "##ter", "is", "com", "##ing"].
+
+2. **Embedding:**
+  - Maps each token to a high-dimensional vector in a continuous space.
+  - Example: ["Win", "##ter", "is", "com", "##ing"] → [[0.12, 0.45, ...], [0.34, 0.67, ...], [0.89, 0.23, ...]].
+
+#### Why Embedding is Important:
+- **Semantic Understanding:** Tokens with similar meanings have closer embeddings in the vector space.
+
+```mermaid
+graph TD
+  A["Input Phrase: 'Winter is coming'"] --> B["Tokenization: ['Win', '##ter', 'is', 'com', '##ing']"]
+  B --> C["Embedding: Dense Numerical Vectors"]
+  C --> D["'Win' → [0.12, 0.45, 0.78, ...]"]
+  C --> E["'##ter' → [0.34, 0.67, 0.89, ...]"]
+  C --> F["'is' → [0.56, 0.23, 0.91, ...]"]
+  C --> G["'com' → [0.78, 0.12, 0.34, ...]"]
+  C --> H["'##ing' → [0.45, 0.89, 0.67, ...]"]
+```
+
+---
+
+### Embedding Example: King - Man + Woman = Queen
+
+Word embeddings capture semantic relationships between words by representing them as vectors in a high-dimensional space. A famous example of this is the analogy:
+
+**"King - Man + Woman = Queen"**
+
+#### Explanation:
+- The vector difference between "King" and "Man" represents the concept of masculinity.
+- Adding the vector for "Woman" shifts the representation to the feminine counterpart, resulting in "Queen."
+
+#### Visualization:
+```mermaid
+graph TD
+  A["King"] -->|Subtract 'Man'| B["Masculinity"]
+  B -->|Add 'Woman'| C["Queen"]
+```
+
+#### Mathematical Representation:
+If `v(King)`, `v(Man)`, and `v(Woman)` are the embeddings for "King," "Man," and "Woman," then:
+```
+v(King) - v(Man) + v(Woman) ≈ v(Queen)
+```
+
+#### Why This Works:
+- Embeddings encode semantic and syntactic relationships.
+- Similar concepts are closer in the vector space, enabling analogies like this.
+
+---
+
+### Predicting the Next Word: "Paris is the city of ..."
+
+#### Key Steps:
+1. **Tokenization:**
+  - The input sentence "Paris is the city of ..." is tokenized into smaller units: `["Paris", "is", "the", "city", "of"]`.
+
+2. **Contextual Embedding:**
+  - Each token is converted into a high-dimensional vector using embeddings, capturing its meaning and context.
+
+3. **Probability Distribution:**
+  - The model computes a probability distribution over the vocabulary for the next word. For "Paris is the city of ...", the probabilities might look like:
+    - "love": 0.65
+    - "light": 0.20    
+    - "art": 0.10
+    - Other words: 0.05
+
+4. **Prediction:**
+  - The word with the highest probability ("love") is selected as the next word.
+
+#### Why This Works:
+- **Training Data:** The model has seen similar phrases during training, such as "Paris is the city of love."
+- **Context Understanding:** The embeddings ensure the model considers the entire sentence context.
+
+#### Visualization:
+```mermaid
+graph TD
+  A["Paris is the city of ..."] --> B["Tokenization"]
+  B --> C["Contextual Embedding"]
+  C --> D["Probability Distribution"]
+  D --> E["Prediction: 'love'"]
+```
+
+#### Example Output:
+- Input: "Paris is the city of ..."
+- Output: "love"
+
+This process demonstrates how language models use context and learned patterns to generate coherent and contextually relevant text.
 
 ## Foundation Models: The Backbone of AI Innovation in Automotive
 
