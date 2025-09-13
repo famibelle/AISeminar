@@ -18,7 +18,7 @@
 Introduction to AI & fundamental concepts​
 
 ---
-## AI VS GENERATIVE AI​
+# AI VS GENERATIVE AI​
 ARTIFICIAL INTELLIGENCE Artificial Intelligence is a field of computer science that aims to create systems capable of imitating or simulating human intelligence.​
 
 MACHINE LEARNING Machine Learning focuses on building systems that learn and improve from experience without being explicitly programmed.​
@@ -29,7 +29,7 @@ GENERATIVE AI Generative AI can create or generate new content, ideas, or data t
 
 ---
 
-## ML: Supervised Learning​
+# ML: Supervised Learning​
 
 Using Labeled Data​
 
@@ -37,7 +37,7 @@ Classification and Regression Tasks​
 
 ---
 
-## ML: Supervised Learning​
+# ML: Supervised Learning​
 - Predictive maintenance for vehicle components (e.g., brake pads, tires).
 - Driver behavior analysis and risk assessment.
 - Traffic sign recognition and classification.
@@ -45,36 +45,29 @@ Classification and Regression Tasks​
 
 ---
 
-## ML: Unsupervised Learning​
+# ML: Unsupervised Learning​
 Discovering hidden structures​
 
 Clustering and dimensionality reduction techniques​
 
 ---
-## ML: Unsupervised Learning​
+# ML: Unsupervised Learning​
 - Clustering driver behavior patterns for personalized insurance plans.
 - Grouping traffic patterns to optimize navigation and route planning.
 - Segmenting vehicle usage data to design targeted marketing strategies.
 
 ---
-## ML: Reinforcement Learning​
+# ML: Reinforcement Learning​
 Agents learning through trial and error​
 
 Reward systems​
 
-### Video: Reinforcement Learning in Action
-
-<iframe
-  width="720"
-  height="405"
-  src="https://www.youtube.com/watch?v=spfpBrBjntg"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+## Video: Reinforcement Learning in Action
+[![Reinforcement Learning in Action](https://img.youtube.com/vi/spfpBrBjntg/0.jpg)](https://www.youtube.com/watch?v=spfpBrBjntg "Reinforcement Learning in Action")
 
 ---
 
-## ML: Reinforcement Learning​
+# ML: Reinforcement Learning​
 - Autonomous driving systems learning optimal driving strategies through simulation.
 - Adaptive cruise control systems optimizing fuel efficiency and safety.
 - Parking assistance systems learning to navigate complex parking scenarios.
@@ -89,7 +82,7 @@ Reward systems​
 
 ---
 
-## Biological Neurons  
+# Biological Neurons  
 Structure: dendrites, soma, axon  
 
 Functioning of synapses  
@@ -98,7 +91,7 @@ Transmission of electrical signals
 
 ---
 
-### Artificial Neurons  
+# Artificial Neurons  
 Mathematical model of the artificial neuron  
 
 Activation functions: ReLU, Sigmoid, Tanh  
@@ -106,23 +99,26 @@ Activation functions: ReLU, Sigmoid, Tanh
 Similarities and differences with biological neurons?  
 
 ---
-### Artificial Neural Networks
+
+# Artificial Neural Networks
 
 Artificial neural networks (ANNs) are computational models inspired by the structure and functioning of biological neural networks. They consist of interconnected layers of artificial neurons, where each neuron processes inputs, applies an activation function, and passes the output to the next layer. ANNs are widely used for tasks such as pattern recognition, classification, and regression in various domains.
 
-### Parameters and Weights in Neural Networks
+## Parameters and Weights in Neural Networks
 
 In neural networks, **parameters** refer to the adjustable values that the model learns during training. These include:
 
-1. **Weights:**
-  - Represent the strength of the connection between neurons.
-  - Adjusted during training to minimize the error between predicted and actual outputs.
+**Weights:**
 
-2. **Biases:**
-  - Added to the weighted sum of inputs to shift the activation function.
-  - Helps the model fit the data better by allowing flexibility in decision boundaries.
+- Represent the strength of the connection between neurons.
+- Adjusted during training to minimize the error between predicted and actual outputs.
+
+**Biases:**
+- Added to the weighted sum of inputs to shift the activation function.
+- Helps the model fit the data better by allowing flexibility in decision boundaries.
 
 **Why They Matter:**
+
 - Weights and biases are the core components that enable neural networks to learn patterns and make predictions. By iteratively updating these values using optimization algorithms like gradient descent, the network improves its performance on the given task.
 
 **Example:**
@@ -133,7 +129,7 @@ In neural networks, **parameters** refer to the adjustable values that the model
 
 ---
 
-## Mistral 7B: Number of Parameters
+# Mistral 7B: Number of Parameters
 
   The Mistral 7B model is a state-of-the-art foundation model with **7 billion parameters**.
 
@@ -144,64 +140,65 @@ In neural networks, **parameters** refer to the adjustable values that the model
 
 ---
 
-### Multi-Layer Perceptron (MLP)
+# Multi-Layer Perceptron (MLP)
 
 A Multi-Layer Perceptron (MLP) is a type of artificial neural network composed of an input layer, one or more hidden layers, and an output layer. Each layer consists of interconnected nodes (neurons) where inputs are processed through weighted connections, activation functions, and biases. MLPs are widely used for supervised learning tasks such as classification and regression, leveraging their ability to model complex, non-linear relationships in data.
 
 The concept of the MLP was first introduced in 1969 by Marvin Minsky and Seymour Papert in their book *Perceptrons*, which laid the groundwork for neural network research.
 
---- 
+---
 
-### Backpropagation
+# Backpropagation
 
 Backpropagation, is a supervised learning algorithm used to train artificial neural networks. It adjusts the weights of the network by propagating the error from the output layer back to the input layer. The process involves two main steps:
 
-1. **Forward Pass:** Compute the output of the network and the error by comparing the predicted output to the actual target.
-2. **Backward Pass:** Calculate the gradient of the error with respect to each weight using the chain rule and update the weights to minimize the error.
+**Forward Pass:** Compute the output of the network and the error by comparing the predicted output to the actual target.
+**Backward Pass:** Calculate the gradient of the error with respect to each weight using the chain rule and update the weights to minimize the error.
 
 This iterative process continues until the network converges to an optimal solution, making it a cornerstone of deep learning.
 
 ---
-### Gradient Descent
+
+# Gradient Descent
 
 Gradient Descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of the steepest descent, as defined by the negative of the gradient. It is widely used in machine learning to optimize model parameters by reducing the error between predicted and actual values.
 
 **Steps:**
-1. Initialize parameters (e.g., weights) with random values.
-2. Compute the gradient of the loss function with respect to the parameters.
-3. Update the parameters by subtracting the gradient scaled by a learning rate.
-4. Repeat until convergence or a stopping criterion is met.
+- Initialize parameters (e.g., weights) with random values.
+- Compute the gradient of the loss function with respect to the parameters.
+- Update the parameters by subtracting the gradient scaled by a learning rate.
+- Repeat until convergence or a stopping criterion is met.
 
 **Key Concepts:**
 - **Learning Rate:** Controls the step size in each iteration.
 - **Convergence:** Achieved when the gradient approaches zero or the loss stops decreasing.
 
---- 
+---
 
-### Building an AI Model: Key Steps
+# Building an AI Model: Key Steps
 
 Building an AI model involves several critical steps to ensure its effectiveness and reliability. Here's a concise overview:
 
-1. **Define the Problem:**
-  - Clearly identify the objective and the problem you want to solve.
-  - Example: Predict brake pad wear or classify traffic signs.
+**Define the Problem:**
+- Clearly identify the objective and the problem you want to solve.
+- Example: Predict brake pad wear or classify traffic signs.
 
-2. **Collect the Data:**
-  - Gather relevant and high-quality data for training and testing.
-  - Example: Sensor data, images, or historical logs.
+**Collect the Data:**
+- Gather relevant and high-quality data for training and testing.
+- Example: Sensor data, images, or historical logs.
 
-3. **Choose a Model:**
-  - Select an appropriate algorithm or architecture based on the problem.
-  - Example: Use YOLO for real-time object detection or LSTM for time-series predictions.
+**Choose a Model:**
+- Select an appropriate algorithm or architecture based on the problem.
+- Example: Use YOLO for real-time object detection or LSTM for time-series predictions.
 
-4. **Train the Model:**
-  - Split the data into training, validation, and test sets.
-  - Train the model using the training data and evaluate its performance on the validation set.
-  - Fine-tune hyperparameters to optimize accuracy and generalization.
+**Train the Model:**
+- Split the data into training, validation, and test sets.
+- Train the model using the training data and evaluate its performance on the validation set.
+- Fine-tune hyperparameters to optimize accuracy and generalization.
 
-5. **Evaluate and Deploy:**
-  - Test the model on unseen data to ensure robustness.
-  - Deploy the model in the target environment (e.g., embedded systems, cloud).
+**Evaluate and Deploy:**
+- Test the model on unseen data to ensure robustness.
+- Deploy the model in the target environment (e.g., embedded systems, cloud).
 
 ```mermaid
 graph TD
@@ -213,34 +210,45 @@ graph TD
 ```
 
 ---
-### Quiz: Neural Networks
+# Quiz: Neural Networks
 
-#### What is the primary advantage of using artificial neural networks (ANNs) in AI applications?
+## What is the primary advantage of using artificial neural networks (ANNs) in AI applications?
   - A) They are inspired by biological neurons.
   - B) They can model complex, non-linear relationships in data.
   - C) They require no training data.
   - D) They are faster than all other machine learning models.
 
-#### What is the purpose of backpropagation in training neural networks?
+---
+
+# Quiz: Neural Networks
+
+## What is the purpose of backpropagation in training neural networks?
   - A) To initialize the weights of the network.
   - B) To propagate the input data forward through the network.
   - C) To adjust the weights by minimizing the error using gradient descent.
   - D) To add more layers to the network.
 
-#### What does the gradient descent algorithm aim to achieve in neural network training?
+---
+
+# Quiz: Neural Networks
+
+## What does the gradient descent algorithm aim to achieve in neural network training?
   - A) Maximize the loss function.
   - B) Minimize the loss function by iteratively updating the weights.
   - C) Increase the learning rate.
   - D) Reduce the number of neurons in the network.
+---
 
-#### Which of the following is a key advantage of using reinforcement learning in neural networks?
+# Quiz: Neural Networks
+
+## Which of the following is a key advantage of using reinforcement learning in neural networks?
   - A) It requires labeled training data.
   - B) It learns optimal strategies through trial and error.
   - C) It is only applicable to supervised learning tasks.
   - D) It does not use reward systems.
 
 ---
-### MNIST Dataset: Handwritten Digit Recognition
+# MNIST Dataset: Handwritten Digit Recognition
 
 The MNIST (Modified National Institute of Standards and Technology) dataset is a widely used benchmark in machine learning and computer vision. It consists of 70,000 grayscale images of handwritten digits (0–9), each of size 28x28 pixels. The dataset is used to train and evaluate models for digit recognition tasks.
 
@@ -255,15 +263,15 @@ The MNIST (Modified National Institute of Standards and Technology) dataset is a
 - Digit recognition in postal systems.
 - Foundational experiments in deep learning.
 
-![MNIST Dataset Example](IMGs\0___9_MNIST.gif)
+![MNIST Dataset Example](https://cdn-images-1.medium.com/v2/resize:fit:1600/0*aWIO7eB6E4-cIkK9.gif)
 <small>Example of handwritten digits recognition from the MNIST dataset</small>
 
 ---
-### Tokenization
+# Tokenization
 
 Tokens in natural language processing (NLP) are like syllables in poetry. Just as syllables are the building blocks of rhythm and structure in a poem, tokens are the fundamental units that allow AI models to process and understand text. 
 
-#### Example:
+## Example:
 
 "Winter is Coming" → 
 -> 5 tokens
@@ -271,7 +279,7 @@ Tokens in natural language processing (NLP) are like syllables in poetry. Just a
 - **Tokens in NLP:** ["Win", "##ter", "is", "Com", "##ing"].
 
 ---
-### Token in AI Models
+# Token in AI Models
 
 The token limit defines the maximum number of tokens a model can process in a single input. Higher token limits enable handling longer contexts, making models more effective for tasks like summarization, code analysis, and document generation.
 
@@ -282,19 +290,19 @@ The token limit defines the maximum number of tokens a model can process in a si
 | Mistral Large  | 64,000             | ~256                    |
 
 ---
-### Embedding: Transforming Tokens into Numerical Representations
+# Embedding: Transforming Tokens into Numerical Representations
 Embedding transforms tokens into vectors, which serve as the true input points for the LLM.
 
-#### How Tokenization and Embedding Work Together:
-1. **Tokenization:**
-  - Splits text into tokens (e.g., words, subwords, or characters).
-    - Example: "Winter is coming" → ["Win", "##ter", "is", "com", "##ing"].
+## How Tokenization and Embedding Work Together:
+**Tokenization:**
+- Splits text into tokens (e.g., words, subwords, or characters).
+- Example: "Winter is coming" → ["Win", "##ter", "is", "com", "##ing"].
 
-2. **Embedding:**
-  - Maps each token to a high-dimensional vector in a continuous space.
-  - Example: ["Win", "##ter", "is", "com", "##ing"] → [[0.12, 0.45, ...], [0.34, 0.67, ...], [0.89, 0.23, ...]].
+**Embedding:**
+- Maps each token to a high-dimensional vector in a continuous space.
+- Example: ["Win", "##ter", "is", "com", "##ing"] → [[0.12, 0.45, ...], [0.34, 0.67, ...], [0.89, 0.23, ...]].
 
-#### Why Embedding is Important:
+## Why Embedding is Important:
 - **Semantic Understanding:** Tokens with similar meanings have closer embeddings in the vector space.
 
 ```mermaid
@@ -318,91 +326,96 @@ graph TD
 
 ---
 
-### Embedding Example: King - Man + Woman = Queen
+# Embedding Example: King - Man + Woman = Queen
 
 Word embeddings capture semantic relationships between words by representing them as vectors in a high-dimensional space. A famous example of this is the analogy:
 
 **"King - Man + Woman = Queen"**
 
-#### Explanation:
+## Explanation:
 - The vector difference between "King" and "Man" represents the concept of masculinity.
 - Adding the vector for "Woman" shifts the representation to the feminine counterpart, resulting in "Queen."
 
-#### Visualization:
+## Visualization:
 ```mermaid
 graph TD
   A["King"] -->|Subtract 'Man'| B["Masculinity"]
   B -->|Add 'Woman'| C["Queen"]
 ```
 
-#### Mathematical Representation:
+## Mathematical Representation:
 If `v(King)`, `v(Man)`, and `v(Woman)` are the embeddings for "King," "Man," and "Woman," then:
 ```
 v(King) - v(Man) + v(Woman) ≈ v(Queen)
 ```
 
-#### Why This Works:
+## Why This Works:
 - Embeddings encode semantic and syntactic relationships.
 - Similar concepts are closer in the vector space, enabling analogies like this.
 
 ---
 
-### Predicting the Next Word: "Paris is the city of ..."
+# Predicting the Next Word: "Paris is the city of ..."
 
-#### Key Steps:
-1. **Tokenization:**
-  - The input sentence "Paris is the city of ..." is tokenized into smaller units: `["Paris", "is", "the", "city", "of"]`.
+## Key Steps:
+**Tokenization:**
+- The input sentence "Paris is the city of ..." is tokenized into smaller units: `["Paris", "is", "the", "city", "of"]`.
 
-2. **Contextual Embedding:**
-  - Each token is converted into a high-dimensional vector using embeddings, capturing its meaning and context.
+**Contextual Embedding:**
+- Each token is converted into a high-dimensional vector using embeddings, capturing its meaning and context.
 
-3. **Probability Distribution:**
-  - The model computes a probability distribution over the vocabulary for the next word. For "Paris is the city of ...", the probabilities might look like:
-    - "love": 0.65
-    - "light": 0.20    
-    - "art": 0.10
-    - Other words: 0.05
+**Probability Distribution:**
+- The model computes a probability distribution over the vocabulary for the next word. For "Paris is the city of ...", the probabilities might look like:
+  - "love": 0.65
+  - "light": 0.20    
+  - "art": 0.10
+  - Other words: 0.05
 
-4. **Prediction:**
-  - The word with the highest probability ("love") is selected as the next word.
+**Prediction:**
+- The word with the highest probability ("love") is selected as the next word.
 
-#### Why This Works:
+
+## Why This Works:
+
 - **Training Data:** The model has seen similar phrases during training, such as "Paris is the city of love."
 - **Context Understanding:** The embeddings ensure the model considers the entire sentence context.
 
-#### Visualization:
+---
+
+# Predicting the Next Word: "Paris is the city of ..."
+
+## Visualization:
 ```mermaid
 graph TD
   A["Paris is the city of ..."] --> B["Tokenization"]
   B --> C["Contextual Embedding"]
-  ```mermaid
-  graph TD
-    A["Paris is the city of ..."] --> B["Tokenization"]
-    B --> C["Contextual Embedding"]
-    C --> D["Probability Distribution"]
-    D --> D1["- 'love': 0.65"]
-    D --> D2["- 'light': 0.20"]
-    D --> D3["- 'art': 0.10"]
-    D --> D4["- Other words: 0.05"]
-    D --> E["Prediction: 'love'"]
-  ```
+  C --> D["Probability Distribution"]
+  D --> D1["- 'love': 0.65"]
+  D --> D2["- 'light': 0.20"]
+  D --> D3["- 'art': 0.10"]
+  D --> D4["- Other words: 0.05"]
+  D --> E["Prediction: 'love'"]
+```
 
-#### Example Output:
+## Example Output:
 - Input: "Paris is the city of ..."
 - Output: "love"
 
 This process demonstrates how language models use context and learned patterns to generate coherent and contextually relevant text.
 
 ---
-### Quiz: Tokens and Embedding
+# Quiz: Tokens and Embedding
 
-#### Question 1: What is the purpose of tokenization in natural language processing (NLP)?
+## Question 1: What is the purpose of tokenization in natural language processing (NLP)?
   - A) To convert text into numerical vectors.
   - B) To split text into smaller units like words or subwords.
   - C) To train a neural network on text data.
   - D) To generate embeddings for tokens.
 
-#### Question 2: How do embeddings help in understanding the meaning of tokens?
+---
+# Quiz: Tokens and Embedding
+
+## Question 2: How do embeddings help in understanding the meaning of tokens?
   - A) By splitting tokens into smaller parts.
   - B) By mapping tokens to high-dimensional vectors that capture semantic relationships.
   - C) By converting tokens into binary representations.
@@ -410,16 +423,21 @@ This process demonstrates how language models use context and learned patterns t
 
 ---
 
-### Large Language Models (LLMs)
+# Large Language Models (LLMs)
+
+---
+
+# Large Language Models (LLMs)
 
 Large Language Models (LLMs) are artificial intelligence models, pre-trained on vast text corpora, capable of understanding and generating natural language.
 
-#### Key Features:
+## Key Features:
 - **Size:** Their size (billions of parameters) enables them to capture the nuances of human language.
 - **Versatility:** They can be adapted to a wide variety of domains and applications.
 - **Generalization Capability:** LLMs use deep learning techniques to learn universal linguistic structures and relationships.
 
-#### Examples of Models:
+
+## Examples of Models:
 - **GPT-5 (2025), GPT-5o (2025), o2 (2025):** Advanced models for text generation and reasoning.
 - **Claude 3(Anthropic, 2025):** A model focused on explanatory reasoning and safety.
 - **Gemini 2 (Google, 2025):** A cutting-edge multimodal model for processing text, images, and videos.
@@ -428,61 +446,74 @@ Large Language Models (LLMs) are artificial intelligence models, pre-trained on 
 - **Kyutai 2025:** An advanced multilingual model for speech recognition and contextual understanding.
 - **Whisper:** A robust speech transcription model supporting numerous dialects.
 
-#### Applications:
+
+## Applications:
 - Translation, summarization, creative writing.
 - Code generation, semantic analysis.
 - Tackling unseen tasks through **zero-shot learning**.
 
 ---
-### Data Requirements for Training Large Models
+# Data Requirements for Training Large Models
 
-#### Key Data Needs:
-1. **Volume:**
-  - Large-scale datasets are essential to train models with billions of parameters.
-  - Example: GPT-4 was trained on hundreds of terabytes of text data.
+## Key Data Needs:
 
-2. **Diversity:**
-  - Data should cover a wide range of topics, languages, and domains.
-  - Example: Text, images, audio, and code for multimodal models.
+**Volume:**
+- Large-scale datasets are essential to train models with billions of parameters.
+- Example: GPT-4 was trained on hundreds of terabytes of text data.
 
-3. **Quality:**
-  - High-quality, clean, and well-annotated data ensures better model performance.
-  - Example: Removing duplicates, correcting errors, and ensuring balanced representation.
+**Diversity:**
+- Data should cover a wide range of topics, languages, and domains.
+- Example: Text, images, audio, and code for multimodal models.
 
-4. **Relevance:**
-  - Domain-specific data is critical for fine-tuning models for specialized applications.
-  - Example: Automotive manuals, sensor logs, and traffic data for autonomous driving.
+**Quality:**
+- High-quality, clean, and well-annotated data ensures better model performance.
+- Example: Removing duplicates, correcting errors, and ensuring balanced representation.
 
-#### Sources of Data:
+**Relevance:**
+- Domain-specific data is critical for fine-tuning models for specialized applications.
+- Example: Automotive manuals, sensor logs, and traffic data for autonomous driving.
+
+---
+# Data Requirements for Training Large Models
+
+## Sources of Data:
+
 - **Public Datasets:** Common Crawl, Wikipedia, ImageNet.
 - **Proprietary Data:** Internal documents, customer interactions, telemetry data.
 - **Synthetic Data:** Generated data to augment training sets and cover edge cases.
 
-#### Challenges:
+
+## Challenges:
+
 - **Bias and Fairness:** Ensuring data is representative and unbiased.
 - **Privacy:** Complying with regulations like GDPR when using sensitive data.
 - **Scalability:** Managing and processing massive datasets efficiently.
 
-#### Example in Automotive:
+---
+# Data Requirements for Training Large Models
+
+## Example in Automotive:
+
 - **Data Types:** Sensor data, traffic patterns, driver behavior logs.
 - **Use Case:** Training models for predictive maintenance, autonomous driving, and voice assistants.
 
 ---
 
-### Infrastructure Requirements for Training LLMs
+# Infrastructure Requirements for Training LLMs
 
 Training a large language model (LLM) demands advanced infrastructure and significant computational resources. Key requirements include:
 
-#### High-Performance Hardware
+## High-Performance Hardware
 - **GPU/TPU Clusters:** Specialized hardware for parallel processing and efficient training of deep learning models.
 - **Massive Compute Power:** Example: GPT-4 was trained using hundreds of petaflops per day.
 
-#### Energy Consumption
+
+## Energy Consumption
 - **Global Impact:** 20% of the world's energy is projected to be consumed by AI systems (source: DeepLearning.ai).
 
 ---
 
-### Energy Consumption for Training Mistral Large 2
+# Energy Consumption for Training Mistral Large 2
 
 The environmental footprint of training Mistral Large 2: as of January 2025, and after 18 months of usage, Large 2 generated the following impacts: 
 - **20.4 ktCO₂e:** Total carbon dioxide equivalent emissions.
@@ -495,8 +526,9 @@ source: [Our contribution to a global environmental standard for AI](https://mis
 |---------------------|-----------------------------|-----------------------------------------|
 | 18 months | ≈ 1,073.7 GWh (≈ 1.074 TWh)                      | ≈ 0.0628 reactor (≈ 6.3% of a reactor) |
 
-![Mistral AI Environmental Impact](https://cms.mistral.ai/assets/ee83637f-9f22-4e54-b63f-86277bea2a69.jpg?width=1841&height=2539)
+<img src="https://cms.mistral.ai/assets/ee83637f-9f22-4e54-b63f-86277bea2a69.jpg" alt="Mistral AI Environmental Impact" width="10%">
 <small>Environmental impact of training Mistral Large 2, including carbon emissions, water usage, and resource depletion.</small>
+
 ---
 
 # Concrete Applications of LLMs (2025)
@@ -506,15 +538,18 @@ source: [Our contribution to a global environmental standard for AI](https://mis
 - Creative co-writing (ads, games, scripts)  
 - Dynamic technical documentation  
 
+
 ## 💻 Code Completion
 - Full app generation from natural specs  
 - Security flaw detection & fixes  
 - Custom automation scripts (SQL, Python, RPA)  
 
+
 ## 🤖 Chatbots & Assistants
 - 24/7 customer support (80–90% automated)  
 - Smart personal assistants (scheduling, admin, comparisons)  
 - Healthcare support: symptom pre-analysis, treatment reminders  
+
 
 ## 🌍 Other Applications
 - Context-aware translations (legal, cultural)  
@@ -523,53 +558,54 @@ source: [Our contribution to a global environmental standard for AI](https://mis
 - Business workflows: meeting summaries, decision tracking  
 
 
-![LLMs Overview](IMGs\LLMs.png)
-<small>Overview of Large Language Models (LLMs) and their applications in various domains, including automotive, healthcare, and software development.</small>
+<img src="../AISeminar/IMGs/LLMs.png" alt="LLMs Overview" style="width:10%;">
 
 ---
 
-### Attention Mechanism: Enhancing Neural Networks
+# Attention Mechanism: Enhancing Neural Networks
 
-#### Publication and Evolution
+## Publication and Evolution
 - **2017:** Vaswani et al. proposed "Attention is All You Need," introducing the Transformer architecture.
   - **Impact:** Became the foundation for modern LLMs like GPT and BERT, replacing RNNs in many applications.
 
-#### Key Features
+## Key Features
 - **Selective Focus:** Assigns weights to input elements, emphasizing the most relevant parts.
 - **Interpretability:** Highlights which parts of the input influence the output, aiding in model transparency.
 
-#### Applications
+## Applications
 - **Natural Language Processing:** Machine translation, summarization, and question answering.
 - **Computer Vision:** Image captioning and object detection.
 - **Automotive Industry:** Predicting brake fade, analyzing driver behavior, and optimizing ADAS systems.
 
 Source:
 
-![Attention Mechanism](https://0.academia-photos.com/attachment_thumbnails/84202720/mini_magick20220415-14619-1w85ue4.png?1650025898)
+![Attention Mechanism](https://0.academia-photos.com/attachment_thumbnails/84202720/mini_magick20220415-14619-1w85ue4.png?1650025898){width="10%"}
 
 <small>Visualization of the attention mechanism highlighting its role in focusing on relevant input elements for improved model performance.</small>
 
-### Attention Mechanism Equation
+---
+# Attention Mechanism Equation
 
 The attention mechanism can be mathematically expressed as:
 
-\[
-\mathrm{Attention}(Q,K,V) = \mathrm{softmax}\!\left(\frac{Q K^\top}{\sqrt{d_k}}\right) V
-\]
+\[\mathrm{Attention}(Q,K,V) = \mathrm{softmax}\!\left(\frac{Q K^\top}{\sqrt{d_k}}\right) V\]
 
 This mechanism allows the model to focus on the most relevant parts of the input sequence.
 
-
 ---
 
-### Direct applications of the attention mechanism
+# Direct applications of the attention mechanism
 
-#### Why attention can be a game changer
+## Why attention can be a game changer
 - Captures very long-term dependencies without the memory degradation typical of RNNs.  
 - Produces interpretable attention maps: helps identify which past steps influence the current prediction.  
 - Enables modelling of rare but critical events by directly linking distant cues in the sequence.
 
-#### Concrete automotive use cases
+---
+
+# Direct applications of the attention mechanism
+
+## Concrete automotive use cases
 - Predictive maintenance (sensor data, time series)  
   - Temporal self-attention on sensor logs → early detection of anomalies and progressive wear.  
   - Attention maps: temporal localization of root causes (e.g., vibration spikes preceding failure).  
@@ -579,11 +615,10 @@ This mechanism allows the model to focus on the most relevant parts of the input
 - Detection of critical events in long test campaigns  
   - Automatic spotting of significant epochs (hard stops, long heat-ups) to prioritize HIL / bench validation.
 
-
 ---
-### Quiz: Attention Mechanism
+# Quiz: Attention Mechanism
 
-#### Why is the attention mechanism crucial in modern neural networks?
+## Why is the attention mechanism crucial in modern neural networks?
   - A) It replaces the need for activation functions.
   - B) It allows the model to focus on the most relevant parts of the input sequence.
   - C) It eliminates the need for training data.
@@ -591,8 +626,11 @@ This mechanism allows the model to focus on the most relevant parts of the input
 
 
 ---
-### Fine-tuning
-### Full Training vs. Fine-Tuning
+
+# Fine-tuning
+
+---
+# Full Training vs. Fine-Tuning
 
 Training a large language model or neural network from scratch is computationally expensive and resource-intensive. It requires:
 
@@ -600,7 +638,9 @@ Training a large language model or neural network from scratch is computationall
 - **High Compute Power:** Specialized hardware like GPUs/TPUs and significant energy consumption.
 - **Time:** Training can take weeks or months, even on large-scale infrastructure.
 
-#### Fine-Tuning as a Solution
+---
+# Fine-Tuning as a Solution
+
 Fine-tuning leverages pre-trained models and adapts them to specific tasks or domains. This approach:
 
 - **Reduces Costs:** Requires significantly less compute and time compared to full training.
@@ -608,20 +648,21 @@ Fine-tuning leverages pre-trained models and adapts them to specific tasks or do
 - **Increases Accessibility:** Enables smaller teams to build specialized applications without extensive resources.
 
 ---
-### Fine-tuning
-### Full Training vs. Fine-Tuning
+# Full Training vs. Fine-Tuning
 
 **Example:**
 - Fine-tuning GPT or Mistral on automotive datasets (e.g., technical manuals, sensor logs) can create a specialized model for predictive maintenance or driver assistance systems at a fraction of the cost of full training.
+
+---
 # Fine-tuning: Example on French Gastronomy
 
-## 1️⃣ Pre-training
+## Pre-training
 The base model (e.g., GPT or Mistral) is trained on a **general corpus**:  
 - Web articles, books, forums, Wikipedia, various recipes…  
 - It already understands French, sentence structures, common ingredients, etc.  
 - However, it **is not an expert** in French gastronomy or precise chef techniques.
 
-## 2️⃣ Fine-tuning
+## Fine-tuning
 The training continues on a **targeted dataset**:  
 - French gastronomic recipes: classic sauces, cooking techniques, refined flavor pairings.  
 - Chef notes, gastronomy books, Michelin-starred menus…  
@@ -631,14 +672,15 @@ The model learns to:
 - Suggest ingredients and techniques that are more **authentic** to French cuisine.  
 - Adhere to the **gastronomic and precise** style of Michelin-starred recipes.
 
-## 3️⃣ Result
+## Result
 After fine-tuning, the model can:  
 - Generate **complete and realistic French gastronomic recipes**.  
 - Adapt existing recipes into a **gastronomic style**.  
 - Answer questions such as:  
   > “How to prepare sweetbreads with morels and red wine sauce like a Michelin-starred chef?”
 
-## 4️⃣ Conceptual Diagram
+---
+# Fine-tuning Conceptual Diagram
 ```mermaid
 flowchart TD
   A[General Pre-trained Model] --> B[Fine-tuning on French Gastronomic Recipes]
@@ -649,7 +691,7 @@ flowchart TD
 ```
 
 ---
-## AI on Cloud, Sovereign, On-Prem, or Edge
+# AI on Cloud, Sovereign, On-Prem, or Edge
 
 AI deployment strategies should align with specific automotive use cases, balancing performance, cost, and regulatory compliance.
 
@@ -661,11 +703,12 @@ AI deployment strategies should align with specific automotive use cases, balanc
 | **Edge** | AI deployed on devices close to the data source (IoT, mobile, industrial machines). | - Ultra-low latency<br>- Reduced bandwidth usage<br>- Can operate offline | - Limited computing resources<br>- Model updates more complex<br>- Security of distributed devices | Autonomous vehicles, smart cameras, industrial automation, IoT devices |
 
 ---
-### Éthiques et responsabilités​
+
+# AI ACT and EU Regulations
 
 ---
 
-### AI Risk Categories and Regulations
+# AI Risk Categories and Regulations
 
 | Risk Category            | Description                                                                                     | Examples                          | Measures/Recommendations                                                                 |
 |--------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------------|
@@ -676,11 +719,11 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-## Foundation Models: The Backbone of AI Innovation
+# Foundation Models: The Backbone of AI Innovation
 
 ---
 
-### Definition and Importance
+# Foundation Models
 
 **Definition:**
 - Foundation models are :followup[**pre-trained, versatile, and powerful AI models**]{question="What makes foundation models more versatile compared to traditional AI models?" questionId="be7e341a-fcdd-410d-a183-5fbc1e4ceda8"} capable of generalizing across many tasks and domains.
@@ -701,6 +744,7 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 
 ---
+# Foundation Models
 
 | **Domain** | **Foundation Models (examples)** |
 |------------|-----------------------------------|
@@ -713,32 +757,7 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-Computer Vision & Multimodality
-
----
-
-
-
-### Applications in Automotive
-
-| Automaker | Example of Foundation Model Usage / Initiative | Source(s) |
-|-----------|-----------------------------------------------|-----------|
-| **BMW Group** | Uses Amazon Bedrock / foundation models for internal assistants and to accelerate R&D & operations; announced integration of DeepSeek in China models. | [AWS Case Study](https://aws.amazon.com/solutions/case-studies/bmw-reinvent-2023-generative-ai/?utm_source=chatgpt.com), [Technode](https://technode.com/2025/02/12/general-motors-mercedes-benz-among-first-global-automakers-to-integrate-deepseek-ai-models/?utm_source=chatgpt.com) |
-| **General Motors (SAIC-GM)** | Integrates DeepSeek R1 into infotainment systems (Cadillac, Buick in China) for conversational / proactive in-car services. | [Technode](https://technode.com/2025/02/12/general-motors-mercedes-benz-among-first-global-automakers-to-integrate-deepseek-ai-models/?utm_source=chatgpt.com) |
-| **Mercedes-Benz / Geely (Smart)** | Smart models to receive DeepSeek foundation models via OTA updates (e.g. Smart #5). | [Technode](https://technode.com/2025/02/12/general-motors-mercedes-benz-among-first-global-automakers-to-integrate-deepseek-ai-models/?utm_source=chatgpt.com) |
-| **Li Auto** | Developing and deploying a “vehicle foundation model” and reasoning visualization to explain autonomous driving decisions. | [InnovationOpenLab](https://www.innovationopenlab.com/news-biz/48514/global-and-china-automotive-ai-foundation-models-and-applications-research-report-2024-2025-capabilities-drive-up-the-performance-of-foundation-models-reasoning-cost-reduction-and-explainability-researchandmarketscom.html?utm_source=chatgpt.com) |
-| **Stellantis** | Strategic partnership with Mistral AI for an in-car voice assistant based on advanced foundation-style models. | [Mistral Press Release](https://mistral.ai/news/mistral-stellantis-partnership/?utm_source=chatgpt.com) |
-| **Volkswagen Group** | Prototypes with Amazon Bedrock / foundation models for knowledge management and industrial processes; “Large Industry Models” initiatives. | [AWS Blog](https://aws.amazon.com/blogs/industries/volkswagen-group-and-aws-partner-on-industrial-cloud/?utm_source=chatgpt.com) |
-| **Toyota** | Uses Azure OpenAI Service and NVIDIA DRIVE for generative AI agents and autonomous systems; accelerates R&D with LLMs and foundation models. | [Microsoft Case](https://customers.microsoft.com/en-us/story/1618243091895916311-toyota-manufacturing-azure-openai/?utm_source=chatgpt.com), [NVIDIA DRIVE](https://www.nvidia.com/en-us/self-driving-cars/drive-platform/?utm_source=chatgpt.com) |
-| **Ford** | Strategic partnership with Google Cloud to leverage AI/ML tools and foundation models for connected vehicles and customer experiences. | [Ford x Google Cloud](https://cloud.google.com/blog/topics/inside-google-cloud/ford-and-google-enter-strategic-partnership/?utm_source=chatgpt.com) |
-| **Nissan** | Research programs on autonomous driving (ProPILOT next-gen) and collaborations with Wayve; exploring “embodied AI foundation models” for driving systems. | [Wayve News](https://wayve.ai/news/nissan-renault-wayve-partnership/?utm_source=chatgpt.com) |
-| **Renault Group** | Using generative AI assistants for “connected avatar” in partnership with Cerence; collaborations with Google Cloud for in-car services. | [Cerence Announcement](https://www.cerence.com/news-releases/news-release-details/cerence-and-renault-group-partner-voice-ai/?utm_source=chatgpt.com), [Google Cloud Renault](https://cloud.google.com/customers/renault-group/?utm_source=chatgpt.com) |
-| **Hyundai Motor Group / Kia** | Partnerships with NVIDIA (DRIVE, Omniverse) and investments in AI startups (CRADLE, ZER01NE) to advance foundation-model-based autonomous driving. | [NVIDIA DRIVE](https://www.nvidia.com/en-us/self-driving-cars/drive-platform/?utm_source=chatgpt.com) |
-| **Tesla** | Builds in-house foundation-scale AI (Dojo supercomputer, FSD end-to-end neural nets) to train massive perception and planning models. | [Tesla Dojo](https://www.tesla.com/AI?utm_source=chatgpt.com) |
-
----
-
-### Benefits of Foundation Models
+# Benefits of Foundation Models
 
 **Cost and Time Reduction:**
 - Reduce development time and cost by **50–80%**.
@@ -758,7 +777,31 @@ Computer Vision & Multimodality
 
 ---
 
-### Challenges and Solutions
+# Computer Vision & Multimodality
+
+---
+
+# Computer Vision & Multimodality
+
+| Automaker | Foundation Model Usage | Source(s) |
+|-----------|-------------------------|-----------|
+| **BMW Group** | Uses Amazon Bedrock for R&D and DeepSeek in China models. | [AWS Case Study](https://aws.amazon.com/solutions/case-studies/bmw-reinvent-2023-generative-ai/), [Technode](https://technode.com/2025/02/12/general-motors-mercedes-benz-among-first-global-automakers-to-integrate-deepseek-ai-models/) |
+| **General Motors** | Integrates DeepSeek R1 for in-car services in Cadillac/Buick. | [Technode](https://technode.com/2025/02/12/general-motors-mercedes-benz-among-first-global-automakers-to-integrate-deepseek-ai-models/) |
+| **Mercedes-Benz** | OTA updates with DeepSeek for Smart models. | [Technode](https://technode.com/2025/02/12/general-motors-mercedes-benz-among-first-global-automakers-to-integrate-deepseek-ai-models/) |
+| **Li Auto** | Developing vehicle foundation models for autonomous driving. | [InnovationOpenLab](https://www.innovationopenlab.com/news-biz/48514/global-and-china-automotive-ai-foundation-models-and-applications-research-report-2024-2025-capabilities-drive-up-the-performance-of-foundation-models-reasoning-cost-reduction-and-explainability-researchandmarketscom.html) |
+| **Stellantis** | Partners with Mistral AI for voice assistants. | [Mistral Press Release](https://mistral.ai/news/mistral-stellantis-partnership/) |
+| **Volkswagen Group** | Prototypes with Amazon Bedrock for industrial processes. | [AWS Blog](https://aws.amazon.com/blogs/industries/volkswagen-group-and-aws-partner-on-industrial-cloud/) |
+| **Toyota** | Uses Azure OpenAI and NVIDIA DRIVE for AI agents. | [Microsoft Case](https://customers.microsoft.com/en-us/story/1618243091895916311-toyota-manufacturing-azure-openai/), [NVIDIA DRIVE](https://www.nvidia.com/en-us/self-driving-cars/drive-platform/) |
+| **Ford** | Partners with Google Cloud for connected vehicles. | [Ford x Google Cloud](https://cloud.google.com/blog/topics/inside-google-cloud/ford-and-google-enter-strategic-partnership/) |
+| **Nissan** | Research on autonomous driving with Wayve. | [Wayve News](https://wayve.ai/news/nissan-renault-wayve-partnership/) |
+| **Renault Group** | AI assistants with Cerence and Google Cloud. | [Cerence Announcement](https://www.cerence.com/news-releases/news-release-details/cerence-and-renault-group-partner-voice-ai/), [Google Cloud Renault](https://cloud.google.com/customers/renault-group/) |
+| **Hyundai/Kia** | NVIDIA partnerships for autonomous driving. | [NVIDIA DRIVE](https://www.nvidia.com/en-us/self-driving-cars/drive-platform/) |
+| **Tesla** | In-house foundation AI with Dojo supercomputer. | [Tesla Dojo](https://www.tesla.com/AI) |
+
+
+---
+
+# Challenges and Solutions
 
 | **Challenge**              | **Solution**                                                                 |
 |----------------------------|------------------------------------------------------------------------------|
@@ -772,7 +815,7 @@ Computer Vision & Multimodality
 
 ---
 
-### Industrial Case Studies
+# Industrial Case Studies
 
 | **OEM**                   | **Foundation Model**       | **Application**               | **Result**                                  |
 |---------------------------|----------------------------|-------------------------------|---------------------------------------------|
@@ -783,7 +826,7 @@ Computer Vision & Multimodality
 
 ---
 
-### Recommendations for Directors
+# Recommendations for Directors
 
 - **Priorities:**
   - Adopt foundation models for voice and data processing applications.
@@ -797,7 +840,7 @@ Computer Vision & Multimodality
 
 ---
 
-### Future Trends
+# Future Trends
 
 - **Multimodal Foundation Models:** Integration of voice, text, images, and sensor data for enhanced contextual understanding.
 - **Embedded Models:** Deployment on specialized chips (e.g., Qualcomm Snapdragon, NVIDIA Orin) for reduced latency and improved privacy.
@@ -806,7 +849,7 @@ Computer Vision & Multimodality
 
 ---
 
-### Arguments to Convince Decision Makers
+# Arguments to Convince Decision Makers
 
 - **Innovation and Competitiveness:**
   - "Foundation models are **key** to staying competitive in the AI and autonomous vehicle era."
@@ -822,7 +865,7 @@ Computer Vision & Multimodality
 
 ---
 
-### Key Points to Remember
+# Key Points to Remember
 
 - **Core Message:**
   "Foundation models are the **cornerstone** of AI innovation in automotive, enabling rapid development of robust and personalized applications."
@@ -837,38 +880,36 @@ Computer Vision & Multimodality
 
 ---
 
-### Image: Foundation Models Overview
+# Image: Foundation Models Overview
 
 ![Foundation Models Overview](https://via.placeholder.com/800x400?text=Foundation+Models+Overview)
 <small>Foundation models are versatile AI models that serve as a base for various applications, including automotive voice assistants, speech recognition, and predictive analytics. They reduce development costs and time while improving performance and adaptability.</small>
 
 ---
 
-## AI Applied to the Automotive Industry
+# AI Applied to the Automotive Industry
 
 ---
 
-## Legacy Code – Retrieval, Documentation & Improvement (e.g., PBC SW)
+# Legacy Code – Retrieval, Documentation & Improvement (e.g., PBC SW)
 
 ---
 
-# Exemples concrets d’IA sur du code legacy (automobile & embarqué)
+# Concrete Examples of AI on Legacy Code (Automotive & Embedded Systems)
 
-| Cas d’usage | Entreprise / Auteur(s) | Description | Source |
-|-------------|-------------------------|-------------|--------|
-| **Compréhension & documentation de code legacy** | Thoughtworks – CodeConcise | Utilisation de LLMs pour résumer et expliquer du code C++ legacy, accélérant la prise en main par les ingénieurs. | [Thoughtworks – CodeConcise](https://www.thoughtworks.com/codeconcise) |
-| **Migration automatisée (REXX → Java)** | IBM + AWS | Conversion de 100 000+ lignes de REXX en Java en deux semaines via un pipeline LLM, avec génération de documentation et diagrammes. | [IBM – Accelerating code modernization with generative AI (Automotive)](https://www.ibm.com/products/blog/accelerating-code-modernization-gen-ai-automotive) |
-| **Test-driven development assisté par IA** | Sibros (via Cursor/Claude Code) | Génération automatique de tests unitaires pour fonctions critiques (ex. contrôleurs de frein), puis refactorisation guidée par LLM. | [Thoughtworks – Claude Code experiment](https://www.thoughtworks.com/insights/blog/generative-ai/claude-code-codeconcise-experiment) |
-| **Documentation & revue de code legacy** | MITRE (Macke, Doyle) | Étude empirique montrant que GPT-4 produit des commentaires complets et utiles sur du code ancien (MUMPS, assembleur). | [arXiv:2404.03114](https://arxiv.org/abs/2404.03114) |
-| **Génération de code embarqué automobile** | Sven Kirchner, Alois C. Knoll et al. | Cadre de génération de code C++ automobile par LLMs, avec vérification et simulation pour systèmes de sûreté critique. | [arXiv:2506.04038](https://arxiv.org/abs/2506.04038) |
-| **Spec2Code (automobile Scania)** | Scania + chercheurs | Génération de code embarqué à partir de spécifications, avec validation formelle et outils de critique. | [PapersWithCode – Spec2Code](https://paperswithcode.com/paper/towards-specification-driven-llm-based) |
-| **Analyse des hallucinations dans le code auto** | Pavel, Petrovic et al. | Étude des hallucinations dans la génération de code automobile par LLMs, avec métriques de validité syntaxique et fonctionnelle. | [arXiv:2508.11257](https://arxiv.org/abs/2508.11257) |
-
+| Use Case | Company / Authors | Description | Source |
+|----------|-------------------|-------------|--------|
+| **Understanding & Documenting Legacy Code** | Thoughtworks – CodeConcise | Use of LLMs to summarize and explain legacy C++ code, accelerating onboarding for engineers. | [Thoughtworks – CodeConcise](https://www.thoughtworks.com/codeconcise) |
+| **Automated Migration (REXX → Java)** | IBM + AWS | Conversion of 100,000+ lines of REXX to Java in two weeks via an LLM pipeline, including documentation and diagram generation. | [IBM – Accelerating code modernization with generative AI (Automotive)](https://www.ibm.com/products/blog/accelerating-code-modernization-gen-ai-automotive) |
+| **AI-Assisted Test-Driven Development** | Sibros (via Cursor/Claude Code) | Automatic generation of unit tests for critical functions (e.g., brake controllers), followed by LLM-guided refactoring. | [Thoughtworks – Claude Code experiment](https://www.thoughtworks.com/insights/blog/generative-ai/claude-code-codeconcise-experiment) |
+| **Legacy Code Documentation & Review** | MITRE (Macke, Doyle) | Empirical study showing that GPT-4 produces complete and useful comments on old code (MUMPS, assembly). | [arXiv:2404.03114](https://arxiv.org/abs/2404.03114) |
+| **Embedded Automotive Code Generation** | Sven Kirchner, Alois C. Knoll et al. | Framework for generating automotive C++ code using LLMs, with verification and simulation for safety-critical systems. | [arXiv:2506.04038](https://arxiv.org/abs/2506.04038) |
+| **Spec2Code (Automotive Scania)** | Scania + Researchers | Generation of embedded code from specifications, with formal validation and critique tools. | [PapersWithCode – Spec2Code](https://paperswithcode.com/paper/towards-specification-driven-llm-based) |
+| **Analysis of Hallucinations in Automotive Code** | Pavel, Petrovic et al. | Study of hallucinations in automotive code generation by LLMs, with metrics for syntactic and functional validity. | [arXiv:2508.11257](https://arxiv.org/abs/2508.11257) |
 
 ---
 
-
-### Challenges in Legacy Code
+# Challenges in Legacy Code
 
 - **Sparse Documentation:** Outdated or missing documentation complicates understanding.
 - **Complex Dependencies:** Intricate dependencies and fragile builds hinder updates.
@@ -881,28 +922,28 @@ Computer Vision & Multimodality
 ---
 
 
-### AI Contributions
+# AI Contributions
 
-#### 1. Code Retrieval
+## Code Retrieval
 - Quickly locate relevant modules, functions, or APIs.
 - **Example:** AI tools like **CodeWhisperer** and **GitHub Copilot** help developers navigate large legacy codebases efficiently.
 
-#### 2. Automated Documentation
+## Automated Documentation
 - Generate function summaries, comments, and system-level diagrams.
 - **Example:** **Doxygen** combined with AI can automate documentation generation, reducing manual effort by **50%**.
 
-#### 3. Refactoring & Modernization
+## Refactoring & Modernization
 - Suggest safer or optimized code structures.
 - Update outdated patterns.
 - **Example:** AI-driven refactoring tools like **SonarQube** and **DeepCode** identify vulnerabilities and suggest improvements.
 
-#### 4. Consistency Checks
+## Consistency Checks
 - Compare legacy code against specifications or safety standards.
 - **Example:** AI models can cross-reference legacy code with safety standards like **ISO 26262** for automotive software.
 
 ---
 
-### Impact
+# Impact
 
 - **Enhanced Safety & Efficiency:** Reduces risk in maintaining and updating critical legacy systems.
 - **Cost Reduction:** Minimizes manual review time, improving productivity.
@@ -914,24 +955,22 @@ Computer Vision & Multimodality
 
 ---
 
-### Image: AI in Legacy Code Management
+# Image: AI in Legacy Code Management
 
 ![AI in Legacy Code Management](https://via.placeholder.com/800x400?text=AI+in+Legacy+Code+Management)
 <small>Illustration of AI contributions in managing legacy code, including code retrieval, automated documentation, refactoring, and consistency checks.</small>
 
 ---
 
-### Impact
+# Impact
 
 - **Enhanced Safety & Efficiency:** Reduces risk in maintaining and updating critical legacy systems.
 - **Cost Reduction:** Minimizes manual review time, improving productivity.
 - **Modernization Support:** Facilitates the transition of legacy systems to modern platforms.
 
-
-
 ---
 
-## AI for Legacy Code - Govtech Lab - Luxembourg
+# AI for Legacy Code - Govtech Lab - Luxembourg
 
 - **Legacy Java Application:**
   - ~700k lines of code.
@@ -955,7 +994,8 @@ Computer Vision & Multimodality
 - [Govtech Lab - Luxembourg](https://govtechlab.public.lu/fr/call-solution/2024/speedup-ailegacycode.html)
 
 ---
-### Thermal Monitoring & Fading - Predictive Analysis
+
+# Thermal Monitoring & Fading - Predictive Analysis
 
 **Key message**
   - Brake fade is history-dependent. Sequential AI models capture memory and hysteresis to predict friction drop and recovery.
@@ -982,7 +1022,7 @@ Computer Vision & Multimodality
 
 ---
 
-### Optimizing Vehicle Testing Using AI & Historical Test Data
+# Optimizing Vehicle Testing Using AI & Historical Test Data
 
 **Context & Dataset**
 - **System:** Power Brake Control (PBC SW)
@@ -1031,11 +1071,12 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 - Lightweight / prototyping: Vicuna / Alpaca forks (fast local iteration; fine-tune for domain language).
 
 ---
-## AI-Driven Friction Material Characterization & Selection
+
+# AI-Driven Friction Material Characterization & Selection
 
 ---
 
-### The Challenge: Complex Trade-offs in Brake Materials
+# The Challenge: Complex Trade-offs in Brake Materials
 
 **Key Conflicts:**
 - Friction vs. wear
@@ -1052,9 +1093,10 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### AI-Powered Solutions
+# AI-Powered Solutions
 
-#### 1. Material Characterization & Prediction
+## Material Characterization & Prediction
+
 **Technologies:**
 - Machine Learning (Random Forest, Neural Networks)
 - Predicts friction coefficient (μ), wear rate, thermal fading resistance
@@ -1072,7 +1114,8 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-#### 2. Noise & Vibration Analysis
+# Noise & Vibration Analysis
+
 **Technologies:**
 - CNNs + spectrogram analysis
 - Anomaly detection for parasitic resonances
@@ -1084,7 +1127,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-#### 3. Closed-Loop Optimization
+# Closed-Loop Optimization
 **Technologies:**
 - Generative design for novel composites (e.g., ceramic-matrix + graphene)
 - Digital twin simulates 10+ years of wear in 48 hours
@@ -1095,7 +1138,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Key Value for OEMs & Suppliers
+# Key Value for OEMs & Suppliers
 
 <custom-element data-json="%7B%22type%22%3A%22table-metadata%22%2C%22attributes%22%3A%7B%22title%22%3A%22Comparison%3A%20Traditional%20vs.%20AI-Augmented%20Workflow%22%7D%7D" />
 
@@ -1108,7 +1151,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Industrial Adoption
+# Industrial Adoption
 
 **Leaders:**
 - **Bosch:** 5,000+ virtual formulations in global AI database
@@ -1118,12 +1161,12 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Practical Implementation
+# Practical Implementation
 
 **Quick Start Pilot:**
-1. Collect existing tribometer data, SEM images, and complaint logs.
-2. Train a Random Forest model to predict wear rate (target: <10% error).
-3. Validate top 5 AI-recommended formulations with physical tests.
+- Collect existing tribometer data, SEM images, and complaint logs.
+- Train a Random Forest model to predict wear rate (target: <10% error).
+- Validate top 5 AI-recommended formulations with physical tests.
 
 **Tech Stack:**
 - Python (scikit-learn, TensorFlow)
@@ -1155,7 +1198,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Goal: Enhance In-Car Interaction and Driver Comfort
+# Goal: Enhance In-Car Interaction and Driver Comfort
 
 **Key Components:**
 - **Voice Assistants:** Natural language interfaces for navigation, climate, and infotainment control.
@@ -1170,7 +1213,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Voice Assistants
+# Voice Assistants
 
 **Functionalities:**
 - Hands-free control of navigation, climate, infotainment, and third-party apps.
@@ -1188,7 +1231,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### TTS (Text-to-Speech)
+# TTS (Text-to-Speech)
 
 **Technologies:**
 - Neural models (e.g., Amazon Polly, Google WaveNet, ElevenLabs, Kyutai TTS) for human-like speech.
@@ -1204,7 +1247,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### STT (Speech-to-Text)
+# STT (Speech-to-Text)
 
 **Leading Models:**
 - **OpenAI Whisper:** Robust to noise, supports 99 languages, offline capable.
@@ -1223,7 +1266,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Speaker Diarization
+# Speaker Diarization
 
 **Technologies:**
 - Models like PyAnnote, NVIDIA NeMo to segment and identify speakers.
@@ -1239,7 +1282,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Benefits of Voice Technologies
+# Benefits of Voice Technologies
 
 | **Benefit**               | **Impact for Driver**               | **Impact for OEM**              |
 |---------------------------|------------------------------------|--------------------------------|
@@ -1256,7 +1299,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Challenges & Technical Solutions
+# Challenges & Technical Solutions
 
 | **Challenge**              | **Solution**                                                                 |
 |----------------------------|------------------------------------------------------------------------------|
@@ -1272,7 +1315,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Industrial Case Studies
+# Industrial Case Studies
 
 | **OEM**                   | **Technology**               | **Result**                                  |
 |---------------------------|------------------------------|---------------------------------------------|
@@ -1284,19 +1327,19 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Typical Voice Interaction Workflow
+# Typical Voice Interaction Workflow
 
-1. **Audio Capture** (microphone array).
-2. **Signal Cleaning** (noise/music suppression).
-3. **STT** (e.g., Whisper or Kyutai) → Text.
-4. **Diarization** (who is speaking? driver or passenger?).
-5. **NLP** (intent understanding).
-6. **Action** (e.g., change temperature).
-7. **TTS** (natural voice response).
+- **Audio Capture** (microphone array).
+- **Signal Cleaning** (noise/music suppression).
+- **STT** (e.g., Whisper or Kyutai) → Text.
+- **Diarization** (who is speaking? driver or passenger?).
+- **NLP** (intent understanding).
+- **Action** (e.g., change temperature).
+- **TTS** (natural voice response).
 
 ---
 
-### Recommendations for Directors
+# Recommendations for Directors
 
 - **Priorities:**
   - Start with a pilot using Whisper or Kyutai (offline) + basic TTS for critical commands (navigation, climate).
@@ -1309,7 +1352,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Future Trends
+# Future Trends
 
 - **Voice Biometrics:** Driver recognition via voice (e.g., Ford testing voice authentication to start the car).
 - **Emotion AI:** Stress or fatigue detection via voice analysis (e.g., Hyundai).
@@ -1318,7 +1361,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Arguments to Convince Decision Makers
+# Arguments to Convince Decision Makers
 
 - **Safety:** "Reducing distractions = fewer accidents = savings on insurance and recalls."
 - **Differentiation:** "A smooth voice interface is a **key selling point** for young drivers (Gen Z/Y)."
@@ -1327,7 +1370,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Key Points to Remember
+# Key Points to Remember
 
 - **Core Message:** "Voice is the **most natural and safe** interface for car interaction. Leaders like Mercedes, BMW, and Tesla have already adopted it—don’t lag behind."
 - **Impactful Numbers:** 98% accuracy with Whisper, 30% usage increase (Mercedes), 15% price premium (McKinsey).
@@ -1336,7 +1379,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Link to unmute.sh
+# Link to unmute.sh
 
 - [unmute.sh](https://unmute.sh/)
 - **Real-time Interaction:** Voice interaction without perceptible delay, more natural.
@@ -1346,11 +1389,12 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 - **Immediate Testing:** Code publication imminent.
 
 ---
+
 # Predicting Brake Pad Friction & Fading Using Neural Networks
 
 ---
 
-## Challenges in Friction Prediction
+# Challenges in Friction Prediction
 - Friction coefficient depends on **temperature, pressure, speed, wear, and braking history**  
 - **Thermal fade**: progressive drop in friction after repeated high-energy braking cycles  
 - Physical tests (dynamometers, vehicle tests) are **time-consuming and expensive**  
@@ -1363,7 +1407,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-## Advantages of RNNs / LSTM / GRU
+# Advantages of RNNs / LSTM / GRU
 - **Capture temporal dependencies**: model how friction evolves over multiple braking cycles  
 - **Handle complex nonlinear relationships** automatically:  
   - Temperature ↔ friction  
@@ -1375,7 +1419,7 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-## Role of Attention Mechanism
+# Role of Attention Mechanism
 - **Focuses on critical cycles** that most influence friction loss  
 - Allows the model to **reuse important information from long sequences**  
 - **Enhances interpretability**:  
@@ -1387,11 +1431,24 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
   - Most beneficial for **long sequences with cumulative effects**  
 
 ---
-## Object Detection (YOLO/R-CNN)
+
+# 🔍 Attention Mechanism in Predictive Maintenance & Thermal Monitoring
+| Article | Domain | Role of Attention | Source |
+|---|--------|--------------------|------|
+| *CNN-LSTM based on attention mechanism for brake pad remaining life prediction* | Brake pad life | Highlights relevant past time steps. | [Wang et al.](https://journals.viserdata.com/index.php/mes/article/view/9085) |
+| *A deep attention based approach for predictive maintenance applications in IoT scenarios* | IoT maintenance | Multi-head attention for RUL estimation. | [De Luca et al.](https://www.emerald.com/insight/content/doi/10.1108/jmtm-02-2022-0093/full/html) |
+| *Enhanced Thermal Modeling of Electric Vehicle Motors Using a Multihead Attention Mechanism* | EV motors | Captures complex thermal dynamics. | [MDPI Energies](https://doi.org/10.3390/en17122976) |
+| *Thermal fault prognosis of lithium-ion batteries in real-world electric vehicles using self-attention mechanism networks* | EV batteries | Predicts thermal anomalies. | [Applied Thermal Eng.](https://doi.org/10.1016/j.applthermaleng.2023.120304) |
+| *A Two-Stage Attention-Based Hierarchical Transformer for Turbofan Engine Remaining Useful Life Prediction* | Turbofan engines | Temporal and sensor-wise attention. | [MDPI Sensors](https://www.mdpi.com/1424-8220/24/3/824) |
+
 
 ---
 
-### Goal: Identify and Locate Objects in an Image
+# Object Detection (YOLO/R-CNN)
+
+---
+
+# Goal: Identify and Locate Objects in an Image
 
 - **Objective:** Identify and locate objects within an image by providing their class and bounding box.
 - **Applications in Automotive:**
@@ -1402,12 +1459,12 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-### Two Main Approaches
+# Two Main Approaches
 
-#### 1. R-CNN Family
+## R-CNN Family
 - **Process:**
-  1. Generates region proposals in the image.
-  2. Classifies each region using a convolutional neural network.
+  - Generates region proposals in the image.
+  - Classifies each region using a convolutional neural network.
 - **Advantages:**
   - High accuracy due to region-based processing.
   - Effective for detecting small objects.
@@ -1416,25 +1473,44 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
   - Slower processing speed.
 - **Example:**
   - **BMW** uses Faster R-CNN for traffic sign recognition, achieving **98% accuracy** in detecting small signs.
-    - [BMW AI Research, 2025](https://www.bmwgroup.com/en/innovation/ai-research.html)
-
-#### 2. YOLO Family
-- **Process:**
-  - Single-shot detection: Predicts classes and bounding boxes in one pass through the network.
-- **Variants:**
-  - YOLOv3, YOLOv4, YOLOv5, YOLOv6, YOLOv7, YOLOv8
-- **Advantages:**
-  - Real-time speed.
-  - Efficient and fast detection suitable for real-time applications.
-- **Disadvantages:**
-  - Slightly lower accuracy compared to R-CNN.
-- **Example:**
-  - **Tesla** uses YOLOv5 for real-time pedestrian detection, achieving **95% accuracy** with **30 ms latency**.
-    - [Tesla AI Day, 2025](https://www.tesla.com/AIDay)
+    -
+     [BMW AI Research, 2025](https://www.bmwgroup.com/en/innovation/ai-research.html)
 
 ---
 
-### Trade-off: Accuracy (R-CNN) vs Real-time Speed (YOLO)
+# YOLO Family
+- **Process:**
+  - Single-shot detection: Predicts classes and bounding boxes in one pass through the network.
+
+- **Variants:**
+  - YOLOv3, YOLOv4, YOLOv5, YOLOv6, YOLOv7, YOLOv8
+
+- **Advantages:**
+  - Real-time speed.
+  - Efficient and fast detection suitable for real-time applications.
+
+- **Disadvantages:**
+  - Slightly lower accuracy compared to R-CNN.
+
+---
+
+# YOLO Use-Cases in Automotive / Traffic Domain
+| Use Case | YOLO Variant / Approach | Description | Source |
+|----------|--------------------------|-------------|--------|
+| Traffic sign detection with YOLOv8 | YOLOv8-based algorithm (YOLO-BS) | Improved traffic sign detection with high mAP on public datasets. | [“A traffic sign detection algorithm based on YOLOv8” — 2025, H. Zhang et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11880478/) |
+| Context-based sign detection with YOLOv7 | YOLO-CCA (YOLOv7 + context modules) | Adds local/global context modules and Transformer-based feature fusion, boosting mAP by ~3.9% on Tsinghua-Tencent-100K. | [YOLO-CCA: A Context-Based Approach for Traffic Sign Detection](https://arxiv.org/abs/2412.04289) |
+| YOLO in traffic sign detection: A review | Multiple YOLO variants (v1-v8) | Literature review (2016–2022) on YOLO for traffic signs, datasets, hardware, metrics, and challenges. | [Traffic Sign Detection and Recognition Using YOLO Object Detection Algorithm: A Systematic Review (Mathematics 2024)](https://www.mdpi.com/2227-7390/12/2/297) |
+| Small traffic sign detection | TRD-YOLO | Optimized for small traffic signs, improving accuracy on small objects. | [TRD-YOLO: A Real-Time, High-Performance Small Traffic Sign Detection Algorithm (2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10145582/) |
+| Pedestrian detection with attention modules | FA-YOLO (YOLO + Feature Enhancement + Adaptive Sparse Self-Attention) | Enhanced pedestrian detection with robustness to occlusion and lighting variations. | [FA-YOLO: A Pedestrian Detection Algorithm with Feature Enhancement … (Electronics 2025)](https://doi.org/10.3390/electronics14091713) |
+
+
+# Video: Object Detection in Action
+
+[![Reinforcement Learning in Action](https://img.youtube.com/vi/FdZvMoP0dRU/0.jpg)](https://www.youtube.com/watch?v=FdZvMoP0dRU "Reinforcement Learning in Action")
+
+---
+
+# Trade-off: Accuracy (R-CNN) vs Real-time Speed (YOLO)
 
 | **Aspect**            | **R-CNN Family**                     | **YOLO Family**                      |
 |-----------------------|---------------------------------------|---------------------------------------|
@@ -1445,21 +1521,15 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-
-### Image: Object Detection Approaches
-
-![Object Detection Approaches](https://via.placeholder.com/800x400?text=Object+Detection+Approaches)
-<small>Illustration of the R-CNN and YOLO approaches for object detection in images. R-CNN focuses on region-based detection with high accuracy, while YOLO emphasizes speed and real-time performance.</small>
+# Image: Object Detection Approaches
 
 
-### Key Points to Remember
+## Key Points to Remember
 
 - **Core Message:**
   - "Object detection using YOLO and R-CNN provides essential capabilities for autonomous driving and ADAS (Advanced Driver-Assistance Systems), balancing accuracy and speed."
   - Real-time processing capability of YOLO.
+
+
 - **Call to Action:**
   - "Adopt a tailored approach to object detection, leveraging R-CNN for accuracy-critical tasks and YOLO for real-time applications to enhance safety and performance in automotive systems."
-
----
-![Object Detection Illustration](https://via.placeholder.com/800x400?text=YOLO+vs+R-CNN+Object+Detection)
-<small>This image illustrates the difference between YOLO and R-CNN approaches, highlighting their respective strengths in terms of speed and accuracy.</small>
