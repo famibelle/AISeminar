@@ -661,7 +661,18 @@ AI deployment strategies should align with specific automotive use cases, balanc
 | **Edge** | AI deployed on devices close to the data source (IoT, mobile, industrial machines). | - Ultra-low latency<br>- Reduced bandwidth usage<br>- Can operate offline | - Limited computing resources<br>- Model updates more complex<br>- Security of distributed devices | Autonomous vehicles, smart cameras, industrial automation, IoT devices |
 
 ---
-Éthiques et responsabilités​
+### Éthiques et responsabilités​
+
+---
+
+### AI Risk Categories and Regulations
+
+| Risk Category            | Description                                                                                     | Examples                          | Measures/Recommendations                                                                 |
+|--------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------------|
+| Unacceptable Risk        | Systems prohibited as they pose a serious threat to fundamental rights or safety.               | Social scoring, Psychological manipulation, Unregulated biometric recognition         | Strictly prohibited                                                                     |
+| High Risk                | Systems with a significant impact on safety or fundamental rights.                              | Medical diagnosis, AI for recruitment, Management of critical infrastructures          | Conformity assessments, Technical documentation, Mandatory human oversight              |
+| Limited Risk             | Systems with moderate risk requiring transparency obligations.                                   | Chatbots, AI-generated image/voice filters                                            | Inform users that they are interacting with AI or that content is artificially generated |
+| Minimal Risk             | Systems with low risk, without specific regulatory obligations.                                  | Recommendation systems, AI in video games                                             | Encourage voluntary codes of conduct to improve transparency and fairness               |
 
 ---
 
