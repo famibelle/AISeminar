@@ -17,6 +17,8 @@
 - **LLaMA 2 (Meta):** Open-source large model adaptable to various use cases.
 - **Mistral 7B (Mistral AI):** French state-of-the-art model optimized for natural language understanding and generation.
 - **Kyutai (France):** Specialized in natural language processing and speech recognition, with strong multilingual capabilities.
+- **Whisper (OpenAI):** Robust speech-to-text model supporting multiple languages and optimized for noisy environments.
+
 
 **Importance:**
 - Reduce development costs and time.
@@ -702,10 +704,6 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 - **Process:**
   1. Generates region proposals in the image.
   2. Classifies each region using a convolutional neural network.
-- **Variants:**
-  - Fast R-CNN
-  - Faster R-CNN
-  - Mask R-CNN
 - **Advantages:**
   - High accuracy due to region-based processing.
   - Effective for detecting small objects.
