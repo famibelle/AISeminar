@@ -98,7 +98,7 @@ Transmission of electrical signals
 
 ---
 
-Artificial Neurons  
+### Artificial Neurons  
 Mathematical model of the artificial neuron  
 
 Activation functions: ReLU, Sigmoid, Tanh  
@@ -110,6 +110,37 @@ Similarities and differences with biological neurons?
 
 Artificial neural networks (ANNs) are computational models inspired by the structure and functioning of biological neural networks. They consist of interconnected layers of artificial neurons, where each neuron processes inputs, applies an activation function, and passes the output to the next layer. ANNs are widely used for tasks such as pattern recognition, classification, and regression in various domains.
 
+### Parameters and Weights in Neural Networks
+
+In neural networks, **parameters** refer to the adjustable values that the model learns during training. These include:
+
+1. **Weights:**
+  - Represent the strength of the connection between neurons.
+  - Adjusted during training to minimize the error between predicted and actual outputs.
+
+2. **Biases:**
+  - Added to the weighted sum of inputs to shift the activation function.
+  - Helps the model fit the data better by allowing flexibility in decision boundaries.
+
+**Why They Matter:**
+- Weights and biases are the core components that enable neural networks to learn patterns and make predictions. By iteratively updating these values using optimization algorithms like gradient descent, the network improves its performance on the given task.
+
+**Example:**
+- In a simple neural network, if the input is `x`, the weight is `w`, and the bias is `b`, the output of a neuron is calculated as:
+  ```
+  output = activation_function(w * x + b)
+  ```
+
+---
+
+## Mistral 7B: Number of Parameters
+
+  The Mistral 7B model is a state-of-the-art foundation model with **7 billion parameters**.
+
+  **Comparison:**
+  - **Mistral 7B:** 7 billion parameters.
+  - **GPT-4:** Estimated 175 billion parameters.
+  - **LLaMA 2 (13B):** 13 billion parameters.
 
 ---
 
@@ -270,12 +301,20 @@ Embedding transforms tokens into vectors, which serve as the true input points f
 graph TD
   A["Input Phrase: 'Winter is coming'"] --> B["Tokenization: ['Win', '##ter', 'is', 'com', '##ing']"]
   B --> C["Embedding: Dense Numerical Vectors"]
-  C --> D["'Win' → [0.12, 0.45, 0.78, ...]"]
-  C --> E["'##ter' → [0.34, 0.67, 0.89, ...]"]
-  C --> F["'is' → [0.56, 0.23, 0.91, ...]"]
-  C --> G["'com' → [0.78, 0.12, 0.34, ...]"]
-  C --> H["'##ing' → [0.45, 0.89, 0.67, ...]"]
-```
+  ```mermaid
+  graph TD
+    C["Tokenization Output"]
+    C --> D["Token: 'Win'"]
+    D --> D1["Vector: [0.12, 0.45, 0.78, ...]"]
+    C --> E["Token: '##ter'"]
+    E --> E1["Vector: [0.34, 0.67, 0.89, ...]"]
+    C --> F["Token: 'is'"]
+    F --> F1["Vector: [0.56, 0.23, 0.91, ...]"]
+    C --> G["Token: 'com'"]
+    G --> G1["Vector: [0.78, 0.12, 0.34, ...]"]
+    C --> H["Token: '##ing'"]
+    H --> H1["Vector: [0.45, 0.89, 0.67, ...]"]
+  ```
 
 ---
 
@@ -336,9 +375,17 @@ v(King) - v(Man) + v(Woman) ≈ v(Queen)
 graph TD
   A["Paris is the city of ..."] --> B["Tokenization"]
   B --> C["Contextual Embedding"]
-  C --> D["Probability Distribution"]
-  D --> E["Prediction: 'love'"]
-```
+  ```mermaid
+  graph TD
+    A["Paris is the city of ..."] --> B["Tokenization"]
+    B --> C["Contextual Embedding"]
+    C --> D["Probability Distribution"]
+    D --> D1["- 'love': 0.65"]
+    D --> D2["- 'light': 0.20"]
+    D --> D3["- 'art': 0.10"]
+    D --> D4["- Other words: 0.05"]
+    D --> E["Prediction: 'love'"]
+  ```
 
 #### Example Output:
 - Input: "Paris is the city of ..."
@@ -346,7 +393,279 @@ graph TD
 
 This process demonstrates how language models use context and learned patterns to generate coherent and contextually relevant text.
 
-## Foundation Models: The Backbone of AI Innovation in Automotive
+---
+### Quiz: Tokens and Embedding
+
+#### Question 1: What is the purpose of tokenization in natural language processing (NLP)?
+  - A) To convert text into numerical vectors.
+  - B) To split text into smaller units like words or subwords.
+  - C) To train a neural network on text data.
+  - D) To generate embeddings for tokens.
+
+#### Question 2: How do embeddings help in understanding the meaning of tokens?
+  - A) By splitting tokens into smaller parts.
+  - B) By mapping tokens to high-dimensional vectors that capture semantic relationships.
+  - C) By converting tokens into binary representations.
+  - D) By reducing the size of the vocabulary.
+
+---
+
+### Large Language Models (LLMs)
+
+Large Language Models (LLMs) are artificial intelligence models, pre-trained on vast text corpora, capable of understanding and generating natural language.
+
+#### Key Features:
+- **Size:** Their size (billions of parameters) enables them to capture the nuances of human language.
+- **Versatility:** They can be adapted to a wide variety of domains and applications.
+- **Generalization Capability:** LLMs use deep learning techniques to learn universal linguistic structures and relationships.
+
+#### Examples of Models:
+- **GPT-5 (2025), GPT-5o (2025), o2 (2025):** Advanced models for text generation and reasoning.
+- **Claude 3(Anthropic, 2025):** A model focused on explanatory reasoning and safety.
+- **Gemini 2 (Google, 2025):** A cutting-edge multimodal model for processing text, images, and videos.
+- **LLaMA  (Meta, 2025):** An open-source model optimized for diverse applications.
+- **Mistral Mixtral (2025):** A French model specialized in natural language processing and content generation.
+- **Kyutai 2025:** An advanced multilingual model for speech recognition and contextual understanding.
+- **Whisper:** A robust speech transcription model supporting numerous dialects.
+
+#### Applications:
+- Translation, summarization, creative writing.
+- Code generation, semantic analysis.
+- Tackling unseen tasks through **zero-shot learning**.
+
+---
+### Data Requirements for Training Large Models
+
+#### Key Data Needs:
+1. **Volume:**
+  - Large-scale datasets are essential to train models with billions of parameters.
+  - Example: GPT-4 was trained on hundreds of terabytes of text data.
+
+2. **Diversity:**
+  - Data should cover a wide range of topics, languages, and domains.
+  - Example: Text, images, audio, and code for multimodal models.
+
+3. **Quality:**
+  - High-quality, clean, and well-annotated data ensures better model performance.
+  - Example: Removing duplicates, correcting errors, and ensuring balanced representation.
+
+4. **Relevance:**
+  - Domain-specific data is critical for fine-tuning models for specialized applications.
+  - Example: Automotive manuals, sensor logs, and traffic data for autonomous driving.
+
+#### Sources of Data:
+- **Public Datasets:** Common Crawl, Wikipedia, ImageNet.
+- **Proprietary Data:** Internal documents, customer interactions, telemetry data.
+- **Synthetic Data:** Generated data to augment training sets and cover edge cases.
+
+#### Challenges:
+- **Bias and Fairness:** Ensuring data is representative and unbiased.
+- **Privacy:** Complying with regulations like GDPR when using sensitive data.
+- **Scalability:** Managing and processing massive datasets efficiently.
+
+#### Example in Automotive:
+- **Data Types:** Sensor data, traffic patterns, driver behavior logs.
+- **Use Case:** Training models for predictive maintenance, autonomous driving, and voice assistants.
+
+---
+
+### Infrastructure Requirements for Training LLMs
+
+Training a large language model (LLM) demands advanced infrastructure and significant computational resources. Key requirements include:
+
+#### High-Performance Hardware
+- **GPU/TPU Clusters:** Specialized hardware for parallel processing and efficient training of deep learning models.
+- **Massive Compute Power:** Example: GPT-4 was trained using hundreds of petaflops per day.
+
+#### Energy Consumption
+- **Global Impact:** 20% of the world's energy is projected to be consumed by AI systems (source: DeepLearning.ai).
+
+---
+
+### Energy Consumption for Training Mistral Large 2
+
+The environmental footprint of training Mistral Large 2: as of January 2025, and after 18 months of usage, Large 2 generated the following impacts: 
+- **20.4 ktCO₂e:** Total carbon dioxide equivalent emissions.
+- **281,000 m³ of water consumed:** Total water usage.
+- **660 kg Sb eq:** Standard unit for resource depletion.
+
+source: [Our contribution to a global environmental standard for AI](https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai)
+
+| Duration | Estimated Energy Consumption | Equivalent in Nuclear Reactors (1.3 GW) |
+|---------------------|-----------------------------|-----------------------------------------|
+| 18 months | ≈ 1,073.7 GWh (≈ 1.074 TWh)                      | ≈ 0.0628 reactor (≈ 6.3% of a reactor) |
+
+![Mistral AI Environmental Impact](https://cms.mistral.ai/assets/ee83637f-9f22-4e54-b63f-86277bea2a69.jpg?width=1841&height=2539)
+<small>Environmental impact of training Mistral Large 2, including carbon emissions, water usage, and resource depletion.</small>
+---
+
+# Concrete Applications of LLMs (2025)
+
+## 📝 Text Generation
+- News & financial reports in real time  
+- Creative co-writing (ads, games, scripts)  
+- Dynamic technical documentation  
+
+## 💻 Code Completion
+- Full app generation from natural specs  
+- Security flaw detection & fixes  
+- Custom automation scripts (SQL, Python, RPA)  
+
+## 🤖 Chatbots & Assistants
+- 24/7 customer support (80–90% automated)  
+- Smart personal assistants (scheduling, admin, comparisons)  
+- Healthcare support: symptom pre-analysis, treatment reminders  
+
+## 🌍 Other Applications
+- Context-aware translations (legal, cultural)  
+- Document analysis & insights extraction  
+- Adaptive tutoring & personalized learning  
+- Business workflows: meeting summaries, decision tracking  
+
+
+![LLMs Overview](IMGs\LLMs.png)
+<small>Overview of Large Language Models (LLMs) and their applications in various domains, including automotive, healthcare, and software development.</small>
+
+---
+
+### Attention Mechanism: Enhancing Neural Networks
+
+#### Publication and Evolution
+- **2017:** Vaswani et al. proposed "Attention is All You Need," introducing the Transformer architecture.
+  - **Impact:** Became the foundation for modern LLMs like GPT and BERT, replacing RNNs in many applications.
+
+#### Key Features
+- **Selective Focus:** Assigns weights to input elements, emphasizing the most relevant parts.
+- **Interpretability:** Highlights which parts of the input influence the output, aiding in model transparency.
+
+#### Applications
+- **Natural Language Processing:** Machine translation, summarization, and question answering.
+- **Computer Vision:** Image captioning and object detection.
+- **Automotive Industry:** Predicting brake fade, analyzing driver behavior, and optimizing ADAS systems.
+
+Source:
+
+![Attention Mechanism](https://0.academia-photos.com/attachment_thumbnails/84202720/mini_magick20220415-14619-1w85ue4.png?1650025898)
+
+<small>Visualization of the attention mechanism highlighting its role in focusing on relevant input elements for improved model performance.</small>
+
+### Attention Mechanism Equation
+
+The attention mechanism can be mathematically expressed as:
+
+\[
+\mathrm{Attention}(Q,K,V) = \mathrm{softmax}\!\left(\frac{Q K^\top}{\sqrt{d_k}}\right) V
+\]
+
+This mechanism allows the model to focus on the most relevant parts of the input sequence.
+
+
+---
+
+### Direct applications of the attention mechanism
+
+#### Why attention can be a game changer
+- Captures very long-term dependencies without the memory degradation typical of RNNs.  
+- Produces interpretable attention maps: helps identify which past steps influence the current prediction.  
+- Enables modelling of rare but critical events by directly linking distant cues in the sequence.
+
+#### Concrete automotive use cases
+- Predictive maintenance (sensor data, time series)  
+  - Temporal self-attention on sensor logs → early detection of anomalies and progressive wear.  
+  - Attention maps: temporal localization of root causes (e.g., vibration spikes preceding failure).  
+- Modeling brake fading / friction  
+  - Causal temporal transformer → identifies stops/thermal events that lead to friction drops.  
+  - Multi-head causal attention: each head captures different time scales (short: thermal spikes; long: accumulated energy).  
+- Detection of critical events in long test campaigns  
+  - Automatic spotting of significant epochs (hard stops, long heat-ups) to prioritize HIL / bench validation.
+
+
+---
+### Quiz: Attention Mechanism
+
+#### Why is the attention mechanism crucial in modern neural networks?
+  - A) It replaces the need for activation functions.
+  - B) It allows the model to focus on the most relevant parts of the input sequence.
+  - C) It eliminates the need for training data.
+  - D) It reduces the size of the neural network.
+
+
+---
+### Fine-tuning
+### Full Training vs. Fine-Tuning
+
+Training a large language model or neural network from scratch is computationally expensive and resource-intensive. It requires:
+
+- **Massive Datasets:** Billions of tokens across diverse domains.
+- **High Compute Power:** Specialized hardware like GPUs/TPUs and significant energy consumption.
+- **Time:** Training can take weeks or months, even on large-scale infrastructure.
+
+#### Fine-Tuning as a Solution
+Fine-tuning leverages pre-trained models and adapts them to specific tasks or domains. This approach:
+
+- **Reduces Costs:** Requires significantly less compute and time compared to full training.
+- **Improves Performance:** Tailors the model to domain-specific data, enhancing accuracy and relevance.
+- **Increases Accessibility:** Enables smaller teams to build specialized applications without extensive resources.
+
+---
+### Fine-tuning
+### Full Training vs. Fine-Tuning
+
+**Example:**
+- Fine-tuning GPT or Mistral on automotive datasets (e.g., technical manuals, sensor logs) can create a specialized model for predictive maintenance or driver assistance systems at a fraction of the cost of full training.
+# Fine-tuning: Example on French Gastronomy
+
+## 1️⃣ Pre-training
+The base model (e.g., GPT or Mistral) is trained on a **general corpus**:  
+- Web articles, books, forums, Wikipedia, various recipes…  
+- It already understands French, sentence structures, common ingredients, etc.  
+- However, it **is not an expert** in French gastronomy or precise chef techniques.
+
+## 2️⃣ Fine-tuning
+The training continues on a **targeted dataset**:  
+- French gastronomic recipes: classic sauces, cooking techniques, refined flavor pairings.  
+- Chef notes, gastronomy books, Michelin-starred menus…  
+
+The model learns to:  
+- Recognize specific terms: “sauce bordelaise,” “low-temperature cooking,” “deglazing with red wine.”  
+- Suggest ingredients and techniques that are more **authentic** to French cuisine.  
+- Adhere to the **gastronomic and precise** style of Michelin-starred recipes.
+
+## 3️⃣ Result
+After fine-tuning, the model can:  
+- Generate **complete and realistic French gastronomic recipes**.  
+- Adapt existing recipes into a **gastronomic style**.  
+- Answer questions such as:  
+  > “How to prepare sweetbreads with morels and red wine sauce like a Michelin-starred chef?”
+
+## 4️⃣ Conceptual Diagram
+```mermaid
+flowchart TD
+  A[General Pre-trained Model] --> B[Fine-tuning on French Gastronomic Recipes]
+  B --> C[Specialized Model in French Gastronomy]
+  
+  A -->|General Knowledge| B
+  B -->|Learning Techniques and Style| C
+```
+
+---
+## AI on Cloud, Sovereign, On-Prem, or Edge
+
+AI deployment strategies should align with specific automotive use cases, balancing performance, cost, and regulatory compliance.
+
+| AI Strategy | Description | Advantages | Challenges | Typical Use Cases |
+|-------------|-------------|------------|------------|-----------------|
+| **Cloud** | AI services hosted on public cloud platforms (AWS, Azure, GCP). | - Scalability<br>- Easy access to large models<br>- Low upfront cost | - Data privacy concerns<br>- Dependence on internet connectivity<br>- Possible vendor lock-in | Chatbots, recommendation systems, analytics, SaaS AI solutions |
+| **Sovereign / National** | AI infrastructure and data managed within a country to meet regulatory and sovereignty requirements. | - Full control over data<br>- Compliance with local regulations<br>- Enhanced national security | - High setup cost<br>- Limited scalability compared to global cloud<br>- Maintenance responsibility | Government AI projects, defense, healthcare requiring strict data residency |
+| **On-Premises (On-Prem)** | AI deployed on the organization’s own servers and data centers. | - Full control over hardware and data<br>- Low latency for local users<br>- Can integrate tightly with internal systems | - High upfront investment<br>- Requires in-house expertise<br>- Scaling can be slow and expensive | Sensitive enterprise AI, internal analytics, finance, R&D labs |
+| **Edge** | AI deployed on devices close to the data source (IoT, mobile, industrial machines). | - Ultra-low latency<br>- Reduced bandwidth usage<br>- Can operate offline | - Limited computing resources<br>- Model updates more complex<br>- Security of distributed devices | Autonomous vehicles, smart cameras, industrial automation, IoT devices |
+
+---
+Éthiques et responsabilités​
+
+---
+
+## Foundation Models: The Backbone of AI Innovation
 
 ---
 
