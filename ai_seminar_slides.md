@@ -526,7 +526,12 @@ source: [Our contribution to a global environmental standard for AI](https://mis
 |---------------------|-----------------------------|-----------------------------------------|
 | 18 months | ≈ 1,073.7 GWh (≈ 1.074 TWh)                      | ≈ 0.0628 reactor (≈ 6.3% of a reactor) |
 
-<img src="https://cms.mistral.ai/assets/ee83637f-9f22-4e54-b63f-86277bea2a69.jpg" alt="Mistral AI Environmental Impact" width="10%">
+
+---
+# Environmental impact of training Mistral Large 2
+
+<img src="https://cms.mistral.ai/assets/ee83637f-9f22-4e54-b63f-86277bea2a69.jpg" alt="Mistral AI Environmental Impact" width="20%">
+
 <small>Environmental impact of training Mistral Large 2, including carbon emissions, water usage, and resource depletion.</small>
 
 ---
@@ -685,7 +690,6 @@ After fine-tuning, the model can:
 flowchart TD
   A[General Pre-trained Model] --> B[Fine-tuning on French Gastronomic Recipes]
   B --> C[Specialized Model in French Gastronomy]
-  
   A -->|General Knowledge| B
   B -->|Learning Techniques and Style| C
 ```
@@ -781,62 +785,54 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-# Computer Vision & Multimodality
+# Computer Vision Use Cases in Automotive
 
-| Automaker | Foundation Model Usage | Source(s) |
-|-----------|-------------------------|-----------|
-| **BMW Group** | Uses Amazon Bedrock for R&D and DeepSeek in China models. | [AWS Case Study](https://aws.amazon.com/solutions/case-studies/bmw-reinvent-2023-generative-ai/), [Technode](https://technode.com/2025/02/12/general-motors-mercedes-benz-among-first-global-automakers-to-integrate-deepseek-ai-models/) |
-| **General Motors** | Integrates DeepSeek R1 for in-car services in Cadillac/Buick. | [Technode](https://technode.com/2025/02/12/general-motors-mercedes-benz-among-first-global-automakers-to-integrate-deepseek-ai-models/) |
-| **Mercedes-Benz** | OTA updates with DeepSeek for Smart models. | [Technode](https://technode.com/2025/02/12/general-motors-mercedes-benz-among-first-global-automakers-to-integrate-deepseek-ai-models/) |
-| **Li Auto** | Developing vehicle foundation models for autonomous driving. | [InnovationOpenLab](https://www.innovationopenlab.com/news-biz/48514/global-and-china-automotive-ai-foundation-models-and-applications-research-report-2024-2025-capabilities-drive-up-the-performance-of-foundation-models-reasoning-cost-reduction-and-explainability-researchandmarketscom.html) |
-| **Stellantis** | Partners with Mistral AI for voice assistants. | [Mistral Press Release](https://mistral.ai/news/mistral-stellantis-partnership/) |
-| **Volkswagen Group** | Prototypes with Amazon Bedrock for industrial processes. | [AWS Blog](https://aws.amazon.com/blogs/industries/volkswagen-group-and-aws-partner-on-industrial-cloud/) |
-| **Toyota** | Uses Azure OpenAI and NVIDIA DRIVE for AI agents. | [Microsoft Case](https://customers.microsoft.com/en-us/story/1618243091895916311-toyota-manufacturing-azure-openai/), [NVIDIA DRIVE](https://www.nvidia.com/en-us/self-driving-cars/drive-platform/) |
-| **Ford** | Partners with Google Cloud for connected vehicles. | [Ford x Google Cloud](https://cloud.google.com/blog/topics/inside-google-cloud/ford-and-google-enter-strategic-partnership/) |
-| **Nissan** | Research on autonomous driving with Wayve. | [Wayve News](https://wayve.ai/news/nissan-renault-wayve-partnership/) |
-| **Renault Group** | AI assistants with Cerence and Google Cloud. | [Cerence Announcement](https://www.cerence.com/news-releases/news-release-details/cerence-and-renault-group-partner-voice-ai/), [Google Cloud Renault](https://cloud.google.com/customers/renault-group/) |
-| **Hyundai/Kia** | NVIDIA partnerships for autonomous driving. | [NVIDIA DRIVE](https://www.nvidia.com/en-us/self-driving-cars/drive-platform/) |
-| **Tesla** | In-house foundation AI with Dojo supercomputer. | [Tesla Dojo](https://www.tesla.com/AI) |
+| Automaker        | Use Case                                                                 | Vision-centric Feature(s) / Functions                                  | Source (URL)                                                                 |
+|------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| **Tesla**        | FSD v12.5: Vision-based attention monitoring (cabin camera), plus améliorations dans le monitoring avec lunettes de soleil etc. | Camera-only driver attention monitoring, suppression des alertes manuelles (“nags”), Vision-based attention system | [Electrek: FSD v12.5 first impression](https://electrek.co/2024/09/24/tesla-full-self-driving-v12-5-first-impression-more-natural-dangerous/)  |
+| **Mercedes-Benz** | CLA (2025) to offer “hands-off point-to-point autonomous urban driving capability” in some jurisdictions | ADAS / driving assistance urbain, likely vision + sensor fusion pour fonctionnement mains-libres dans trafic urbain                      | [WardsAuto: 2025 Mercedes-Benz CLA to Offer Autonomous Urban Driving Capability](https://www.wardsauto.com/autonomous-adas/2025-mercedes-benz-cla-to-offer-autonomous-urban-driving-capability)  |
+| **Toyota**        | Next-gen vehicles to be built with NVIDIA Drive AGX Orin supercomputer + DriveOS for automated driving capabilities (announced at CES 2025) | Real-time computer vision + sensor fusion via Nvidia Drive AGX Orin; implies visual perception & ADAS/autonomous driving support | [Toyota & NVidia](https://techstory.in/toyota-teams-up-with-nvidia-for-next-gen-automated-driving-at-ces-2025/)  |
+| **Mercedes-Benz** | Partnership with Momenta: Mercedes to use Momenta software on at least four models in China from 2025-2027 for autonomous driving/ADAS features | Use of vision-based ADAS / autonomy features supplied by Momenta; likely includes perception modules | [Reuters: Mercedes to use Momenta software in 4 models](https://www.reuters.com/business/autos-transportation/mercedes-use-momenta-software-4-models-accelerate-china-comeback-sources-say-2024-11-29/)  |
 
+
+---
+
+<video controls autoplay width="100%" height="100%" style="position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:9999;">
+  <source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/network.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ---
 
 # Challenges and Solutions
 
-| **Challenge**              | **Solution**                                                                 |
-|----------------------------|------------------------------------------------------------------------------|
-| Model size and complexity  | Model compression, distillation, and deployment on powerful cloud or embedded infrastructure. |
-| Automotive-specific constraints | Fine-tuning on specific datasets, integration with signal processing modules, and deployment on optimized embedded platforms. |
-| Privacy and security       | Local data processing, anonymization, and compliance with regulations (e.g., GDPR). |
-
-**Example:**
-- **Stellantis** reduced latency from 500 ms to 200 ms by deploying STT/TTS on Qualcomm Snapdragon Digital Chassis.
-  - [Stellantis AI News, 2024](https://www.stellantis.com/en/innovation/ai-voice)
-
----
-
-# Industrial Case Studies
-
-| **OEM**                   | **Foundation Model**       | **Application**               | **Result**                                  |
-|---------------------------|----------------------------|-------------------------------|---------------------------------------------|
-| Mercedes-Benz            | GPT-4 (OpenAI)            | "Hey Mercedes" voice assistant | 30% increase in usage vs. physical buttons  |
-| BMW                      | LLaMA 2 (Meta)            | Speech recognition            | 95% accuracy in noisy environments           |
-| Tesla                    | Mistral 7B (Mistral AI)   | Voice command system          | Top 1 in voice satisfaction (Consumer Reports, 2023) |
-| Volvo                    | Kyutai (France)           | Emotional TTS                 | 25% improvement in perceived comfort          |
+- **Stellantis × Mistral AI** : Développement d'un assistant vocal embarqué avec support conversationnel et interaction vocale naturelle, évoluant via des mises à jour OTA. | [Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing) |
+- **Stellantis × Qualcomm** : Collaboration sur le Snapdragon Digital Chassis, exploitant des plateformes de calcul pour les capacités d'IA embarquées. | [Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions) |
 
 ---
 
 # Recommendations for Directors
 
 - **Priorities:**
-  - Adopt foundation models for voice and data processing applications.
-  - Partner with specialized providers (e.g., OpenAI, Mistral AI, Kyutai) for access to advanced models.
-  - Invest in fine-tuning to adapt models to automotive specifics.
-  - Deploy on embedded platforms for latency, security, and privacy.
+  - Adopt foundation models for voice and data processing applications, when appropriate.
+    - Example: Stellantis is partnering with **Mistral AI** to deploy an in-vehicle voice assistant. ([Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing))
+  - Partner with specialized providers for access to advanced foundation models.
+    - Example: Toyota integrates **NVIDIA DRIVE AGX Orin** for vision and driving assistance systems. ([TechCrunch, 2025](https://techcrunch.com/2025/01/06/toyotas-next-generation-cars-will-be-built-with-nvidias-ai-brains-and-operating-system/))
+  - Invest in fine-tuning and domain adaptation to automotive-specific datasets.
+  - Deploy on embedded or edge platforms to ensure latency, security, and privacy compliance.
+    - Example: Qualcomm Snapdragon Digital Chassis used by Stellantis for embedded AI workloads. ([Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions))
 
-- **Budget:**
-  - Development and deployment cost: :followup[**€100–200k**]{question="What are the primary cost drivers when budgeting for foundation model deployment in automotive projects?" questionId="ce637b34-814c-48b2-bf8b-314e3a21d089"} depending on complexity and integration.
-  - Quick ROI through reduced development costs and improved customer satisfaction.
+
+---
+# AI Initiatives Summary (2024–2025)
+
+| Focus Area                  | Initiative / Description                                                                                       | Impact / Benefit                                                      | Source |
+|------------------------------|---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|--------|
+| Innovation & Competitiveness | Partnership with **Mistral AI** to leverage foundation models and AI-driven automation for vehicle engineering and customer experience | Enhances data analysis capabilities, accelerates decision-making, supports AI-driven innovation | [GlobeNewswire, 2025](https://www.globenewswire.com/news-release/2025/02/07/3022573/0/en/Stellantis-and-Mistral-AI-Strengthen-Strategic-Partnership-to-Enhance-Customer-Experience-Vehicle-Development-and-Manufacturing.html?utm_source=chatgpt.com) |
+| Cost Reduction               | Deployment of **Autonomous Mobile Robots (AMRs)**, AI-powered robot guidance systems, and digital twins in manufacturing | Improves logistics efficiency, reduces assembly lead times, streamlines factory design; contributes to energy reduction (~23%) | [Manufacturing Today, 2025](https://manufacturing-today.com/news/stellantis-integrates-ai-to-boost-efficiency-and-sustainability-across-global-manufacturing/?utm_source=chatgpt.com) |
+| Customer Satisfaction        | Development of **in-vehicle voice assistants** using foundation models for natural interaction | Provides personalized, conversational support to drivers and passengers | [Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing?utm_source=chatgpt.com) |
+| Regulatory Compliance        | Localized AI deployment on embedded platforms and secure processing for privacy and safety | Supports compliance with automotive safety standards and data privacy regulations | [Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions?utm_source=chatgpt.com) |
+
 
 ---
 
@@ -865,25 +861,8 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-# Key Points to Remember
 
-- **Core Message:**
-  "Foundation models are the **cornerstone** of AI innovation in automotive, enabling rapid development of robust and personalized applications."
-
-- **Impactful Numbers:**
-  - 50–80% reduction in development time and cost.
-  - 95% accuracy in speech recognition (BMW).
-  - 25% improvement in perceived comfort (Volvo).
-
-- **Call to Action:**
-  "Adopt foundation models today to accelerate innovation, reduce costs, and improve customer satisfaction."
-
----
-
-# Image: Foundation Models Overview
-
-![Foundation Models Overview](https://via.placeholder.com/800x400?text=Foundation+Models+Overview)
-<small>Foundation models are versatile AI models that serve as a base for various applications, including automotive voice assistants, speech recognition, and predictive analytics. They reduce development costs and time while improving performance and adaptability.</small>
+![Foundation Models Explained](https://humanloop.com/blog/foundation-models/foundation-models-explained.jpeg)
 
 ---
 
@@ -892,6 +871,15 @@ AI deployment strategies should align with specific automotive use cases, balanc
 ---
 
 # Legacy Code – Retrieval, Documentation & Improvement (e.g., PBC SW)
+
+---
+
+# Challenges in Legacy Code
+
+- **Sparse Documentation:** Outdated or missing documentation complicates understanding.
+- **Complex Dependencies:** Intricate dependencies and fragile builds hinder updates.
+- **High-Risk Modifications:** Altering core systems like Power Brake Control (PBC) software poses significant risks.
+
 
 ---
 
@@ -907,17 +895,7 @@ AI deployment strategies should align with specific automotive use cases, balanc
 | **Spec2Code (Automotive Scania)** | Scania + Researchers | Generation of embedded code from specifications, with formal validation and critique tools. | [PapersWithCode – Spec2Code](https://paperswithcode.com/paper/towards-specification-driven-llm-based) |
 | **Analysis of Hallucinations in Automotive Code** | Pavel, Petrovic et al. | Study of hallucinations in automotive code generation by LLMs, with metrics for syntactic and functional validity. | [arXiv:2508.11257](https://arxiv.org/abs/2508.11257) |
 
----
 
-# Challenges in Legacy Code
-
-- **Sparse Documentation:** Outdated or missing documentation complicates understanding.
-- **Complex Dependencies:** Intricate dependencies and fragile builds hinder updates.
-- **High-Risk Modifications:** Altering core systems like Power Brake Control (PBC) software poses significant risks.
-
-**Example:**
-- **BMW:** Struggled with outdated documentation in their legacy PBC software, leading to high maintenance costs.
-  - [BMW AI Research, 2025](https://www.bmwgroup.com/en/innovation/ai-research.html)
 
 ---
 
@@ -943,24 +921,13 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-# Impact
+# Impact of AI at Tesla
 
-- **Enhanced Safety & Efficiency:** Reduces risk in maintaining and updating critical legacy systems.
-- **Cost Reduction:** Minimizes manual review time, improving productivity.
-- **Modernization Support:** Facilitates the transition of legacy systems to modern platforms.
-
-**Example:**
-- **Tesla:** Used AI to refactor legacy code in their PBC system, reducing maintenance costs by **30%**.
-  - [Tesla AI Day, 2025](https://www.tesla.com/AIDay)
-
----
-
-# Image: AI in Legacy Code Management
-
-![AI in Legacy Code Management](https://via.placeholder.com/800x400?text=AI+in+Legacy+Code+Management)
-<small>Illustration of AI contributions in managing legacy code, including code retrieval, automated documentation, refactoring, and consistency checks.</small>
-
----
+| Domain                   | Initiative / Description                                                                                       | Impact / Benefit                                                      | Source |
+|--------------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|--------|
+| **Safety & Efficiency**  | Compression of approximately 300 lines of legacy code by a factor of 100, reducing risks associated with maintaining critical systems | Reduced risks associated with maintaining critical systems           | [Elon Musk: GOODBYE to Legacy Tesla FSD CODE!! Plus, Is ...](https://www.youtube.com/watch?v=ahybUR5W8Cw) |
+| **Cost Reduction**       | Use of AI to refactor legacy code in the PBC system, reducing maintenance costs by 30%                         | 30% reduction in maintenance costs                                   | [Tesla AI Day Highlights - EE Times Asia](https://www.eetasia.com/tesla-ai-day-highlights/) |
+| **Support for Modernization** | Adoption of foundation models for voice and data processing, facilitating the transition to modern platforms | Facilitates the transition to modern platforms                       | [Tesla AI Day Highlights - EE Times Asia](https://www.eetasia.com/tesla-ai-day-highlights/) |
 
 # Impact
 
