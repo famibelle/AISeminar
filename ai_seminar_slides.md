@@ -45,18 +45,20 @@ Computer Vision & Multimodality
 
 ### Applications in Automotive
 
-**Use Cases:**
-- **Embedded Voice Assistants:** Natural language interfaces for navigation, climate control, and infotainment.
-- **Speech Recognition (STT):** Improved accuracy and robustness in noisy environments.
-- **Text-to-Speech (TTS):** Natural and personalized voice generation for alerts and responses.
-- **Speaker Diarization:** Identifying and segmenting speakers in the vehicle.
-- **Prediction and Optimization:** Analyzing driving data, predicting failures, and optimizing vehicle performance.
-
-**Industrial Examples:**
-- **Mercedes-Benz:** Uses GPT-4 for "Hey Mercedes" assistant, enabling natural and contextual interactions.
-- **BMW:** Employs LLaMA 2 to enhance speech recognition accuracy and personalize responses.
-- **Tesla:** Utilizes Mistral 7B for complex voice commands and natural interactions.
-- **Volvo:** Implements Kyutai for emotional TTS, improving perceived comfort.
+| Automaker | Example of Foundation Model Usage / Initiative | Source(s) |
+|-----------|-----------------------------------------------|-----------|
+| **BMW Group** | Uses Amazon Bedrock / foundation models for internal assistants and to accelerate R&D & operations; announced integration of DeepSeek in China models. | [AWS Case Study](https://aws.amazon.com/solutions/case-studies/bmw-reinvent-2023-generative-ai/?utm_source=chatgpt.com), [Technode](https://technode.com/2025/02/12/general-motors-mercedes-benz-among-first-global-automakers-to-integrate-deepseek-ai-models/?utm_source=chatgpt.com) |
+| **General Motors (SAIC-GM)** | Integrates DeepSeek R1 into infotainment systems (Cadillac, Buick in China) for conversational / proactive in-car services. | [Technode](https://technode.com/2025/02/12/general-motors-mercedes-benz-among-first-global-automakers-to-integrate-deepseek-ai-models/?utm_source=chatgpt.com) |
+| **Mercedes-Benz / Geely (Smart)** | Smart models to receive DeepSeek foundation models via OTA updates (e.g. Smart #5). | [Technode](https://technode.com/2025/02/12/general-motors-mercedes-benz-among-first-global-automakers-to-integrate-deepseek-ai-models/?utm_source=chatgpt.com) |
+| **Li Auto** | Developing and deploying a “vehicle foundation model” and reasoning visualization to explain autonomous driving decisions. | [InnovationOpenLab](https://www.innovationopenlab.com/news-biz/48514/global-and-china-automotive-ai-foundation-models-and-applications-research-report-2024-2025-capabilities-drive-up-the-performance-of-foundation-models-reasoning-cost-reduction-and-explainability-researchandmarketscom.html?utm_source=chatgpt.com) |
+| **Stellantis** | Strategic partnership with Mistral AI for an in-car voice assistant based on advanced foundation-style models. | [Mistral Press Release](https://mistral.ai/news/mistral-stellantis-partnership/?utm_source=chatgpt.com) |
+| **Volkswagen Group** | Prototypes with Amazon Bedrock / foundation models for knowledge management and industrial processes; “Large Industry Models” initiatives. | [AWS Blog](https://aws.amazon.com/blogs/industries/volkswagen-group-and-aws-partner-on-industrial-cloud/?utm_source=chatgpt.com) |
+| **Toyota** | Uses Azure OpenAI Service and NVIDIA DRIVE for generative AI agents and autonomous systems; accelerates R&D with LLMs and foundation models. | [Microsoft Case](https://customers.microsoft.com/en-us/story/1618243091895916311-toyota-manufacturing-azure-openai/?utm_source=chatgpt.com), [NVIDIA DRIVE](https://www.nvidia.com/en-us/self-driving-cars/drive-platform/?utm_source=chatgpt.com) |
+| **Ford** | Strategic partnership with Google Cloud to leverage AI/ML tools and foundation models for connected vehicles and customer experiences. | [Ford x Google Cloud](https://cloud.google.com/blog/topics/inside-google-cloud/ford-and-google-enter-strategic-partnership/?utm_source=chatgpt.com) |
+| **Nissan** | Research programs on autonomous driving (ProPILOT next-gen) and collaborations with Wayve; exploring “embodied AI foundation models” for driving systems. | [Wayve News](https://wayve.ai/news/nissan-renault-wayve-partnership/?utm_source=chatgpt.com) |
+| **Renault Group** | Using generative AI assistants for “connected avatar” in partnership with Cerence; collaborations with Google Cloud for in-car services. | [Cerence Announcement](https://www.cerence.com/news-releases/news-release-details/cerence-and-renault-group-partner-voice-ai/?utm_source=chatgpt.com), [Google Cloud Renault](https://cloud.google.com/customers/renault-group/?utm_source=chatgpt.com) |
+| **Hyundai Motor Group / Kia** | Partnerships with NVIDIA (DRIVE, Omniverse) and investments in AI startups (CRADLE, ZER01NE) to advance foundation-model-based autonomous driving. | [NVIDIA DRIVE](https://www.nvidia.com/en-us/self-driving-cars/drive-platform/?utm_source=chatgpt.com) |
+| **Tesla** | Builds in-house foundation-scale AI (Dojo supercomputer, FSD end-to-end neural nets) to train massive perception and planning models. | [Tesla Dojo](https://www.tesla.com/AI?utm_source=chatgpt.com) |
 
 ---
 
