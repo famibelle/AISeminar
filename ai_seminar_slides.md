@@ -865,7 +865,7 @@ This mechanism allows the model to **focus on the most relevant parts** of the i
 
 ---
 
-# Full Training vs. Fine-Tuning
+# Full Training
 
 Training a large language model or neural network from scratch is computationally expensive and resource-intensive. It requires:
 
@@ -883,13 +883,13 @@ Fine-tuning leverages pre-trained models and adapts them to specific tasks or do
 - **Increases Accessibility:** Enables smaller teams to build specialized applications without extensive resources.
 
 ---
-# Full Training vs. Fine-Tuning
+# Fine-Tuning
 
 **Example:**
 - Fine-tuning GPT or Mistral on automotive datasets (e.g., technical manuals, sensor logs) can create a specialized model for predictive maintenance or driver assistance systems at a fraction of the cost of full training.
 
 ---
-# Fine-tuning: Example on French Gastronomy
+# Example on French Gastronomy
 
 ## Pre-training
 The base model (e.g., GPT or Mistral) is trained on a **general corpus**:  
@@ -899,7 +899,7 @@ The base model (e.g., GPT or Mistral) is trained on a **general corpus**:
 
 
 ---
-## Fine-tuning: Example on French Gastronomy
+## Example on French Gastronomy
 
 <div style="display: flex; align-items: center; gap: 20px;">
 
@@ -923,7 +923,7 @@ flowchart TD
 
 ---
 
-## Fine-tuning: Example on French Gastronomy
+## Example on French Gastronomy
 
 <div style="display: flex; align-items: center; gap: 20px;">
 
@@ -936,7 +936,7 @@ flowchart TD
 
 
 ---
-# Fine-tuning: Example on French Gastronomy
+# Example on French Gastronomy
 
 <div style="display: flex; align-items: center; gap: 20px;">
 
@@ -958,12 +958,25 @@ flowchart TD
 
 ---
 
+# Quiz: Fine-Tuning
+
+---
+
+# What is the primary benefit of fine-tuning a pre-trained AI model?
+  - A) It eliminates the need for training data.
+  - B) It reduces the computational cost compared to training from scratch.
+  - C) It increases the size of the model.
+  - D) It replaces the pre-trained model with a new one.
+
+---
+
 # AI on Cloud, Sovereign, On-Premise, or Edge
 
 ---
+
 # AI on Cloud
 
-- **Description:** AI is hosted on public cloud platforms like AWS, Azure, or Google Cloud.
+## Description: AI is hosted on public cloud platforms like AWS, Azure, or Google Cloud.
 - **Advantages:**
   - Rapid scalability.
   - Easy access to pre-trained models and massive resources.
@@ -972,6 +985,10 @@ flowchart TD
   - Data privacy concerns.
   - Dependence on internet connectivity.
   - Risk of vendor lock-in.
+
+---
+# AI on Cloud
+
 - **Examples:**
   - **AWS SageMaker** for training and deploying ML models.
   - **Google Vertex AI** for integrated AI solutions.
@@ -993,10 +1010,6 @@ flowchart TD
   - High setup cost.
   - Limited scalability compared to global cloud.
   - Requires internal maintenance.
-- **Typical Use Cases:** Government projects, defense, healthcare requiring strict data residency.
-- **Examples:**
-  - **Gaia-X:** European initiative for a sovereign cloud.
-  - **OVHcloud:** French provider of sovereign cloud solutions.
 
   </div>
   <div style="flex: 1;">
@@ -1005,6 +1018,16 @@ flowchart TD
 
   </div>
 </div>
+
+---
+# Sovereign AI
+
+## Typical Use Cases: Government projects, defense, healthcare requiring strict data residency.
+- **Examples:**
+  - **Gaia-X:** European initiative for a sovereign cloud.
+  - **OVHcloud:** French provider of sovereign cloud solutions.
+
+
 ---
 # AI On-Prem
 
@@ -1021,9 +1044,6 @@ flowchart TD
   - High upfront investment.
   - Requires in-house expertise.
   - Scaling can be slow and expensive.
-- **Typical Use Cases:** Internal analytics, finance, R&D labs.
-- **Examples:**
-  - **NVIDIA DGX Systems** for on-site AI model training.
 
   </div>
   <div style="flex: 1;">
@@ -1032,6 +1052,13 @@ flowchart TD
 
   </div>
 </div>
+
+
+---
+# AI On-Prem
+- **Typical Use Cases:** Internal analytics, finance, R&D labs.
+- **Examples:**
+  - **NVIDIA DGX Systems** for on-site AI model training.
 
 ---
 
@@ -1050,10 +1077,7 @@ flowchart TD
   - Limited computing resources.
   - Model updates are more complex.
   - Security of distributed devices.
-- **Typical Use Cases:** Autonomous vehicles, smart cameras, industrial automation, IoT devices.
-- **Examples:**
-  - **Qualcomm Snapdragon Ride** for autonomous vehicles.
-  - **NVIDIA Jetson** for IoT and robotics applications.
+
 
   </div>
 
@@ -1063,6 +1087,30 @@ flowchart TD
 
   </div>
 </div>
+
+---
+
+# AI on Edge
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
+- **Typical Use Cases:** Autonomous vehicles, smart cameras, industrial automation, IoT devices.
+
+- **Examples:**
+  - **Qualcomm Snapdragon Ride** for autonomous vehicles.
+  - **NVIDIA Jetson** for IoT and robotics applications.
+
+</div>
+
+  <div style="flex: 1;">
+
+![Snapdragon Ride](https://specials-images.forbesimg.com/imageserve/61d625f9b6cd3ef368034eac/All-the-vehicle-system-included-in-the-Snapdragon-Digital-Chassis-and-current/960x0.jpg?fit=scale)
+
+  </div>
+</div>
+
 ---
 # AI deployment strategies in a wrap
 
@@ -1074,6 +1122,27 @@ AI deployment strategies should align with specific automotive use cases, balanc
 | **Sovereign / National** | AI infrastructure and data managed within a country to meet regulatory and sovereignty requirements. | - Full control over data<br>- Compliance with local regulations<br>- Enhanced national security | - High setup cost<br>- Limited scalability compared to global cloud<br>- Maintenance responsibility | Government AI projects, defense, healthcare requiring strict data residency |
 | **On-Premises (On-Prem)** | AI deployed on the organization’s own servers and data centers. | - Full control over hardware and data<br>- Low latency for local users<br>- Can integrate tightly with internal systems | - High upfront investment<br>- Requires in-house expertise<br>- Scaling can be slow and expensive | Sensitive enterprise AI, internal analytics, finance, R&D labs |
 | **Edge** | AI deployed on devices close to the data source (IoT, mobile, industrial machines). | - Ultra-low latency<br>- Reduced bandwidth usage<br>- Can operate offline | - Limited computing resources<br>- Model updates more complex<br>- Security of distributed devices | Autonomous vehicles, smart cameras, industrial automation, IoT devices |
+
+
+---
+
+# Quiz: AI Deployment Strategies
+
+---
+
+## Which AI deployment strategy is ideal for autonomous vehicles and IoT devices?
+- A) Cloud
+- B) Sovereign / National
+- C) On-Premises
+- D) Edge
+
+---
+
+## What is a primary challenge of on-premises AI deployment?
+- A) Dependence on internet connectivity
+- B) Limited computing resources
+- C) High upfront investment and in-house expertise requirements
+- D) Vendor lock-in
 
 ---
 
@@ -1115,6 +1184,9 @@ AI deployment strategies should align with specific automotive use cases, balanc
 - Offer superior generalization capabilities.
 - Adaptable to diverse domains, including automotive.
 
+---
+
+![Foundation Models Explained](https://humanloop.com/blog/foundation-models/foundation-models-explained.jpeg)
 
 ---
 # Foundation Models
@@ -1140,8 +1212,12 @@ AI deployment strategies should align with specific automotive use cases, balanc
 - Superior accuracy and robustness compared to specialized models.
 - Ability to generalize across multiple tasks and domains.
 
+---
+
+# Benefits of Foundation Models
+
 **Adaptability and Customization:**
-- Fine-tuning for specific applications.
+- **Fine-tuning** for specific applications.
 - Adaptation to languages, accents, and contexts.
 
 **Accelerated Innovation:**
@@ -1202,6 +1278,183 @@ AI deployment strategies should align with specific automotive use cases, balanc
 | Customer Satisfaction        | Development of **in-vehicle voice assistants** using foundation models for natural interaction | Provides personalized, conversational support to drivers and passengers | [Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing?utm_source=chatgpt.com) |
 | Regulatory Compliance        | Localized AI deployment on embedded platforms and secure processing for privacy and safety | Supports compliance with automotive safety standards and data privacy regulations | [Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions?utm_source=chatgpt.com) |
 
+---
+
+# Voice Assistants
+
+**Functionalities:**
+- Hands-free control of navigation, climate, infotainment, and third-party apps.
+- Integration with embedded systems (e.g., MBUX, BMW iDrive, Tesla OS).
+
+**Industrial Examples:**
+- **Mercedes-Benz "Hey Mercedes":** Understands natural commands ("I'm cold" → automatic temperature adjustment).
+- **BMW Intelligent Personal Assistant:** Manages individual preferences (seat, music, routes).
+- **Tesla Voice Command:** Handles complex queries ("Find a Supercharger on my route and turn on seat heating").
+
+**Sources:**
+- [Mercedes-Benz AI](https://www.mercedes-benz.com/innovation/ai-in-engineering/)
+- [BMW Group AI](https://www.bmwgroup.com/en/innovation/artificial-intelligence.html)
+- [Tesla AI Day](https://www.tesla.com/AIDay)
+
+---
+
+# TTS (Text-to-Speech)
+
+**Technologies:**
+- Neural models (e.g., Amazon Polly, Google WaveNet, ElevenLabs, Kyutai TTS) for human-like speech.
+- Customization for brand identity (e.g., premium voice for Audi, youthful voice for Mini).
+
+**Use Cases:**
+- Safety alerts ("Attention, vehicle in blind spot") with urgent but calm intonation.
+- Conversational feedback ("Your destination is 10 minutes away. Would you like a coffee break?").
+
+**Example:**
+- **Volvo:** Uses TTS with contextual emotions (calm for confirmations, urgent for alerts).
+  - [Volvo Cars Tech Report, 2024](https://www.volvocars.com/innovation/voice-technology)
+
+---
+
+# STT (Speech-to-Text)
+
+**Leading Models:**
+- **OpenAI Whisper:** Robust to noise, supports 99 languages, offline capable.
+- **Google Speech-to-Text:** Optimized for short commands, integrates with Android Automotive.
+- **Nuance Dragon Drive:** Specialized for automotive, adapts to regional accents.
+- **Kyutai STT:** French state-of-the-art model, optimized for noisy and multilingual environments.
+
+**Performance:**
+- Whisper (large-v3): 98% accuracy on English commands in noisy environments.
+- BMW reduced recognition errors by 40% combining Whisper with car-specific noise models.
+
+**Sources:**
+- [OpenAI Whisper](https://openai.com/research/whisper)
+- [BMW Group AI, 2023](https://www.bmwgroup.com/en/innovation/artificial-intelligence.html)
+- [Kyutai STT](https://kyutai.org/)
+
+---
+
+# Speaker Diarization
+
+**Technologies:**
+- Models like PyAnnote, NVIDIA NeMo to segment and identify speakers.
+- Integration with directional microphones (e.g., ceiling microphone array).
+
+**Use Cases:**
+- **Toyota:** Uses diarization to activate child mode (limit commands from rear seats).
+- **Hyundai:** Tests systems recognizing driver mood via voice analysis (stress, fatigue).
+
+**Sources:**
+- [Toyota Research Institute, 2023](https://www.tri.global/news/ai-driven-testing/)
+- [Hyundai AI Lab, 2024](https://www.hyundai.com/innovation/ai-voice)
+
+---
+
+# Benefits of Voice Technologies
+
+| **Benefit**               | **Impact for Driver**               | **Impact for OEM**              |
+|---------------------------|------------------------------------|--------------------------------|
+| Hands-free control        | Reduced distractions, improved safety | Compliance with regulations (e.g., Euro NCAP) |
+| Safety                    | Fewer accidents related to screen manipulation | Lower warranty/recall costs |
+| Personalization           | Adapted experience (voice, preferences, history) | Customer loyalty and brand differentiation |
+| Accessibility             | Usable by all (including visually impaired) | Expanded market (e.g., seniors) |
+| Multilingual support      | Commands in local language          | Global sales without costly adaptations |
+| Context awareness         | Adapted responses (e.g., "Let's go home" → automatic navigation) | Data to improve connected services |
+
+**Sources:**
+- [McKinsey, 2023](https://www.mckinsey.com/industries/automotive-and-assembly/our-insights)
+- [J.D. Power U.S. Tech Experience Index, 2023](https://www.jdpower.com/tech-experience)
+
+---
+
+# Challenges & Technical Solutions
+
+| **Challenge**              | **Solution**                                                                 |
+|----------------------------|------------------------------------------------------------------------------|
+| Background noise (engine, music) | Whisper + signal processing (e.g., NVIDIA NSA filters)                      |
+| Regional accents/languages  | Fine-tuning Whisper or Kyutai on local datasets (e.g., Quebec French)       |
+| Latency                    | On-device models (e.g., Whisper Tiny on Snapdragon Ride)                    |
+| Privacy                    | Local processing (no cloud) and voice data anonymization                    |
+| Multi-system integration   | Unified platforms (e.g., Android Automotive, QNX)                           |
+
+**Example:**
+- **Stellantis** reduced latency from 500 ms to 200 ms by deploying STT/TTS on Qualcomm Snapdragon Digital Chassis.
+  - [Stellantis AI News, 2024](https://www.stellantis.com/en/innovation/ai-voice)
+
+---
+
+# Industrial Case Studies
+
+| **OEM**                   | **Technology**               | **Result**                                  |
+|---------------------------|------------------------------|---------------------------------------------|
+| Mercedes-Benz            | "Hey Mercedes" (Nuance + TTS) | 30% increase in usage vs. physical buttons |
+| BMW                      | Whisper + diarization        | 95% accuracy in noisy environments          |
+| Tesla                    | In-house STT/TTS             | Top 1 in voice satisfaction (Consumer Reports, 2023) |
+| Toyota                   | Diarization + child mode     | 60% reduction in accidental commands from rear |
+| Volvo                    | Emotional TTS                | 25% improvement in perceived comfort         |
+
+---
+
+# Typical Voice Interaction Workflow
+
+- **Audio Capture** (microphone array).
+- **Signal Cleaning** (noise/music suppression).
+- **STT** (e.g., Whisper or Kyutai) → Text.
+- **Diarization** (who is speaking? driver or passenger?).
+- **NLP** (intent understanding).
+- **Action** (e.g., change temperature).
+- **TTS** (natural voice response).
+
+---
+
+# Recommendations for Directors
+
+- **Priorities:**
+  - Start with a pilot using Whisper or Kyutai (offline) + basic TTS for critical commands (navigation, climate).
+  - Integrate diarization for family vehicles (e.g., SUVs).
+  - Customize voice for brand identity.
+- **Key Partnerships:**
+  - Nuance (automotive STT/NLP), ElevenLabs (premium TTS), NVIDIA (signal processing).
+- **Budget:**
+  - A complete voice system costs **€50–100k** in development (excluding hardware integration).
+
+---
+
+# Future Trends
+
+- **Voice Biometrics:** Driver recognition via voice (e.g., Ford testing voice authentication to start the car).
+- **Emotion AI:** Stress or fatigue detection via voice analysis (e.g., Hyundai).
+- **Multimodal:** Combining voice + gestures + gaze (e.g., "Open the window" + looking at the window).
+- **Generative AI:** Using embedded LLMs (e.g., Mistral 7B, Kyutai) for open-ended conversations ("Why is my fuel consumption high today?").
+
+---
+
+# Arguments to Convince Decision Makers
+
+- **Safety:** "Reducing distractions = fewer accidents = savings on insurance and recalls."
+- **Differentiation:** "A smooth voice interface is a **key selling point** for young drivers (Gen Z/Y)."
+- **ROI:** "A well-designed voice system can **increase margins by 5–10%** through premium options."
+- **Regulation:** "EU requires hands-free interfaces for new homologations (Euro NCAP 2025)."
+
+---
+
+# Key Points to Remember
+
+- **Core Message:** "Voice is the **most natural and safe** interface for car interaction. Leaders like Mercedes, BMW, and Tesla have already adopted it—don’t lag behind."
+- **Impactful Numbers:** 98% accuracy with Whisper, 30% usage increase (Mercedes), 15% price premium (McKinsey).
+- **Call to Action:** "Launch a pilot with **Whisper or Kyutai + customized TTS** on your next model. Aim for **90% satisfaction** on voice commands within 12 months."
+
+
+---
+
+# Link to unmute.sh
+
+- [unmute.sh](https://unmute.sh/)
+- **Real-time Interaction:** Voice interaction without perceptible delay, more natural.
+- **Configurable Voices:** From short samples, without heavy training.
+- **Behavioral Personalization:** Via simple text prompts.
+- **Deployment Flexibility:** On existing systems, no cloud dependency.
+- **Immediate Testing:** Code publication imminent.
+
 
 ---
 
@@ -1227,10 +1480,6 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 - **Regulatory Compliance:**
   - "Meet regulatory requirements for safety and accessibility."
-
----
-
-![Foundation Models Explained](https://humanloop.com/blog/foundation-models/foundation-models-explained.jpeg)
 
 ---
 
@@ -1594,182 +1843,6 @@ Automated inspection system allows 100% test coverage of brake pads.
 - Improved safety
 - Personalized experience
 
----
-
-# Voice Assistants
-
-**Functionalities:**
-- Hands-free control of navigation, climate, infotainment, and third-party apps.
-- Integration with embedded systems (e.g., MBUX, BMW iDrive, Tesla OS).
-
-**Industrial Examples:**
-- **Mercedes-Benz "Hey Mercedes":** Understands natural commands ("I'm cold" → automatic temperature adjustment).
-- **BMW Intelligent Personal Assistant:** Manages individual preferences (seat, music, routes).
-- **Tesla Voice Command:** Handles complex queries ("Find a Supercharger on my route and turn on seat heating").
-
-**Sources:**
-- [Mercedes-Benz AI](https://www.mercedes-benz.com/innovation/ai-in-engineering/)
-- [BMW Group AI](https://www.bmwgroup.com/en/innovation/artificial-intelligence.html)
-- [Tesla AI Day](https://www.tesla.com/AIDay)
-
----
-
-# TTS (Text-to-Speech)
-
-**Technologies:**
-- Neural models (e.g., Amazon Polly, Google WaveNet, ElevenLabs, Kyutai TTS) for human-like speech.
-- Customization for brand identity (e.g., premium voice for Audi, youthful voice for Mini).
-
-**Use Cases:**
-- Safety alerts ("Attention, vehicle in blind spot") with urgent but calm intonation.
-- Conversational feedback ("Your destination is 10 minutes away. Would you like a coffee break?").
-
-**Example:**
-- **Volvo:** Uses TTS with contextual emotions (calm for confirmations, urgent for alerts).
-  - [Volvo Cars Tech Report, 2024](https://www.volvocars.com/innovation/voice-technology)
-
----
-
-# STT (Speech-to-Text)
-
-**Leading Models:**
-- **OpenAI Whisper:** Robust to noise, supports 99 languages, offline capable.
-- **Google Speech-to-Text:** Optimized for short commands, integrates with Android Automotive.
-- **Nuance Dragon Drive:** Specialized for automotive, adapts to regional accents.
-- **Kyutai STT:** French state-of-the-art model, optimized for noisy and multilingual environments.
-
-**Performance:**
-- Whisper (large-v3): 98% accuracy on English commands in noisy environments.
-- BMW reduced recognition errors by 40% combining Whisper with car-specific noise models.
-
-**Sources:**
-- [OpenAI Whisper](https://openai.com/research/whisper)
-- [BMW Group AI, 2023](https://www.bmwgroup.com/en/innovation/artificial-intelligence.html)
-- [Kyutai STT](https://kyutai.org/)
-
----
-
-# Speaker Diarization
-
-**Technologies:**
-- Models like PyAnnote, NVIDIA NeMo to segment and identify speakers.
-- Integration with directional microphones (e.g., ceiling microphone array).
-
-**Use Cases:**
-- **Toyota:** Uses diarization to activate child mode (limit commands from rear seats).
-- **Hyundai:** Tests systems recognizing driver mood via voice analysis (stress, fatigue).
-
-**Sources:**
-- [Toyota Research Institute, 2023](https://www.tri.global/news/ai-driven-testing/)
-- [Hyundai AI Lab, 2024](https://www.hyundai.com/innovation/ai-voice)
-
----
-
-# Benefits of Voice Technologies
-
-| **Benefit**               | **Impact for Driver**               | **Impact for OEM**              |
-|---------------------------|------------------------------------|--------------------------------|
-| Hands-free control        | Reduced distractions, improved safety | Compliance with regulations (e.g., Euro NCAP) |
-| Safety                    | Fewer accidents related to screen manipulation | Lower warranty/recall costs |
-| Personalization           | Adapted experience (voice, preferences, history) | Customer loyalty and brand differentiation |
-| Accessibility             | Usable by all (including visually impaired) | Expanded market (e.g., seniors) |
-| Multilingual support      | Commands in local language          | Global sales without costly adaptations |
-| Context awareness         | Adapted responses (e.g., "Let's go home" → automatic navigation) | Data to improve connected services |
-
-**Sources:**
-- [McKinsey, 2023](https://www.mckinsey.com/industries/automotive-and-assembly/our-insights)
-- [J.D. Power U.S. Tech Experience Index, 2023](https://www.jdpower.com/tech-experience)
-
----
-
-# Challenges & Technical Solutions
-
-| **Challenge**              | **Solution**                                                                 |
-|----------------------------|------------------------------------------------------------------------------|
-| Background noise (engine, music) | Whisper + signal processing (e.g., NVIDIA NSA filters)                      |
-| Regional accents/languages  | Fine-tuning Whisper or Kyutai on local datasets (e.g., Quebec French)       |
-| Latency                    | On-device models (e.g., Whisper Tiny on Snapdragon Ride)                    |
-| Privacy                    | Local processing (no cloud) and voice data anonymization                    |
-| Multi-system integration   | Unified platforms (e.g., Android Automotive, QNX)                           |
-
-**Example:**
-- **Stellantis** reduced latency from 500 ms to 200 ms by deploying STT/TTS on Qualcomm Snapdragon Digital Chassis.
-  - [Stellantis AI News, 2024](https://www.stellantis.com/en/innovation/ai-voice)
-
----
-
-# Industrial Case Studies
-
-| **OEM**                   | **Technology**               | **Result**                                  |
-|---------------------------|------------------------------|---------------------------------------------|
-| Mercedes-Benz            | "Hey Mercedes" (Nuance + TTS) | 30% increase in usage vs. physical buttons |
-| BMW                      | Whisper + diarization        | 95% accuracy in noisy environments          |
-| Tesla                    | In-house STT/TTS             | Top 1 in voice satisfaction (Consumer Reports, 2023) |
-| Toyota                   | Diarization + child mode     | 60% reduction in accidental commands from rear |
-| Volvo                    | Emotional TTS                | 25% improvement in perceived comfort         |
-
----
-
-# Typical Voice Interaction Workflow
-
-- **Audio Capture** (microphone array).
-- **Signal Cleaning** (noise/music suppression).
-- **STT** (e.g., Whisper or Kyutai) → Text.
-- **Diarization** (who is speaking? driver or passenger?).
-- **NLP** (intent understanding).
-- **Action** (e.g., change temperature).
-- **TTS** (natural voice response).
-
----
-
-# Recommendations for Directors
-
-- **Priorities:**
-  - Start with a pilot using Whisper or Kyutai (offline) + basic TTS for critical commands (navigation, climate).
-  - Integrate diarization for family vehicles (e.g., SUVs).
-  - Customize voice for brand identity.
-- **Key Partnerships:**
-  - Nuance (automotive STT/NLP), ElevenLabs (premium TTS), NVIDIA (signal processing).
-- **Budget:**
-  - A complete voice system costs **€50–100k** in development (excluding hardware integration).
-
----
-
-# Future Trends
-
-- **Voice Biometrics:** Driver recognition via voice (e.g., Ford testing voice authentication to start the car).
-- **Emotion AI:** Stress or fatigue detection via voice analysis (e.g., Hyundai).
-- **Multimodal:** Combining voice + gestures + gaze (e.g., "Open the window" + looking at the window).
-- **Generative AI:** Using embedded LLMs (e.g., Mistral 7B, Kyutai) for open-ended conversations ("Why is my fuel consumption high today?").
-
----
-
-# Arguments to Convince Decision Makers
-
-- **Safety:** "Reducing distractions = fewer accidents = savings on insurance and recalls."
-- **Differentiation:** "A smooth voice interface is a **key selling point** for young drivers (Gen Z/Y)."
-- **ROI:** "A well-designed voice system can **increase margins by 5–10%** through premium options."
-- **Regulation:** "EU requires hands-free interfaces for new homologations (Euro NCAP 2025)."
-
----
-
-# Key Points to Remember
-
-- **Core Message:** "Voice is the **most natural and safe** interface for car interaction. Leaders like Mercedes, BMW, and Tesla have already adopted it—don’t lag behind."
-- **Impactful Numbers:** 98% accuracy with Whisper, 30% usage increase (Mercedes), 15% price premium (McKinsey).
-- **Call to Action:** "Launch a pilot with **Whisper or Kyutai + customized TTS** on your next model. Aim for **90% satisfaction** on voice commands within 12 months."
-
-
----
-
-# Link to unmute.sh
-
-- [unmute.sh](https://unmute.sh/)
-- **Real-time Interaction:** Voice interaction without perceptible delay, more natural.
-- **Configurable Voices:** From short samples, without heavy training.
-- **Behavioral Personalization:** Via simple text prompts.
-- **Deployment Flexibility:** On existing systems, no cloud dependency.
-- **Immediate Testing:** Code publication imminent.
 
 ---
 
