@@ -15,7 +15,7 @@
 
 ---
 
-Introduction to AI & fundamental concepts​
+# Introduction to AI & fundamental concepts​
 
 ---
 # AI VS GENERATIVE AI​
@@ -58,13 +58,21 @@ Clustering and dimensionality reduction techniques​
 
 ---
 # ML: Reinforcement Learning​
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
 Agents learning through trial and error​
 
 Reward systems​
+  </div>
 
-## Reinforcement Learning in Action
+  <div style="flex: 1;">
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/spfpBrBjntg?si=68Z-oEMzvfxk8p6x&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+  </div>
+
+</div>
 ---
 
 # ML: Reinforcement Learning​
@@ -73,6 +81,7 @@ Reward systems​
 - Parking assistance systems learning to navigate complex parking scenarios.
 
 ---
+# Supervised Learning, Unsupervised Learning, Reinforcement Learning
 
 | Mode            | Labeled Training Data | Definition                                                                                     | Use Cases                                                                                     |
 |-----------------|-----------------------|------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
@@ -83,28 +92,61 @@ Reward systems​
 ---
 
 # Biological Neurons  
-Structure: dendrites, soma, axon  
 
-Functioning of synapses  
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
 
-Transmission of electrical signals  
+  **Structure:**  
+  - Dendrites  
+  - Soma  
+  - Axon  
+
+  **Functioning of Synapses:**  
+  - Chemical and electrical signal transmission  
+
+  </div>
+
+  <div style="flex: 1;">
+
+  ![Neuron Structure](https://www.researchgate.net/profile/Christos-Pliatsikas/publication/376253955/figure/fig1/AS:11431281218483806@1705590629078/Neuron-anatomy-Created-with-BioRendercom.png)  
+  *Illustration of a biological neuron*
+
+  </div>
+
+</div>
 
 ---
 
 # Artificial Neurons  
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
+
 Mathematical model of the artificial neuron  
 
 Activation functions: ReLU, Sigmoid, Tanh  
 
 Similarities and differences with biological neurons?  
 
+</div>
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
+
+  ![Artificial Neuron Structure](https://en.wikipedia.org/wiki/File:Artificial_neuron_structure.svg)  
+  *Illustration of an artificial neuron*
+  </div>
+</div>
+
+
 ---
 
 # Artificial Neural Networks
 
-Artificial neural networks (ANNs) are computational models inspired by the structure and functioning of biological neural networks. They consist of interconnected layers of artificial neurons, where each neuron processes inputs, applies an activation function, and passes the output to the next layer. 
+Artificial neural networks (ANNs) are computational models inspired by the structure and functioning of biological neural networks. 
 
-ANNs are widely used for tasks such as pattern recognition, classification, and regression in various domains.
+They consist of interconnected layers of artificial neurons, where each neuron processes inputs, applies an activation function, and passes the output to the next layer. 
+
+**ANNs** are widely used for tasks such as pattern recognition, classification, and regression in various domains.
 
 ---
 
@@ -121,49 +163,103 @@ In neural networks, **parameters** refer to the adjustable values that the model
 - Added to the weighted sum of inputs to shift the activation function.
 - Helps the model fit the data better by allowing flexibility in decision boundaries.
 
+---
+
+# Parameters and Weights in Neural Networks
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
+
 **Why They Matter:**
 
 - Weights and biases are the core components that enable neural networks to learn patterns and make predictions. By iteratively updating these values using optimization algorithms like gradient descent, the network improves its performance on the given task.
+  </div>
 
+  <div style="flex: 1;">
 **Example:**
 - In a simple neural network, if the input is `x`, the weight is `w`, and the bias is `b`, the output of a neuron is calculated as:
   ```
   output = activation_function(w * x + b)
   ```
-
+  </div>
+</div>
 ---
 
 # Mistral 7B: Number of Parameters
 
-  The Mistral 7B model is a state-of-the-art foundation model with **7 billion parameters**.
+<div style="display: flex; align-items: center; gap: 20px;">
 
-  **Comparison:**
-  - **Mistral 7B:** 7 billion parameters.
-  - **GPT-4:** Estimated 175 billion parameters.
-  - **LLaMA 2 (13B):** 13 billion parameters.
+  <div style="flex: 1;">
 
+The Mistral 7B model is a state-of-the-art foundation model with **7 billion parameters**.
+
+
+**Comparison:**
+- **GPT-4:** Estimated 175 billion parameters.
+- **LLaMA 2 (13B):** 13 billion parameters.
+
+  </div>
+
+  <div style="flex: 1;">
+
+![Model Parameters Comparison](https://www.geeky-gadgets.com/wp-content/uploads/2023/09/New-Mistral-7B-instruct-model-from-Mistral-AI.webp)
+
+  </div>
+</div>
 ---
 
 # Multi-Layer Perceptron (MLP)
+<div style="display: flex; align-items: center; gap: 20px;">
 
-A Multi-Layer Perceptron (MLP) is a type of artificial neural network composed of an input layer, one or more hidden layers, and an output layer. Each layer consists of interconnected nodes (neurons) where inputs are processed through weighted connections, activation functions, and biases. MLPs are widely used for supervised learning tasks such as classification and regression, leveraging their ability to model complex, non-linear relationships in data.
+  <div style="flex: 1;">
+
+A Multi-Layer Perceptron (MLP) is a type of artificial neural network composed of an input layer, one or more hidden layers, and an output layer. Each layer consists of interconnected nodes (neurons) where inputs are processed through weighted connections, activation functions, and biases. 
+
+MLPs are widely used for supervised learning tasks such as classification and regression, leveraging their ability to model complex, non-linear relationships in data.
 
 The concept of the MLP was first introduced in 1969 by Marvin Minsky and Seymour Papert in their book *Perceptrons*, which laid the groundwork for neural network research.
 
+  </div>
+
+  <div style="flex: 1;">
+
+![MLP](https://media.licdn.com/dms/image/D5612AQG2n-h9rBE2NA/article-cover_image-shrink_600_2000/0/1701597139460?e=2147483647&v=beta&t=kTHU5V1z66QpFeikBYqQ4Gwgu-o3V8DlwKWOub6Rr2M)
+
+  </div>
+
+</div>
 ---
 
 # Backpropagation
 
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
 Backpropagation, is a supervised learning algorithm used to train artificial neural networks. It adjusts the weights of the network by propagating the error from the output layer back to the input layer. The process involves two main steps:
 
 **Forward Pass:** Compute the output of the network and the error by comparing the predicted output to the actual target.
+
 **Backward Pass:** Calculate the gradient of the error with respect to each weight using the chain rule and update the weights to minimize the error.
 
 This iterative process continues until the network converges to an optimal solution, making it a cornerstone of deep learning.
 
+  </div>
+
+  <div style="flex: 1;">
+
+![Backpropagation](https://i.makeagif.com/media/9-23-2021/ZbBtF9.gif)
+
+  </div>
+
+</div>
 ---
 
 # Gradient Descent
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
 
 Gradient Descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of the steepest descent, as defined by the negative of the gradient. It is widely used in machine learning to optimize model parameters by reducing the error between predicted and actual values.
 
@@ -177,11 +273,22 @@ Gradient Descent is an optimization algorithm used to minimize a function by ite
 - **Learning Rate:** Controls the step size in each iteration.
 - **Convergence:** Achieved when the gradient approaches zero or the loss stops decreasing.
 
+  </div>
+
+  <div style="flex: 1;">
+![Gradient Descent](https://blog.datumbox.com/wp-content/uploads/2013/10/gradient-descent.png)
+  </div>
+
+</div>
+
 ---
 
 # Building an AI Model: Key Steps
 
-Building an AI model involves several critical steps to ensure its effectiveness and reliability. Here's a concise overview:
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
 
 **Define the Problem:**
 - Clearly identify the objective and the problem you want to solve.
@@ -204,6 +311,10 @@ Building an AI model involves several critical steps to ensure its effectiveness
 - Test the model on unseen data to ensure robustness.
 - Deploy the model in the target environment (e.g., embedded systems, cloud).
 
+  </div>
+
+  <div style="flex: 1;">
+
 ```mermaid
 graph TD
    A[Define the Problem] --> B[Collect the Data]
@@ -212,11 +323,14 @@ graph TD
    D --> E[Evaluate and Deploy]
    E --> F[Monitor and Improve]
 ```
-
+  </div>
+</div>
 ---
 # Quiz: Neural Networks
 
-## What is the primary advantage of using artificial neural networks (ANNs) in AI applications?
+---
+
+# What is the primary advantage of using artificial neural networks (ANNs) in AI applications?
   - A) They are inspired by biological neurons.
   - B) They can model complex, non-linear relationships in data.
   - C) They require no training data.
@@ -224,9 +338,7 @@ graph TD
 
 ---
 
-# Quiz: Neural Networks
-
-## What is the purpose of backpropagation in training neural networks?
+# What is the purpose of backpropagation in training neural networks?
   - A) To initialize the weights of the network.
   - B) To propagate the input data forward through the network.
   - C) To adjust the weights by minimizing the error using gradient descent.
@@ -234,18 +346,14 @@ graph TD
 
 ---
 
-# Quiz: Neural Networks
-
-## What does the gradient descent algorithm aim to achieve in neural network training?
+# What does the gradient descent algorithm aim to achieve in neural network training?
   - A) Maximize the loss function.
   - B) Minimize the loss function by iteratively updating the weights.
   - C) Increase the learning rate.
   - D) Reduce the number of neurons in the network.
 ---
 
-# Quiz: Neural Networks
-
-## Which of the following is a key advantage of using reinforcement learning in neural networks?
+# Which of the following is a key advantage of using reinforcement learning in neural networks?
   - A) It requires labeled training data.
   - B) It learns optimal strategies through trial and error.
   - C) It is only applicable to supervised learning tasks.
@@ -254,6 +362,10 @@ graph TD
 ---
 # MNIST Dataset: Handwritten Digit Recognition
 
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
 The MNIST (Modified National Institute of Standards and Technology) dataset is a widely used benchmark in machine learning and computer vision. It consists of 70,000 grayscale images of handwritten digits (0–9), each of size 28x28 pixels. The dataset is used to train and evaluate models for digit recognition tasks.
 
 **Significance:**
@@ -261,24 +373,33 @@ The MNIST (Modified National Institute of Standards and Technology) dataset is a
 - It helps in understanding how neural networks can classify numbers based on pixel patterns.
 
 **History:**
-- MNIST was introduced in 1998 by Yann LeCun, Corinna Cortes, and Christopher J.C. Burges as part of their research on neural networks and machine learning.
+- MNIST was introduced in 1998 by **Yann LeCun, Corinna Cortes, and Christopher J.C. Burges** as part of their research on neural networks and machine learning.
 
 **Applications:**
 - Digit recognition in postal systems.
 - Foundational experiments in deep learning.
 
-![MNIST Dataset Example](https://cdn-images-1.medium.com/v2/resize:fit:1600/0*aWIO7eB6E4-cIkK9.gif)
-<small>Example of handwritten digits recognition from the MNIST dataset</small>
+  </div>
+  <div style="flex: 1;">
+
+
+![MNIST Dataset Example](https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png)
+
+Example of handwritten digits recognition from the MNIST dataset
+
+  </div>
+</div>
+
+---
+
+# Winter is Coming
 
 ---
 # Tokenization
 
 Tokens in natural language processing (NLP) are like syllables in poetry. Just as syllables are the building blocks of rhythm and structure in a poem, tokens are the fundamental units that allow AI models to process and understand text. 
 
-## Example:
-
-"Winter is Coming" → 
--> 5 tokens
+## "Winter is Coming" → 5 tokens
 - **Syllables in a poem:** Win / ter / is / com / ing.
 - **Tokens in NLP:** ["Win", "##ter", "is", "Com", "##ing"].
 
@@ -290,14 +411,31 @@ The token limit defines the maximum number of tokens a model can process in a si
 | Model          | Max Size (tokens)  | Approx. Paperback Pages |
 |----------------|---------------------|--------------------------|
 | GPT-5          | 128,000            | ~512                    |
-| Llama 3.1 (400B)| 128,000           | ~512                    |
+| Llama 3.1      | 128,000            | ~512                    |
 | Mistral Large  | 64,000             | ~256                    |
 
 ---
-# Embedding: Transforming Tokens into Numerical Representations
+# Embedding
+
+## Transforming Tokens into Numerical Representations
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
 Embedding transforms tokens into vectors, which serve as the true input points for the LLM.
 
-## How Tokenization and Embedding Work Together:
+  </div>
+
+  <div style="flex: 1;">
+
+![Embedding Example](https://causewriter.ai/wp-content/uploads/2023/08/image-2.png)
+
+  </div>
+</div>
+---
+
+# How Tokenization and Embedding Work Together:
 **Tokenization:**
 - Splits text into tokens (e.g., words, subwords, or characters).
 - Example: "Winter is coming" → ["Win", "##ter", "is", "com", "##ing"].
@@ -306,33 +444,41 @@ Embedding transforms tokens into vectors, which serve as the true input points f
 - Maps each token to a high-dimensional vector in a continuous space.
 - Example: ["Win", "##ter", "is", "com", "##ing"] → [[0.12, 0.45, ...], [0.34, 0.67, ...], [0.89, 0.23, ...]].
 
-## Why Embedding is Important:
+---
+
+# Why Embedding is Important:
 - **Semantic Understanding:** Tokens with similar meanings have closer embeddings in the vector space.
 
 ```mermaid
-graph TD
+graph LR
   A["Input Phrase: 'Winter is coming'"] --> B["Tokenization: ['Win', '##ter', 'is', 'com', '##ing']"]
   B --> C["Embedding: Dense Numerical Vectors"]
-  ```mermaid
-  graph TD
-    C["Tokenization Output"]
-    C --> D["Token: 'Win'"]
-    D --> D1["Vector: [0.12, 0.45, 0.78, ...]"]
-    C --> E["Token: '##ter'"]
-    E --> E1["Vector: [0.34, 0.67, 0.89, ...]"]
-    C --> F["Token: 'is'"]
-    F --> F1["Vector: [0.56, 0.23, 0.91, ...]"]
-    C --> G["Token: 'com'"]
-    G --> G1["Vector: [0.78, 0.12, 0.34, ...]"]
-    C --> H["Token: '##ing'"]
-    H --> H1["Vector: [0.45, 0.89, 0.67, ...]"]
+
+  C["Tokenization Output"]
+  C --> D["Token: 'Win'"]
+  D --> D1["Vector: [0.12, 0.45, 0.78, ...]"]
+  C --> E["Token: '##ter'"]
+  E --> E1["Vector: [0.34, 0.67, 0.89, ...]"]
+  C --> F["Token: 'is'"]
+  F --> F1["Vector: [0.56, 0.23, 0.91, ...]"]
+  C --> G["Token: 'com'"]
+  G --> G1["Vector: [0.78, 0.12, 0.34, ...]"]
+  C --> H["Token: '##ing'"]
+  H --> H1["Vector: [0.45, 0.89, 0.67, ...]"]
   ```
 
 ---
 
-# Embedding Example: King - Man + Woman = Queen
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">King - Man + Woman = Queen ?</div>
 
-Word embeddings capture semantic relationships between words by representing them as vectors in a high-dimensional space. A famous example of this is the analogy:
+---
+
+# Embedding Example: 
+## King - Man + Woman = Queen
+
+Word embeddings capture semantic relationships between words by representing them as vectors in a high-dimensional space. 
+
+A famous example of this is the analogy:
 
 **"King - Man + Woman = Queen"**
 
@@ -340,12 +486,14 @@ Word embeddings capture semantic relationships between words by representing the
 - The vector difference between "King" and "Man" represents the concept of masculinity.
 - Adding the vector for "Woman" shifts the representation to the feminine counterpart, resulting in "Queen."
 
-## Visualization:
-```mermaid
-graph TD
-  A["King"] -->|Subtract 'Man'| B["Masculinity"]
-  B -->|Add 'Woman'| C["Queen"]
-```
+---
+
+# Embedding Example: 
+## King - Man + Woman = Queen
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
 
 ## Mathematical Representation:
 If `v(King)`, `v(Man)`, and `v(Woman)` are the embeddings for "King," "Man," and "Woman," then:
@@ -357,16 +505,32 @@ v(King) - v(Man) + v(Woman) ≈ v(Queen)
 - Embeddings encode semantic and syntactic relationships.
 - Similar concepts are closer in the vector space, enabling analogies like this.
 
+  </div>
+
+  <div style="flex: 1;">
+
+![Image](https://dfzljdn9uc3pi.cloudfront.net/2022/cs-964/1/fig-6-2x.jpg)
+
+  </div>
+</div>
+
+---
+
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Predicting the Next Word: "Paris is the city of ..."</div>
+
 ---
 
 # Predicting the Next Word: "Paris is the city of ..."
 
-## Key Steps:
 **Tokenization:**
 - The input sentence "Paris is the city of ..." is tokenized into smaller units: `["Paris", "is", "the", "city", "of"]`.
 
 **Contextual Embedding:**
 - Each token is converted into a high-dimensional vector using embeddings, capturing its meaning and context.
+
+---
+
+# Predicting the Next Word: "Paris is the city of ..."
 
 **Probability Distribution:**
 - The model computes a probability distribution over the vocabulary for the next word. For "Paris is the city of ...", the probabilities might look like:
@@ -379,6 +543,9 @@ v(King) - v(Man) + v(Woman) ≈ v(Queen)
 - The word with the highest probability ("love") is selected as the next word.
 
 
+---
+# Predicting the Next Word: "Paris is the city of ..."
+
 ## Why This Works:
 
 - **Training Data:** The model has seen similar phrases during training, such as "Paris is the city of love."
@@ -388,9 +555,8 @@ v(King) - v(Man) + v(Woman) ≈ v(Queen)
 
 # Predicting the Next Word: "Paris is the city of ..."
 
-## Visualization:
 ```mermaid
-graph TD
+graph LR
   A["Paris is the city of ..."] --> B["Tokenization"]
   B --> C["Contextual Embedding"]
   C --> D["Probability Distribution"]
@@ -400,6 +566,9 @@ graph TD
   D --> D4["- Other words: 0.05"]
   D --> E["Prediction: 'love'"]
 ```
+---
+
+# Predicting the Next Word: "Paris is the city of ..."
 
 ## Example Output:
 - Input: "Paris is the city of ..."
@@ -408,30 +577,32 @@ graph TD
 This process demonstrates how language models use context and learned patterns to generate coherent and contextually relevant text.
 
 ---
-# Quiz: Tokens and Embedding
 
-## Question 1: What is the purpose of tokenization in natural language processing (NLP)?
-  - A) To convert text into numerical vectors.
-  - B) To split text into smaller units like words or subwords.
-  - C) To train a neural network on text data.
-  - D) To generate embeddings for tokens.
-
----
-# Quiz: Tokens and Embedding
-
-## Question 2: How do embeddings help in understanding the meaning of tokens?
-  - A) By splitting tokens into smaller parts.
-  - B) By mapping tokens to high-dimensional vectors that capture semantic relationships.
-  - C) By converting tokens into binary representations.
-  - D) By reducing the size of the vocabulary.
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Quiz: Tokens and Embedding</div>
 
 ---
 
-# Large Language Models (LLMs)
+# What is the purpose of tokenization in natural language processing (NLP)?
+- A) To convert text into numerical vectors.
+- B) To split text into smaller units like words or subwords.
+- C) To train a neural network on text data.
+- D) To generate embeddings for tokens.
+
+---
+# How do embeddings help in understanding the meaning of tokens?
+- A) By splitting tokens into smaller parts.
+- B) By mapping tokens to high-dimensional vectors that capture semantic relationships.
+- C) By converting tokens into binary representations.
+- D) By reducing the size of the vocabulary.
+
 
 ---
 
-# Large Language Models (LLMs)
+# Large Language Models
+
+---
+
+# Large Language Models
 
 Large Language Models (LLMs) are artificial intelligence models, pre-trained on vast text corpora, capable of understanding and generating natural language.
 
@@ -440,6 +611,9 @@ Large Language Models (LLMs) are artificial intelligence models, pre-trained on 
 - **Versatility:** They can be adapted to a wide variety of domains and applications.
 - **Generalization Capability:** LLMs use deep learning techniques to learn universal linguistic structures and relationships.
 
+---
+
+# Large Language Models
 
 ## Examples of Models:
 - **GPT-5 (2025), GPT-5o (2025), o2 (2025):** Advanced models for text generation and reasoning.
@@ -450,6 +624,9 @@ Large Language Models (LLMs) are artificial intelligence models, pre-trained on 
 - **Kyutai 2025:** An advanced multilingual model for speech recognition and contextual understanding.
 - **Whisper:** A robust speech transcription model supporting numerous dialects.
 
+---
+
+# Large Language Models
 
 ## Applications:
 - Translation, summarization, creative writing.
@@ -486,6 +663,8 @@ Large Language Models (LLMs) are artificial intelligence models, pre-trained on 
 - **Proprietary Data:** Internal documents, customer interactions, telemetry data.
 - **Synthetic Data:** Generated data to augment training sets and cover edge cases.
 
+---
+# Data Requirements for Training Large Models
 
 ## Challenges:
 
@@ -511,6 +690,9 @@ Training a large language model (LLM) demands advanced infrastructure and signif
 - **GPU/TPU Clusters:** Specialized hardware for parallel processing and efficient training of deep learning models.
 - **Massive Compute Power:** Example: GPT-4 was trained using hundreds of petaflops per day.
 
+---
+
+# Infrastructure Requirements for Training LLMs
 
 ## Energy Consumption
 - **Global Impact:** 20% of the world's energy is projected to be consumed by AI systems (source: DeepLearning.ai).
@@ -547,18 +729,27 @@ source: [Our contribution to a global environmental standard for AI](https://mis
 - Creative co-writing (ads, games, scripts)  
 - Dynamic technical documentation  
 
+---
+
+# Concrete Applications of LLMs (2025)
 
 ## 💻 Code Completion
 - Full app generation from natural specs  
 - Security flaw detection & fixes  
 - Custom automation scripts (SQL, Python, RPA)  
 
+---
+
+# Concrete Applications of LLMs (2025)
 
 ## 🤖 Chatbots & Assistants
 - 24/7 customer support (80–90% automated)  
 - Smart personal assistants (scheduling, admin, comparisons)  
 - Healthcare support: symptom pre-analysis, treatment reminders  
 
+---
+
+# Concrete Applications of LLMs (2025)
 
 ## 🌍 Other Applications
 - Context-aware translations (legal, cultural)  
@@ -573,8 +764,12 @@ source: [Our contribution to a global environmental standard for AI](https://mis
 
 # Attention Mechanism: Enhancing Neural Networks
 
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
 ## Publication and Evolution
-- **2017:** Vaswani et al. proposed "Attention is All You Need," introducing the Transformer architecture.
+- **2017:** Vaswani et al. proposed **"Attention is All You Need,"** introducing the Transformer architecture.
   - **Impact:** Became the foundation for modern LLMs like GPT and BERT, replacing RNNs in many applications.
 
 ## Key Features
@@ -586,59 +781,90 @@ source: [Our contribution to a global environmental standard for AI](https://mis
 - **Computer Vision:** Image captioning and object detection.
 - **Automotive Industry:** Predicting brake fade, analyzing driver behavior, and optimizing ADAS systems.
 
-Source:
 
-![Attention Mechanism](https://0.academia-photos.com/attachment_thumbnails/84202720/mini_magick20220415-14619-1w85ue4.png?1650025898){width="10%"}
+</div>
 
-<small>Visualization of the attention mechanism highlighting its role in focusing on relevant input elements for improved model performance.</small>
+  <div style="flex: 1;">
+
+![Attention Mechanism](https://0.academia-photos.com/attachment_thumbnails/84202720/mini_magick20220415-14619-1w85ue4.png)
+
+  </div>
+
+</div>
 
 ---
+
 # Attention Mechanism Equation
 
 The attention mechanism can be mathematically expressed as:
 
-\[\mathrm{Attention}(Q,K,V) = \mathrm{softmax}\!\left(\frac{Q K^\top}{\sqrt{d_k}}\right) V\]
+$$\text{Attention}(Q,K,V) = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V$$
 
-This mechanism allows the model to focus on the most relevant parts of the input sequence.
+Where:
+- $Q$ (Query): What we're looking for
+- $K$ (Key): What we're comparing against  
+- $V$ (Value): The actual information to retrieve
+- $d_k$: dimension of the key vectors (used for the scaling factor)
+
+This mechanism allows the model to **focus on the most relevant parts** of the input sequence.
 
 ---
 
-# Direct applications of the attention mechanism
-
-## Why attention can be a game changer
+# Why **Attention** can be a game changer
 - Captures very long-term dependencies without the memory degradation typical of RNNs.  
 - Produces interpretable attention maps: helps identify which past steps influence the current prediction.  
 - Enables modelling of rare but critical events by directly linking distant cues in the sequence.
 
 ---
-
-# Direct applications of the attention mechanism
-
-## Concrete automotive use cases
-- Predictive maintenance (sensor data, time series)  
-  - Temporal self-attention on sensor logs → early detection of anomalies and progressive wear.  
-  - Attention maps: temporal localization of root causes (e.g., vibration spikes preceding failure).  
-- Modeling brake fading / friction  
-  - Causal temporal transformer → identifies stops/thermal events that lead to friction drops.  
-  - Multi-head causal attention: each head captures different time scales (short: thermal spikes; long: accumulated energy).  
-- Detection of critical events in long test campaigns  
-  - Automatic spotting of significant epochs (hard stops, long heat-ups) to prioritize HIL / bench validation.
+# **Attention** and Predictive maintenance (sensor data, time series)  
+- Temporal self-attention on sensor logs → early detection of anomalies and progressive wear.  
+- Attention maps: temporal localization of root causes (e.g., vibration spikes preceding failure).  
 
 ---
+
+# Attention and Modeling brake fading / friction  
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
+- Causal temporal transformer → identifies stops/thermal events that lead to friction drops.  
+- Multi-head causal attention: each head captures different time scales 
+  - short: thermal spikes 
+  - long: accumulated energy
+
+  </div>
+
+  <div style="flex: 1;">  
+
+![Types of Brake Fade](https://www.slashgear.com/img/gallery/what-is-brake-fade-and-what-causes-it/what-are-the-types-of-brake-fade-1707264185.jpg)
+
+  </div>
+</div>
+---
+
+# Attention Mechanism and Detection of critical events in long test campaigns  
+
+- Automatic spotting of significant epochs (hard stops, long heat-ups) to prioritize HIL / bench validation.
+
+---
+
 # Quiz: Attention Mechanism
 
-## Why is the attention mechanism crucial in modern neural networks?
+---
+
+# Why is the attention mechanism crucial in modern neural networks?
   - A) It replaces the need for activation functions.
   - B) It allows the model to focus on the most relevant parts of the input sequence.
   - C) It eliminates the need for training data.
   - D) It reduces the size of the neural network.
-
 
 ---
 
 # Fine-tuning
 
 ---
+
 # Full Training vs. Fine-Tuning
 
 Training a large language model or neural network from scratch is computationally expensive and resource-intensive. It requires:
@@ -671,35 +897,174 @@ The base model (e.g., GPT or Mistral) is trained on a **general corpus**:
 - It already understands French, sentence structures, common ingredients, etc.  
 - However, it **is not an expert** in French gastronomy or precise chef techniques.
 
-## Fine-tuning
+
+---
+## Fine-tuning: Example on French Gastronomy
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
+# Fine-tuning
 The training continues on a **targeted dataset**:  
 - French gastronomic recipes: classic sauces, cooking techniques, refined flavor pairings.  
 - Chef notes, gastronomy books, Michelin-starred menus…  
 
-The model learns to:  
-- Recognize specific terms: “sauce bordelaise,” “low-temperature cooking,” “deglazing with red wine.”  
+  </div>
+
+  <div style="flex: 1;">
+```mermaid
+flowchart TD
+  A[General Pre-trained Model] --> |General Knowledge| B[Fine-tuning on French Gastronomic Recipes]
+  B --> |Learning Techniques and Style| C[Specialized Model in French Gastronomy]
+```
+  </div>
+</div>
+
+---
+
+## Fine-tuning: Example on French Gastronomy
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
+# The model learns to:  
+- Recognize specific terms: “sauce bordelaise,” “low-temperature cooking,” “déglaçage au vin rouge”
 - Suggest ingredients and techniques that are more **authentic** to French cuisine.  
 - Adhere to the **gastronomic and precise** style of Michelin-starred recipes.
 
-## Result
-After fine-tuning, the model can:  
-- Generate **complete and realistic French gastronomic recipes**.  
-- Adapt existing recipes into a **gastronomic style**.  
-- Answer questions such as:  
-  > “How to prepare sweetbreads with morels and red wine sauce like a Michelin-starred chef?”
 
 ---
-# Fine-tuning Conceptual Diagram
-```mermaid
-flowchart TD
-  A[General Pre-trained Model] --> B[Fine-tuning on French Gastronomic Recipes]
-  B --> C[Specialized Model in French Gastronomy]
-  A -->|General Knowledge| B
-  B -->|Learning Techniques and Style| C
-```
+# Fine-tuning: Example on French Gastronomy
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
+  ## Result
+  After fine-tuning, the model can:  
+  - Generate **complete and realistic French gastronomic recipes**.  
+  - Adapt existing recipes into a **gastronomic style**.  
+  - Answer questions such as:  
+    > “How to prepare sweetbreads with morels and red wine sauce like a Michelin-starred chef?”
+  </div>
+  <div style="flex: 1;">
+
+![Image](https://cdn.sanity.io/images/d35hevy9/production/45a0d7d20ff15bbf7f88654b848379b9fd0b9d10-2756x1480.png)
+
+  </div>
+ </div> 
 
 ---
-# AI on Cloud, Sovereign, On-Prem, or Edge
+
+# AI on Cloud, Sovereign, On-Premise, or Edge
+
+---
+# AI on Cloud
+
+- **Description:** AI is hosted on public cloud platforms like AWS, Azure, or Google Cloud.
+- **Advantages:**
+  - Rapid scalability.
+  - Easy access to pre-trained models and massive resources.
+  - *Low initial cost.*
+- **Disadvantages:**
+  - Data privacy concerns.
+  - Dependence on internet connectivity.
+  - Risk of vendor lock-in.
+- **Examples:**
+  - **AWS SageMaker** for training and deploying ML models.
+  - **Google Vertex AI** for integrated AI solutions.
+  - **Microsoft Azure AI** for cognitive services.
+
+---
+# Sovereign AI
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
+- **Description:** Infrastructure and data are managed within a country to comply with local regulations.
+- **Advantages:**
+  - Full control over data.
+  - Compliance with national regulations.
+  - Enhanced national security.
+- **Disadvantages:**
+  - High setup cost.
+  - Limited scalability compared to global cloud.
+  - Requires internal maintenance.
+- **Typical Use Cases:** Government projects, defense, healthcare requiring strict data residency.
+- **Examples:**
+  - **Gaia-X:** European initiative for a sovereign cloud.
+  - **OVHcloud:** French provider of sovereign cloud solutions.
+
+  </div>
+  <div style="flex: 1;">
+
+![Image](https://media.securiti.ai/wp-content/uploads/2025/06/11045706/Securiti-Powers-Sovereign-AI-in-the-EU-with-NVIDIA.png)
+
+  </div>
+</div>
+---
+# AI On-Prem
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
+- **Description:** AI is deployed on the organization’s own servers and data centers.
+- **Advantages:**
+  - Full control over hardware and data.
+  - Low latency for local users.
+  - Tight integration with internal systems.
+- **Disadvantages:**
+  - High upfront investment.
+  - Requires in-house expertise.
+  - Scaling can be slow and expensive.
+- **Typical Use Cases:** Internal analytics, finance, R&D labs.
+- **Examples:**
+  - **NVIDIA DGX Systems** for on-site AI model training.
+
+  </div>
+  <div style="flex: 1;">
+  
+![Image](https://tse1.mm.bing.net/th/id/OIP.XlBlbDxLG7pmyhSCbH1twgHaFj?rs=1&pid=ImgDetMain&o=7&rm=3)
+
+  </div>
+</div>
+
+---
+
+# AI on Edge
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
+- **Description:** AI is deployed on devices close to the data source (IoT, mobile, industrial machines).
+- **Advantages:**
+  - Ultra-low latency.
+  - Reduced bandwidth usage.
+  - Can operate offline.
+- **Disadvantages:**
+  - Limited computing resources.
+  - Model updates are more complex.
+  - Security of distributed devices.
+- **Typical Use Cases:** Autonomous vehicles, smart cameras, industrial automation, IoT devices.
+- **Examples:**
+  - **Qualcomm Snapdragon Ride** for autonomous vehicles.
+  - **NVIDIA Jetson** for IoT and robotics applications.
+
+  </div>
+
+  <div style="flex: 1;">
+
+![nvidia Robot](https://developer-blogs.nvidia.com/wp-content/uploads/2024/10/humanoid-robot-gif.gif)
+
+  </div>
+</div>
+---
+# AI deployment strategies in a wrap
 
 AI deployment strategies should align with specific automotive use cases, balancing performance, cost, and regulatory compliance.
 
@@ -734,14 +1099,14 @@ AI deployment strategies should align with specific automotive use cases, balanc
 # Foundation Models
 
 **Definition:**
-- Foundation models are :followup[**pre-trained, versatile, and powerful AI models**]{question="What makes foundation models more versatile compared to traditional AI models?" questionId="be7e341a-fcdd-410d-a183-5fbc1e4ceda8"} capable of generalizing across many tasks and domains.
+- Foundation models are **pre-trained, versatile, and powerful AI models** capable of generalizing across many tasks and domains.
 - They serve as a base for developing specific applications via fine-tuning or prompt engineering.
 
 **Examples:**
-- **GPT-4 (OpenAI):** Advanced language model for text generation, context understanding, and complex problem-solving.
-- **LLaMA 2 (Meta):** Open-source large model adaptable to various use cases.
+- **GPT-5 (OpenAI):** Advanced language model for text generation, context understanding, and complex problem-solving.
+- **LLaMA (Meta):** Open-source large model adaptable to various use cases.
 - **Mistral 7B (Mistral AI):** French state-of-the-art model optimized for natural language understanding and generation.
-- **Kyutai (France):** Specialized in natural language processing and speech recognition, with strong multilingual capabilities.
+- **Kyutai :** Specialized in natural language processing and speech recognition, with strong multilingual capabilities.
 - **Whisper (OpenAI):** Robust speech-to-text model supporting multiple languages and optimized for noisy environments.
 
 
@@ -810,8 +1175,8 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 # Challenges and Solutions
 
-- **Stellantis × Mistral AI** : Développement d'un assistant vocal embarqué avec support conversationnel et interaction vocale naturelle, évoluant via des mises à jour OTA. | [Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing) |
-- **Stellantis × Qualcomm** : Collaboration sur le Snapdragon Digital Chassis, exploitant des plateformes de calcul pour les capacités d'IA embarquées. | [Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions) |
+- **Stellantis × Mistral AI**: Development of an in-vehicle voice assistant with conversational support and natural voice interaction, evolving through OTA updates. | [Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing) |
+- **Stellantis × Qualcomm**: Collaboration on the Snapdragon Digital Chassis, leveraging computing platforms for embedded AI capabilities. | [Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions) |
 
 ---
 
@@ -865,7 +1230,6 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-
 ![Foundation Models Explained](https://humanloop.com/blog/foundation-models/foundation-models-explained.jpeg)
 
 ---
@@ -900,9 +1264,7 @@ AI deployment strategies should align with specific automotive use cases, balanc
 | **Analysis of Hallucinations in Automotive Code** | Pavel, Petrovic et al. | Study of hallucinations in automotive code generation by LLMs, with metrics for syntactic and functional validity. | [arXiv:2508.11257](https://arxiv.org/abs/2508.11257) |
 
 
-
 ---
-
 
 # AI Contributions
 
@@ -1104,9 +1466,25 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 # Vision-based classification system for brake pads
 
-Reduced manual effort by 80% in classification process. Easy integration in existing automation system based on SIMATIC S7-1500. Automated inspection system allows 100% test coverage of brake pads.
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
+Reduced manual effort by 80% in classification process. 
+
+Easy integration in existing automation system based on SIMATIC S7-1500. 
+
+Automated inspection system allows 100% test coverage of brake pads.
+
+  </div>
+
+  <div style="flex: 1; text-align: center;">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-FEVyaKAOew?si=ortamkPyqkdXX_py" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  </div>
+</div>
+
 
 ---
 
@@ -1508,6 +1886,10 @@ Reduced manual effort by 80% in classification process. Easy integration in exis
 | Small traffic sign detection | TRD-YOLO | Optimized for small traffic signs, improving accuracy on small objects. | [TRD-YOLO: A Real-Time, High-Performance Small Traffic Sign Detection Algorithm (2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10145582/) |
 | Pedestrian detection with attention modules | FA-YOLO (YOLO + Feature Enhancement + Adaptive Sparse Self-Attention) | Enhanced pedestrian detection with robustness to occlusion and lighting variations. | [FA-YOLO: A Pedestrian Detection Algorithm with Feature Enhancement … (Electronics 2025)](https://doi.org/10.3390/electronics14091713) |
 
+
+---
+
+# YOLO Use-Cases in Automotive / Traffic Domain
 
 # Video: Object Detection in Action
 
