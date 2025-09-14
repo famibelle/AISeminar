@@ -62,8 +62,8 @@ Agents learning through trial and error​
 
 Reward systems​
 
-## Video: Reinforcement Learning in Action
-[![Reinforcement Learning in Action](https://img.youtube.com/vi/spfpBrBjntg/0.jpg)](https://www.youtube.com/watch?v=spfpBrBjntg "Reinforcement Learning in Action")
+## Reinforcement Learning in Action
+<iframe width="560" height="315" src="https://www.youtube.com/embed/spfpBrBjntg?si=68Z-oEMzvfxk8p6x&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -102,9 +102,13 @@ Similarities and differences with biological neurons?
 
 # Artificial Neural Networks
 
-Artificial neural networks (ANNs) are computational models inspired by the structure and functioning of biological neural networks. They consist of interconnected layers of artificial neurons, where each neuron processes inputs, applies an activation function, and passes the output to the next layer. ANNs are widely used for tasks such as pattern recognition, classification, and regression in various domains.
+Artificial neural networks (ANNs) are computational models inspired by the structure and functioning of biological neural networks. They consist of interconnected layers of artificial neurons, where each neuron processes inputs, applies an activation function, and passes the output to the next layer. 
 
-## Parameters and Weights in Neural Networks
+ANNs are widely used for tasks such as pattern recognition, classification, and regression in various domains.
+
+---
+
+# Parameters and Weights in Neural Networks
 
 In neural networks, **parameters** refer to the adjustable values that the model learns during training. These include:
 
@@ -1043,6 +1047,27 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
+# Material Characterization & Prediction with AI
+
+**Technologies:**
+- **Artificial Intelligence** (Neural Networks, Generative Models, Autoencoders)
+  - Predicts friction coefficient (μ), wear rate, and thermal fading resistance
+  - Enables simulation of thousands of virtual formulations before physical testing
+
+**Results:**
+- **Tenneco:** 50–70% reduction in material screening time using AI to simulate over 8,000 virtual formulations, reducing reliance on physical prototypes and accelerating innovation in automotive friction materials:refs[1-6].
+
+**Data Sources:**
+- Tribometer logs (friction and wear data)
+- SEM images (microstructural analysis)
+- Chemical composition
+- Real-time telemetry (embedded sensors)
+
+<small>[Tenneco Digital Transformation of the Year 2024](https://www.digitalengineeringawards.com/winners/2024) :refs[3-6]</small>
+<small>[AI-Powered Prediction of Friction and Wear in Functionalized Epoxy-MWCNT Composites - ScienceDirect 2025](https://www.sciencedirect.com/science/article/pii/S0043164825006027) :refs[5-12]</small>
+
+---
+
 # The Challenge: Complex Trade-offs in Brake Materials
 
 **Key Conflicts:**
@@ -1060,54 +1085,67 @@ Caveats: Always validate AI-generated scenarios with physics-based models and HI
 
 ---
 
-# AI-Powered Solutions
-
-## Material Characterization & Prediction
+# Brake Composites Optimization with AI
 
 **Technologies:**
-- Machine Learning (Random Forest, Neural Networks)
-- Predicts friction coefficient (μ), wear rate, thermal fading resistance
+- Neural networks for predicting friction material performance.
+- Generative AI (foundation models) for compound recipe design and iteration.
+- Neural network-based computer vision for brake pad surface classification.
 
-**Results:**
-- **Tenneco:** 65% reduction in material screening time
-- Simulates 10,000+ virtual formulations before physical testing
-  <small>[Tenneco AI Case Study, 2023](https://www.tenneco.com/innovation/ai-material-science)</small>
+**Results (from industry cases):**
 
-**Data Sources:**
-- Tribometer logs
-- SEM images
-- Chemical composition
-- Real-world telemetry
+| Study / Case | Company | Description | Key Results | Source |
+|--------------|---------|-------------|-------------|--------|
+| *AI-driven R&D for Friction Materials* (2025) | **TMD Friction** | Uses in-house neural networks to virtually test and optimize new brake-friction material formulas. | Reduced dyno testing costs and time; AI models accurately predict ingredient effect on performance. | [The BRAKE Report, 2025](https://thebrakereport.com/tmd-friction-revolutionizes-rd-with-ai/) |
+| *ALCHEMIX – Generative AI for Brake Compounds* (2024) | **Brembo** | Uses Microsoft Azure OpenAI to generate and evaluate novel brake pad recipes virtually. | Cut compound development time from days to minutes; AI explores unconventional formulations and flags errors. | [Brembo Press Release, 2024](https://www.brembogroup.com/en/media/news/alchemix-microsoft) |
+| *AI Vision for Brake Pad Quality Inspection* (2020s) | **E.P.F. Elettrotecnica** | Siemens Simatic NPU runs a neural network to classify pad surface structures during production. | 80% less manual inspection; 100% pads automatically checked with higher consistency. | [Siemens Case Study](https://references.siemens.com/en/reference?id=23301) |
 
 ---
 
-# Noise & Vibration Analysis
+# Vision-based classification system for brake pads
 
-**Technologies:**
-- CNNs + spectrogram analysis
-- Anomaly detection for parasitic resonances
+Reduced manual effort by 80% in classification process. Easy integration in existing automation system based on SIMATIC S7-1500. Automated inspection system allows 100% test coverage of brake pads.
 
-**Results:**
-- **Continental:** 92% accuracy in noise classification
-- 40% reduction in NVH complaints
-  <small>[Continental Tech Report, 2024](https://www.continental.com/en/innovation/ai-brake-nvh)</small>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-FEVyaKAOew?si=ortamkPyqkdXX_py" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
-# Closed-Loop Optimization
-**Technologies:**
-- Generative design for novel composites (e.g., ceramic-matrix + graphene)
-- Digital twin simulates 10+ years of wear in 48 hours
+# Brake Noise Analysis with CNNs
 
-**Results:**
-- **Akebono:** Low-noise EV pad developed in 9 months (vs. 24 months)
-  <small>[Akebono AI Initiative, 2023](https://www.akebonobrake.com/innovation/ai-material-design)</small>
+**Technologies:**
+- Faster R-CNN (Inception V2 backbone) applied on spectrogram images from brake acoustic test benches.  
+- Standard CNN (e.g., ResNet) on audio spectrograms for squeal vs. moan classification.  
+
+**Results (from industry cases):**
+
+| Study / Case | Description | Key Results | Source |
+|--------------|-------------|-------------|--------|
+| *Brake NVH Noise Detection using Faster R-CNN* (Applus IDIADA, 2021) | Detection of squeal events on brake dyno acoustic data, training on ~30,000 labeled noise samples. | Achieved ~**0.55 mAP** for squeal event detection. | [The BRAKE Report – IDIADA](https://thebrakereport.com/machine-learning-for-brake-nvh-noise-detection/) |
+| *AI-Assisted NVH Classification* (Renumics, 2022) | CNN (ResNet-style) on spectrograms to distinguish squeal vs. moan, reducing false positives in durability and NVH tests. | Demonstrated higher classification accuracy vs. rule-based triggers (no % published). | [Renumics Blog – NVH Analysis](https://renumics.com/blog/ai-nvh-analysis/) |
+
+---
+
+# Generative / Optimization AI for Brake Composites — Industry
+
+**Scope:** Industry use cases only; AI techniques **excluding** machine-learning (no neural nets / statistical ML).  
+**Included techniques:** generative design / topology optimization, genetic algorithms (GA), multi-objective evolutionary algorithms (NSGA-II), DOE / Taguchi, rule-based optimisation, physics-based numerical optimisation.
+
+| Technology (AI, non-ML) | Industry Case / Company | Description & Role | Key Results / Notes | Source (URL) |
+|-------------------------|-------------------------|--------------------|---------------------|--------------|
+| **Generative Design / Topology Optimization** | **General Motors (Autodesk / Generative Design)** | GM used Autodesk generative design (cloud-based AI/optimization algorithms) to explore thousands of design alternatives (e.g., seat-bracket). Approach widely used in automotive for parts re-engineering (inspiration for lighter, manufacturable geometries). *Applicable to brake hardware design (calipers, carriers, discs) — not friction composite chemistry.* | Demonstrated weight reductions and part consolidation in GM prototypes (proof-of-concept). Generative design is production-ready for some OEM cases. | https://www.autodesk.com/customer-stories/general-motors-generative-design  |
+| **Topology Optimization (structural / thermo-mechanical)** | **University → OEM collaborations (caliper / disc studies)** | Topology optimisation used to re-design calipers, discs, and pedals for weight and thermal performance; adopted as an industrial design toolchain (CAD → TO → AM / conventional manufacture). | Several industrial case studies & papers show improved thermal dissipation, lower mass and validated prototypes (used as design input in OEM labs). | https://www.mdpi.com/2076-3417/11/4/1437 (Topology optimization of brake calipers)  |
+| **Genetic Algorithms / Multi-Objective Evolutionary Algorithms (NSGA-II)** | **Automotive R&D & SAE studies** | GA / NSGA-II applied to multi-objective parameter search (brake disc/pad geometry, process parameters) to trade off friction, wear and weight; typically combined with physics simulations (FEM / tribology models). | Papers and SAE tech-papers demonstrate resulting Pareto fronts and optimized parameter sets (reduced mass, maintained performance). | SAE technical paper: Optimization of Brake System Parameters Using Genetic ... (2023) https://www.sae.org/publications/technical-papers/content/2023-01-1881/  |
+| **Design of Experiments (DOE) / Taguchi for materials/process optimisation** | **Industrial friction labs / suppliers (various)** | DOE and Taguchi methods remain standard in R&D for formulation tuning (curing time, pressure, filler ratios). They are often used alongside AI optimisation loops to seed/evaluate candidate formulations. | Industry reports use DOE to reduce test matrix size and identify robust process windows (widely referenced in friction materials literature). | Example: Optimization of Process Parameters for Friction Materials (MDPI, 2021) https://www.mdpi.com/2227-9717/9/9/1570  |
+| **Physics-based surrogate optimisation & virtual testing (non-ML solvers)** | **Tier-1 R&D workflows (conceptual / vendor case studies)** | Use physics solvers (FEM thermal/tribological models) coupled to optimisation engines (gradient/free-form optimizers, GA) to evaluate candidates virtually before dyno tests. | Reported industrial benefit: fewer dyno cycles and faster iteration (case studies from supplier whitepapers). Quantitative gains depend on setup. | Example overview: Generative Design & Topology Optimization (Autodesk) https://www.autodesk.com/design-make/articles/generative-design-in-manufacturing  |
+
+**Notes & limitations:**
+- There are *many* academic papers applying GA / NSGA-II / TO to brake components (calipers, discs, pedals) and process parameters; industrial deployment is often proof-of-concept or R&D-centered rather than mass production for friction **formulation** (pad chemistry) specifically.  
+- For **friction composite chemistry (pad formulations)**, most recent industrial advancements combine physics simulations + ML surrogates; true industry examples that use *only* non-ML AI for automatic compound generation are rare in public literature. Suppliers (TMD Friction, Brembo, Fras-le) report “AI & virtual testing” in R&D, but often do not disclose whether ML or optimisation algorithms are used internally. See Brembo ALCHEMIX (uses Azure OpenAI — ML) and TMD Friction press items (R&D AI) for industry traction (these are ML-centric and were intentionally **excluded** from the table above because you asked to exclude ML). | Brembo ALCHEMIX news: https://www.brembogroup.com/en/media/news/alchemix-microsoft (note: uses Azure OpenAI — ML)  |
 
 ---
 
 # Key Value for OEMs & Suppliers
 
-<custom-element data-json="%7B%22type%22%3A%22table-metadata%22%2C%22attributes%22%3A%7B%22title%22%3A%22Comparison%3A%20Traditional%20vs.%20AI-Augmented%20Workflow%22%7D%7D" />
 
 | Metric               | Traditional Process | AI-Augmented Workflow |
 |----------------------|---------------------|-----------------------|
