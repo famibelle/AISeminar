@@ -1230,6 +1230,112 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
+# Object Detection (YOLO/R-CNN)
+
+---
+
+# Goal: Identify and Locate Objects in an Image
+
+- **Objective:** Identify and locate objects within an image by providing their class and bounding box.
+- **Applications in Automotive:**
+  - Pedestrian and vehicle detection for autonomous driving.
+  - Traffic sign recognition.
+  - Obstacle detection and avoidance.
+  - Parking assistance systems.
+
+---
+
+# Two Main Approaches
+
+## R-CNN Family
+- **Process:**
+  - Generates region proposals in the image.
+  - Classifies each region using a convolutional neural network.
+- **Advantages:**
+  - High accuracy due to region-based processing.
+  - Effective for detecting small objects.
+- **Disadvantages:**
+  - Computationally expensive.
+  - Slower processing speed.
+
+---
+
+# R-CNN Family
+
+- **Example:**
+  - **Mobileye** has developed camera-only Intelligent Speed Assist solutions for **traffic sign recognition**, based on deep convolutional networks (approaches related to region-based object detection).
+    - [Mobileye Blog, 2024](https://www.mobileye.com/blog/intelligent-speed-assist-isa-computer-vision-adas-solution/)
+  - **Bosch** has released research datasets (e.g., Bosch Small Traffic Lights Dataset) used with **Faster R-CNN and Mask R-CNN** in academic and industrial collaborations for detecting small objects like traffic lights.
+    - [Bosch Small Traffic Lights Dataset, GitHub](https://hci.iwr.uni-heidelberg.de/node/6132)
+  - **Academic/industrial joint research** (e.g., Shao et al., 2019, Applied Sciences) applied **Improved Faster R-CNN** for traffic sign detection, achieving higher accuracy on small signs in real-world driving datasets.
+    - [Applied Sciences, MDPI 2019](https://doi.org/10.3390/app12188948)
+
+---
+
+# YOLO Family
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
+- **Process:**
+  - Single-shot detection: Predicts classes and bounding boxes in one pass through the network.
+
+- **Variants:**
+  - YOLOv3, YOLOv4, YOLOv5, YOLOv6, YOLOv7, YOLOv8
+
+- **Advantages:**
+  - Real-time speed.
+  - Efficient and fast detection suitable for real-time applications.
+
+- **Disadvantages:**
+  - Slightly lower accuracy compared to R-CNN.
+
+  </div>
+
+  <div style="flex: 1;">
+
+<div style="text-align: center;">
+  <img src="https://framerusercontent.com/images/wmnihLAMWTEv1yW0v6w4ETUz3BQ.jpeg" alt="YOLO" style="width: 75%;">
+</div>
+
+  </div>
+
+</div>
+---
+
+# YOLO Use-Cases in Automotive / Traffic Domain
+| Use Case | YOLO Variant / Approach | Description | Source |
+|----------|--------------------------|-------------|--------|
+| Traffic sign detection with YOLOv8 | YOLOv8-based algorithm (YOLO-BS) | Improved traffic sign detection with high mAP on public datasets. | [“A traffic sign detection algorithm based on YOLOv8” — 2025, H. Zhang et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11880478/) |
+| Context-based sign detection with YOLOv7 | YOLO-CCA (YOLOv7 + context modules) | Adds local/global context modules and Transformer-based feature fusion, boosting mAP by ~3.9% on Tsinghua-Tencent-100K. | [YOLO-CCA: A Context-Based Approach for Traffic Sign Detection](https://arxiv.org/abs/2412.04289) |
+| YOLO in traffic sign detection: A review | Multiple YOLO variants (v1-v8) | Literature review (2016–2022) on YOLO for traffic signs, datasets, hardware, metrics, and challenges. | [Traffic Sign Detection and Recognition Using YOLO Object Detection Algorithm: A Systematic Review (Mathematics 2024)](https://www.mdpi.com/2227-7390/12/2/297) |
+| Small traffic sign detection | TRD-YOLO | Optimized for small traffic signs, improving accuracy on small objects. | [TRD-YOLO: A Real-Time, High-Performance Small Traffic Sign Detection Algorithm (2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10145582/) |
+| Pedestrian detection with attention modules | FA-YOLO (YOLO + Feature Enhancement + Adaptive Sparse Self-Attention) | Enhanced pedestrian detection with robustness to occlusion and lighting variations. | [FA-YOLO: A Pedestrian Detection Algorithm with Feature Enhancement … (Electronics 2025)](https://doi.org/10.3390/electronics14091713) |
+
+
+---
+
+# YOLO Use-Cases in Automotive / Traffic Domain
+
+# Video: Object Detection in Action
+
+[![Reinforcement Learning in Action](https://img.youtube.com/vi/FdZvMoP0dRU/0.jpg)](https://www.youtube.com/watch?v=FdZvMoP0dRU&autoplay=1 "Reinforcement Learning in Action")
+
+---
+
+# Trade-off: Accuracy (R-CNN) vs Real-time Speed (YOLO)
+
+| **Aspect**            | **R-CNN Family**                     | **YOLO Family**                      |
+|-----------------------|---------------------------------------|---------------------------------------|
+| **Accuracy**          | High (better for small objects)      | Moderate                            |
+| **Speed**             | Slower (multi-stage process)         | Faster (real-time capable)          |
+| **Computational Load**| Higher                                | Lower                               |
+| **Real-time Use**     | Limited                               | Suitable                            |
+
+---
+
+
 # Computer Vision Use Cases in Automotive
 
 | Automaker        | Use Case                                                                 | Vision-centric Feature(s) / Functions                                  | Source (URL)                                                                 |
@@ -1898,88 +2004,6 @@ Automated inspection system allows 100% test coverage of brake pads.
 | *A Two-Stage Attention-Based Hierarchical Transformer for Turbofan Engine Remaining Useful Life Prediction* | Turbofan engines | Temporal and sensor-wise attention. | [MDPI Sensors](https://www.mdpi.com/1424-8220/24/3/824) |
 
 
----
-
-# Object Detection (YOLO/R-CNN)
-
----
-
-# Goal: Identify and Locate Objects in an Image
-
-- **Objective:** Identify and locate objects within an image by providing their class and bounding box.
-- **Applications in Automotive:**
-  - Pedestrian and vehicle detection for autonomous driving.
-  - Traffic sign recognition.
-  - Obstacle detection and avoidance.
-  - Parking assistance systems.
-
----
-
-# Two Main Approaches
-
-## R-CNN Family
-- **Process:**
-  - Generates region proposals in the image.
-  - Classifies each region using a convolutional neural network.
-- **Advantages:**
-  - High accuracy due to region-based processing.
-  - Effective for detecting small objects.
-- **Disadvantages:**
-  - Computationally expensive.
-  - Slower processing speed.
-- **Example:**
-  - **BMW** uses Faster R-CNN for traffic sign recognition, achieving **98% accuracy** in detecting small signs.
-    -
-     [BMW AI Research, 2025](https://www.bmwgroup.com/en/innovation/ai-research.html)
-
----
-
-# YOLO Family
-- **Process:**
-  - Single-shot detection: Predicts classes and bounding boxes in one pass through the network.
-
-- **Variants:**
-  - YOLOv3, YOLOv4, YOLOv5, YOLOv6, YOLOv7, YOLOv8
-
-- **Advantages:**
-  - Real-time speed.
-  - Efficient and fast detection suitable for real-time applications.
-
-- **Disadvantages:**
-  - Slightly lower accuracy compared to R-CNN.
-
----
-
-# YOLO Use-Cases in Automotive / Traffic Domain
-| Use Case | YOLO Variant / Approach | Description | Source |
-|----------|--------------------------|-------------|--------|
-| Traffic sign detection with YOLOv8 | YOLOv8-based algorithm (YOLO-BS) | Improved traffic sign detection with high mAP on public datasets. | [“A traffic sign detection algorithm based on YOLOv8” — 2025, H. Zhang et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11880478/) |
-| Context-based sign detection with YOLOv7 | YOLO-CCA (YOLOv7 + context modules) | Adds local/global context modules and Transformer-based feature fusion, boosting mAP by ~3.9% on Tsinghua-Tencent-100K. | [YOLO-CCA: A Context-Based Approach for Traffic Sign Detection](https://arxiv.org/abs/2412.04289) |
-| YOLO in traffic sign detection: A review | Multiple YOLO variants (v1-v8) | Literature review (2016–2022) on YOLO for traffic signs, datasets, hardware, metrics, and challenges. | [Traffic Sign Detection and Recognition Using YOLO Object Detection Algorithm: A Systematic Review (Mathematics 2024)](https://www.mdpi.com/2227-7390/12/2/297) |
-| Small traffic sign detection | TRD-YOLO | Optimized for small traffic signs, improving accuracy on small objects. | [TRD-YOLO: A Real-Time, High-Performance Small Traffic Sign Detection Algorithm (2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10145582/) |
-| Pedestrian detection with attention modules | FA-YOLO (YOLO + Feature Enhancement + Adaptive Sparse Self-Attention) | Enhanced pedestrian detection with robustness to occlusion and lighting variations. | [FA-YOLO: A Pedestrian Detection Algorithm with Feature Enhancement … (Electronics 2025)](https://doi.org/10.3390/electronics14091713) |
-
-
----
-
-# YOLO Use-Cases in Automotive / Traffic Domain
-
-# Video: Object Detection in Action
-
-[![Reinforcement Learning in Action](https://img.youtube.com/vi/FdZvMoP0dRU/0.jpg)](https://www.youtube.com/watch?v=FdZvMoP0dRU "Reinforcement Learning in Action")
-
----
-
-# Trade-off: Accuracy (R-CNN) vs Real-time Speed (YOLO)
-
-| **Aspect**            | **R-CNN Family**                     | **YOLO Family**                      |
-|-----------------------|---------------------------------------|---------------------------------------|
-| **Accuracy**          | High (better for small objects)      | Moderate                            |
-| **Speed**             | Slower (multi-stage process)         | Faster (real-time capable)          |
-| **Computational Load**| Higher                                | Lower                               |
-| **Real-time Use**     | Limited                               | Suitable                            |
-
----
 
 # Image: Object Detection Approaches
 
