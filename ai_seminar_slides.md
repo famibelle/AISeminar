@@ -1436,6 +1436,11 @@ AI deployment strategies should align with specific automotive use cases, balanc
 </video>
 
 Tesla Vision-based Driver Monitoring
+
+---
+
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Voice AI</div>
+
 ---
 
 # Voice Assistants
@@ -1446,13 +1451,6 @@ Tesla Vision-based Driver Monitoring
 
 **Industrial Examples:**
 - **Mercedes-Benz "Hey Mercedes":** Understands natural commands ("I'm cold" → automatic temperature adjustment).
-- **BMW Intelligent Personal Assistant:** Manages individual preferences (seat, music, routes).
-- **Tesla Voice Command:** Handles complex queries ("Find a Supercharger on my route and turn on seat heating").
-
-**Sources:**
-- [Mercedes-Benz AI](https://www.mercedes-benz.com/innovation/ai-in-engineering/)
-- [BMW Group AI](https://www.bmwgroup.com/en/innovation/artificial-intelligence.html)
-- [Tesla AI Day](https://www.tesla.com/AIDay)
 
 ---
 
@@ -1460,15 +1458,11 @@ Tesla Vision-based Driver Monitoring
 
 **Technologies:**
 - Neural models (e.g., Amazon Polly, Google WaveNet, ElevenLabs, Kyutai TTS) for human-like speech.
-- Customization for brand identity (e.g., premium voice for Audi, youthful voice for Mini).
+- Customization for brand identity.
 
 **Use Cases:**
 - Safety alerts ("Attention, vehicle in blind spot") with urgent but calm intonation.
 - Conversational feedback ("Your destination is 10 minutes away. Would you like a coffee break?").
-
-**Example:**
-- **Volvo:** Uses TTS with contextual emotions (calm for confirmations, urgent for alerts).
-  - [Volvo Cars Tech Report, 2024](https://www.volvocars.com/innovation/voice-technology)
 
 ---
 
@@ -1476,17 +1470,13 @@ Tesla Vision-based Driver Monitoring
 
 **Leading Models:**
 - **OpenAI Whisper:** Robust to noise, supports 99 languages, offline capable.
-- **Google Speech-to-Text:** Optimized for short commands, integrates with Android Automotive.
-- **Nuance Dragon Drive:** Specialized for automotive, adapts to regional accents.
 - **Kyutai STT:** French state-of-the-art model, optimized for noisy and multilingual environments.
 
 **Performance:**
-- Whisper (large-v3): 98% accuracy on English commands in noisy environments.
-- BMW reduced recognition errors by 40% combining Whisper with car-specific noise models.
+- Whisper (large-v3): 98% accuracy on English.
 
 **Sources:**
 - [OpenAI Whisper](https://openai.com/research/whisper)
-- [BMW Group AI, 2023](https://www.bmwgroup.com/en/innovation/artificial-intelligence.html)
 - [Kyutai STT](https://kyutai.org/)
 
 ---
@@ -1494,17 +1484,10 @@ Tesla Vision-based Driver Monitoring
 # Speaker Diarization
 
 **Technologies:**
-- Models like PyAnnote, NVIDIA NeMo to segment and identify speakers.
-- Integration with directional microphones (e.g., ceiling microphone array).
+- Models like PyAnnote to identify speakers.
 
 **Use Cases:**
-- **Toyota:** Uses diarization to activate child mode (limit commands from rear seats).
-- **Hyundai:** Tests systems recognizing driver mood via voice analysis (stress, fatigue).
-
-**Sources:**
-- [Toyota Research Institute, 2023](https://www.tri.global/news/ai-driven-testing/)
-- [Hyundai AI Lab, 2024](https://www.hyundai.com/innovation/ai-voice)
-
+- Uses diarization to distinguish between driver and passengers.
 ---
 
 # Benefits of Voice Technologies
@@ -1520,7 +1503,6 @@ Tesla Vision-based Driver Monitoring
 
 **Sources:**
 - [McKinsey, 2023](https://www.mckinsey.com/industries/automotive-and-assembly/our-insights)
-- [J.D. Power U.S. Tech Experience Index, 2023](https://www.jdpower.com/tech-experience)
 
 ---
 
@@ -1532,23 +1514,7 @@ Tesla Vision-based Driver Monitoring
 | Regional accents/languages  | Fine-tuning Whisper or Kyutai on local datasets (e.g., Quebec French)       |
 | Latency                    | On-device models (e.g., Whisper Tiny on Snapdragon Ride)                    |
 | Privacy                    | Local processing (no cloud) and voice data anonymization                    |
-| Multi-system integration   | Unified platforms (e.g., Android Automotive, QNX)                           |
-
-**Example:**
-- **Stellantis** reduced latency from 500 ms to 200 ms by deploying STT/TTS on Qualcomm Snapdragon Digital Chassis.
-  - [Stellantis AI News, 2024](https://www.stellantis.com/en/innovation/ai-voice)
-
----
-
-# Industrial Case Studies
-
-| **OEM**                   | **Technology**               | **Result**                                  |
-|---------------------------|------------------------------|---------------------------------------------|
-| Mercedes-Benz            | "Hey Mercedes" (Nuance + TTS) | 30% increase in usage vs. physical buttons |
-| BMW                      | Whisper + diarization        | 95% accuracy in noisy environments          |
-| Tesla                    | In-house STT/TTS             | Top 1 in voice satisfaction (Consumer Reports, 2023) |
-| Toyota                   | Diarization + child mode     | 60% reduction in accidental commands from rear |
-| Volvo                    | Emotional TTS                | 25% improvement in perceived comfort         |
+| Multi-system integration   | Unified platforms (e.g., Android Automotive)                           |
 
 ---
 
@@ -1566,21 +1532,18 @@ Tesla Vision-based Driver Monitoring
 
 # Recommendations for Directors
 
-- **Priorities:**
-  - Start with a pilot using Whisper or Kyutai (offline) + basic TTS for critical commands (navigation, climate).
-  - Integrate diarization for family vehicles (e.g., SUVs).
-  - Customize voice for brand identity.
-- **Key Partnerships:**
-  - Nuance (automotive STT/NLP), ElevenLabs (premium TTS), NVIDIA (signal processing).
-- **Budget:**
-  - A complete voice system costs **€50–100k** in development (excluding hardware integration).
+- Start with a pilot using Whisper or Kyutai (offline) + basic TTS for critical commands (navigation, climate).
+- Integrate diarization for family vehicles (e.g., SUVs).
+- Customize voice for brand identity.
+- Plan for multilingual support from day one.
+- Ensure privacy by processing voice data locally.
 
 ---
 
 # Future Trends
 
-- **Voice Biometrics:** Driver recognition via voice (e.g., Ford testing voice authentication to start the car).
-- **Emotion AI:** Stress or fatigue detection via voice analysis (e.g., Hyundai).
+- **Voice Biometrics:** Driver recognition via voice.
+- **Emotion AI:** Stress or fatigue detection via voice analysis.
 - **Multimodal:** Combining voice + gestures + gaze (e.g., "Open the window" + looking at the window).
 - **Generative AI:** Using embedded LLMs (e.g., Mistral 7B, Kyutai) for open-ended conversations ("Why is my fuel consumption high today?").
 
@@ -1588,19 +1551,18 @@ Tesla Vision-based Driver Monitoring
 
 # Arguments to Convince Decision Makers
 
-- **Safety:** "Reducing distractions = fewer accidents = savings on insurance and recalls."
+- **Safety:** "Voice user interface: a complementary safety solution"
 - **Differentiation:** "A smooth voice interface is a **key selling point** for young drivers (Gen Z/Y)."
 - **ROI:** "A well-designed voice system can **increase margins by 5–10%** through premium options."
-- **Regulation:** "EU requires hands-free interfaces for new homologations (Euro NCAP 2025)."
+- **Regulation:** Matthew Avery, director of strategic development for Euro NCAP, recently said, “The overuse of touchscreens is an industry-wide problem, with almost every vehicle maker moving key controls onto central touchscreens, obliging drivers to take their eyes off the road, and raising the risk of distraction crashes.”.
 
 ---
 
 # Key Points to Remember
 
-- **Core Message:** "Voice is the **most natural and safe** interface for car interaction. Leaders like Mercedes, BMW, and Tesla have already adopted it—don’t lag behind."
-- **Impactful Numbers:** 98% accuracy with Whisper, 30% usage increase (Mercedes), 15% price premium (McKinsey).
-- **Call to Action:** "Launch a pilot with **Whisper or Kyutai + customized TTS** on your next model. Aim for **90% satisfaction** on voice commands within 12 months."
-
+- **Core Message:** Voice is a **natural and safe** interface for car interaction.
+- **Impactful Numbers:** 98% accuracy with Whisper
+- **Call to Action:** "Launch a pilot with **Whisper or Kyutai + customized TTS**
 
 ---
 
@@ -1646,7 +1608,8 @@ Tesla Vision-based Driver Monitoring
     </button>
   </div>
 
-  < !-- Here’s your **complete, ready-to-use prompt in English** for an EV’s AI companion, optimized for a foggy 2-hour drive with technical precision and natural interaction:
+
+<!-- Here’s your **complete, ready-to-use prompt in English** for an EV’s AI companion, optimized for a foggy 2-hour drive with technical precision and natural interaction:
 
 **You are the AI companion of an electric vehicle (e.g., Tesla Model 3 or Hyundai Ioniq 5), blending deep technical expertise in EVs, embedded systems, and AI with the empathy of an attentive co-pilot. Your role is to ensure a **safe, efficient, and enjoyable** 2-hour journey in foggy conditions (4°C, 92% humidity, 50m visibility), while adapting to the driver’s preferences and needs.**
 
@@ -1662,7 +1625,7 @@ Tesla Vision-based Driver Monitoring
 |-----------------------------|-------------------------------|---------------------------------------------------------------------------|
 | **Battery SoC**             | 78% (280 km range)            | Sufficient for destination + 50 km buffer.                               |
 | **Battery Temp**            | 22°C                          | Optimal (15–30°C). Preconditioning active for efficiency.                |
-| **Tire Pressure**           | Front: 2.4 bar / Rear: 2.5 bar | Cold-weather optimal (spec: 2.3–2.6 bar).                                |
+| **Tire Pressure**           | Front: 2.4 bar and Rear: 2.5 bar | Cold-weather optimal (spec: 2.3–2.6 bar).                                |
 | **Tire Temp**               | 10°C (all)                    | Normal for winter; grip monitoring enabled.                              |
 | **Energy Consumption**      | 18.2 kWh/100 km               | Slightly high due to fog (heating/lights). Average: 16.5 kWh/100 km.      |
 | **Regen Braking**           | 65% efficiency                | Reduced by wet roads; coasting recommended.                              |
@@ -1748,44 +1711,31 @@ Tesla Vision-based Driver Monitoring
 
 ---
 
-# AI Applied to the Automotive Industry
+# # <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">AI Applied to the Automotive Industry</div>
 
 ---
 
+# Stellantis × Mistral AI
 
-# Challenges and Solutions
+<div style="display: flex; align-items: center; gap: 20px;">
 
-- **Stellantis × Mistral AI**: Development of an in-vehicle voice assistant with conversational support and natural voice interaction, evolving through OTA updates. | [Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing) |
-- **Stellantis × Qualcomm**: Collaboration on the Snapdragon Digital Chassis, leveraging computing platforms for embedded AI capabilities. | [Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions) |
+  <div style="flex: 1;">
 
----
+- Development of an in-vehicle voice assistant with conversational support and natural voice interaction, evolving through OTA updates.
+- [Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing)
 
-# Recommendations for Directors
+  </div>
 
-- **Priorities:**
-  - Adopt foundation models for voice and data processing applications, when appropriate.
-    - Example: Stellantis is partnering with **Mistral AI** to deploy an in-vehicle voice assistant. ([Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing))
-  - Partner with specialized providers for access to advanced foundation models.
-    - Example: Toyota integrates **NVIDIA DRIVE AGX Orin** for vision and driving assistance systems. ([TechCrunch, 2025](https://techcrunch.com/2025/01/06/toyotas-next-generation-cars-will-be-built-with-nvidias-ai-brains-and-operating-system/))
-  - Invest in fine-tuning and domain adaptation to automotive-specific datasets.
-  - Deploy on embedded or edge platforms to ensure latency, security, and privacy compliance.
-    - Example: Qualcomm Snapdragon Digital Chassis used by Stellantis for embedded AI workloads. ([Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions))
+  <div style="flex: 1; text-align: center;">
+    <img src="https://www.stellantis.com/content/dam/stellantis-corporate/news/press-releases/2025/february/07-02-25/Stellantis-Mistral.png" alt="Stellantis and Mistral AI Partnership" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    
+  </div>
 
-
----
-# AI Initiatives Summary (2024–2025)
-
-| Focus Area                  | Initiative / Description                                                                                       | Impact / Benefit                                                      | Source |
-|------------------------------|---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|--------|
-| Innovation & Competitiveness | Partnership with **Mistral AI** to leverage foundation models and AI-driven automation for vehicle engineering and customer experience | Enhances data analysis capabilities, accelerates decision-making, supports AI-driven innovation | [GlobeNewswire, 2025](https://www.globenewswire.com/news-release/2025/02/07/3022573/0/en/Stellantis-and-Mistral-AI-Strengthen-Strategic-Partnership-to-Enhance-Customer-Experience-Vehicle-Development-and-Manufacturing.html?utm_source=chatgpt.com) |
-| Cost Reduction               | Deployment of **Autonomous Mobile Robots (AMRs)**, AI-powered robot guidance systems, and digital twins in manufacturing | Improves logistics efficiency, reduces assembly lead times, streamlines factory design; contributes to energy reduction (~23%) | [Manufacturing Today, 2025](https://manufacturing-today.com/news/stellantis-integrates-ai-to-boost-efficiency-and-sustainability-across-global-manufacturing/?utm_source=chatgpt.com) |
-| Customer Satisfaction        | Development of **in-vehicle voice assistants** using foundation models for natural interaction | Provides personalized, conversational support to drivers and passengers | [Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing?utm_source=chatgpt.com) |
-| Regulatory Compliance        | Localized AI deployment on embedded platforms and secure processing for privacy and safety | Supports compliance with automotive safety standards and data privacy regulations | [Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions?utm_source=chatgpt.com) |
+</div>
 
 ---
 
-
-# Legacy Code – Retrieval, Documentation & Improvement (e.g., PBC SW)
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Legacy Code – Retrieval, Documentation & Improvement (e.g., PBC SW)</div>
 
 ---
 
@@ -1795,7 +1745,6 @@ Tesla Vision-based Driver Monitoring
 - **Complex Dependencies:** Intricate dependencies and fragile builds hinder updates.
 - **High-Risk Modifications:** Altering core systems like Power Brake Control (PBC) software poses significant risks.
 
-
 ---
 
 # Concrete Examples of AI on Legacy Code (Automotive & Embedded Systems)
@@ -1803,13 +1752,26 @@ Tesla Vision-based Driver Monitoring
 | Use Case | Company / Authors | Description | Source |
 |----------|-------------------|-------------|--------|
 | **Understanding & Documenting Legacy Code** | Thoughtworks – CodeConcise | Use of LLMs to summarize and explain legacy C++ code, accelerating onboarding for engineers. | [Thoughtworks – CodeConcise](https://www.thoughtworks.com/codeconcise) |
-| **Automated Migration (REXX → Java)** | IBM + AWS | Conversion of 100,000+ lines of REXX to Java in two weeks via an LLM pipeline, including documentation and diagram generation. | [IBM – Accelerating code modernization with generative AI (Automotive)](https://www.ibm.com/products/blog/accelerating-code-modernization-gen-ai-automotive) |
+| **Automated Migration (REXX → Java)** | IBM + AWS | Conversion of 100,000+ lines of REXX (Restructured Extended Executor) to Java in two weeks via an LLM pipeline, including documentation and diagram generation. | [IBM – Accelerating code modernization with generative AI (Automotive)](https://www.ibm.com/products/blog/accelerating-code-modernization-gen-ai-automotive) |
 | **AI-Assisted Test-Driven Development** | Sibros (via Cursor/Claude Code) | Automatic generation of unit tests for critical functions (e.g., brake controllers), followed by LLM-guided refactoring. | [Thoughtworks – Claude Code experiment](https://www.thoughtworks.com/insights/blog/generative-ai/claude-code-codeconcise-experiment) |
 | **Legacy Code Documentation & Review** | MITRE (Macke, Doyle) | Empirical study showing that GPT-4 produces complete and useful comments on old code (MUMPS, assembly). | [arXiv:2404.03114](https://arxiv.org/abs/2404.03114) |
 | **Embedded Automotive Code Generation** | Sven Kirchner, Alois C. Knoll et al. | Framework for generating automotive C++ code using LLMs, with verification and simulation for safety-critical systems. | [arXiv:2506.04038](https://arxiv.org/abs/2506.04038) |
 | **Spec2Code (Automotive Scania)** | Scania + Researchers | Generation of embedded code from specifications, with formal validation and critique tools. | [PapersWithCode – Spec2Code](https://paperswithcode.com/paper/towards-specification-driven-llm-based) |
 | **Analysis of Hallucinations in Automotive Code** | Pavel, Petrovic et al. | Study of hallucinations in automotive code generation by LLMs, with metrics for syntactic and functional validity. | [arXiv:2508.11257](https://arxiv.org/abs/2508.11257) |
 
+---
+
+# [Thoughtworks – CodeConcise](https://www.thoughtworks.com/codeconcise) in details
+
+Generative AI can help developers understand legacy codebases, especially when the documentation is poor, outdated, or misleading. 
+
+Thoughtworks has developed a generative AI tool called CodeConcise, designed to help teams modernize legacy code. 
+
+CodeConcise uses a Large Language Model (LLM) and a knowledge graph derived from Abstract Syntax Trees (ASTs) to analyze and document legacy code. 
+
+AI can generate documentation more quickly and ensure it is geared toward the specific needs of business analysts. 
+
+A particularly promising technique is a retrieval-augmented generation (RAG) approach where the information retrieval is done on a knowledge graph of the codebase.
 
 ---
 
@@ -1821,7 +1783,7 @@ Tesla Vision-based Driver Monitoring
 
 ## Automated Documentation
 - Generate function summaries, comments, and system-level diagrams.
-- **Example:** **Doxygen** combined with AI can automate documentation generation, reducing manual effort by **50%**.
+- **Example:** **Doxygen** combined with AI can automate documentation generation.
 
 ## Refactoring & Modernization
 - Suggest safer or optimized code structures.
@@ -1831,22 +1793,6 @@ Tesla Vision-based Driver Monitoring
 ## Consistency Checks
 - Compare legacy code against specifications or safety standards.
 - **Example:** AI models can cross-reference legacy code with safety standards like **ISO 26262** for automotive software.
-
----
-
-# Impact of AI at Tesla
-
-| Domain                   | Initiative / Description                                                                                       | Impact / Benefit                                                      | Source |
-|--------------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|--------|
-| **Safety & Efficiency**  | Compression of approximately 300 lines of legacy code by a factor of 100, reducing risks associated with maintaining critical systems | Reduced risks associated with maintaining critical systems           | [Elon Musk: GOODBYE to Legacy Tesla FSD CODE!! Plus, Is ...](https://www.youtube.com/watch?v=ahybUR5W8Cw) |
-| **Cost Reduction**       | Use of AI to refactor legacy code in the PBC system, reducing maintenance costs by 30%                         | 30% reduction in maintenance costs                                   | [Tesla AI Day Highlights - EE Times Asia](https://www.eetasia.com/tesla-ai-day-highlights/) |
-| **Support for Modernization** | Adoption of foundation models for voice and data processing, facilitating the transition to modern platforms | Facilitates the transition to modern platforms                       | [Tesla AI Day Highlights - EE Times Asia](https://www.eetasia.com/tesla-ai-day-highlights/) |
-
-# Impact
-
-- **Enhanced Safety & Efficiency:** Reduces risk in maintaining and updating critical legacy systems.
-- **Cost Reduction:** Minimizes manual review time, improving productivity.
-- **Modernization Support:** Facilitates the transition of legacy systems to modern platforms.
 
 ---
 
@@ -1860,22 +1806,27 @@ Tesla Vision-based Driver Monitoring
   - High effort for debugging or adding features.
   - Difficult to trace links between modules and understand system architecture.
 
+---
 
-- **AI-Powered Solution:**
+# AI-Powered Solution for Legacy Code
   - Syntactic & semantic parsing of the codebase.
   - Function, class, and module descriptions.
   - Control flow and algorithm explanations.
   - Dependency mapping and UML diagrams (class, sequence, component).
   - Annotated source code and contextual glossary.
 
-- **Key Value**
+**Key Value**
 - **Faster Understanding:** Of complex legacy systems.
 - **Reduced Manual Documentation Effort:** By automating documentation generation.
 - [Govtech Lab - Luxembourg](https://govtechlab.public.lu/fr/call-solution/2024/speedup-ailegacycode.html)
 
 ---
 
-# Thermal Monitoring & Fading - Predictive Analysis
+# Thermal Monitoring & Fading - Predictive Analysis with AI
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
 
 **Key message**
   - Brake fade is history-dependent. Sequential AI models capture memory and hysteresis to predict friction drop and recovery.
@@ -1884,6 +1835,19 @@ Tesla Vision-based Driver Monitoring
   - Drivers: thermal peaks, cumulative braking energy, dwell/cool-down, material state evolution.
   - Sequence models use the full past sequence rather than only instantaneous temperature.
 
+  </div>
+  <div style="flex: 1;">
+
+  <img src="https://www.thermoanalytics.com/sites/default/files/styles/site_max/public/2020-02/thermal-simulation-of-brake-disc-and-caliper-showing-heat-generation-from-friction.png" alt="Thermal Simulation of Brake Disc and Caliper" style="width: 50%;">
+  <p style="font-size: 0.9em; color: #555;">Thermal simulation of brake disc and caliper showing heat generation from friction.</p>
+
+  </div>
+</div>
+
+---
+
+## Thermal Monitoring & Fading - Predictive Analysis with RNN or Attention Mechanisms
+
 **RNNs (LSTM/GRU)**
   - Encode recent history into a latent state analogous to thermo-tribological condition.
   - Good for short-to-medium memory; may struggle with very long sequences.
@@ -1891,6 +1855,10 @@ Tesla Vision-based Driver Monitoring
 **Attention / Transformers (GPT-style)**
   - Causal self-attention highlights critical events (high-energy stops, temperature spikes, long dwells).
   - Multi-head attention captures multiple time scales; positional/time encodings distinguish ramps and cool-downs.
+
+---
+
+# Thermal Monitoring & Fading - Predictive Analysis with AI
 
 **GPT analogy (intuitive)**
   - Like next-word prediction, the model predicts the next friction values from context.
@@ -1902,53 +1870,20 @@ Tesla Vision-based Driver Monitoring
 
 ---
 
-# Optimizing Vehicle Testing Using AI & Historical Test Data
+<div style="display: flex; align-items: center; gap: 20px;">
 
-**Context & Dataset**
-- **System:** Power Brake Control (PBC SW)
-- **Dataset:** Past brake test logs, sensor streams (pedal, torque, ABS, speed), environmental conditions
-- **Industrial Examples:**
-  - **BMW:** Uses AI to analyze millions of real-world driving km and generate critical ADAS test scenarios. Result: **30% reduction in lab test time**, **15% more edge cases uncovered** ([BMW Group AI Lab, 2023](https://www.bmwgroup.com/en/innovation/artificial-intelligence.html)).
-  - **Tesla:** Leverages AI to analyze real-time braking logs and prioritize test scenarios. Outcome: **40% fewer redundant tests** on test benches ([Tesla AI Day, 2022](https://www.tesla.com/AIDay)).
-  - **Volvo:** Combines historical data and generative models to simulate extreme conditions (black ice, emergency braking). Result: **25% improvement in critical case coverage** before physical tests ([Volvo Cars Tech Report, 2024](https://www.volvocars.com/innovation/ai-in-safety-testing)).
+  <div style="flex: 1;">
 
-**LLM Reasoning**
-- Analyze past tests & reports
-- Identify edge cases, rare failures, and gaps in previous coverage
-- Combine requirements + historical data to propose high-value scenarios
-- **Example:** Mercedes-Benz uses LLMs to convert unstructured failure reports into parametric scenario families, **cutting test planning time by 50%** ([Mercedes-Benz R&D, 2024](https://www.mercedes-benz.com/innovation/ai-in-engineering/)).
+## May be Attention is all need for predicting Thermal Monitoring & Fading 
+  
+  </div>
 
-**Scenario Generation & Optimization**
-- Generative models propose new sequences (speed, surface, brake force)
-- LLM ensures safety, compliance, and coverage maximization
-- Prioritize scenarios based on risk, novelty, and efficiency
-- **Example:** Ford implemented an LLM + RAG pipeline to generate wet-surface braking scenarios, **reducing test campaign duration by 20%** while increasing rare failure detection ([Ford AI Research, 2023](https://media.ford.com/content/fordmedia/fna/us/en/news/2023/05/18/ford-accelerates-ai-in-vehicle-testing.html)).
+  <div style="flex: 1;">
+    <img src="https://image.slidesharecdn.com/attentionisallyouneed-180911075353/95/attention-is-all-you-need-1-638.jpg?cb=1536652582" alt="Attention is All You Need" style="width: 100%;">
+  </div>
 
-**Validation & Feedback**
-- Engineers validate scenarios → results feed back to improve AI models
-- **Example:** Toyota refines test scenarios via engineer-AI feedback loops, **saving 35% in lab hours** by eliminating redundant tests ([Toyota Research Institute, 2023](https://www.tri.global/news/ai-driven-testing/)).
+</div>
 
-**Key Value:**
-- Reasoning LLMs transform massive brake datasets into actionable, high-impact test scenarios
-- Accelerates test planning, reduces redundancy, uncovers critical edge cases
-- **Concrete ROI:**
-  - **Audi:** €12M/year saved through AI-optimized brake testing ([Audi AI Initiative, 2024](https://www.audi-ai.com/testing-optimization)).
-  - **Renault:** **25% test cost reduction** via predictive analysis of historical data ([Renault Software République, 2023](https://www.renaultgroup.com/fr/innovation/ia-et-donnees/)).
-- Workflow: RAG → LLM families → parametric scenario generation (JSON templates) → simulator/checkers → engineer validation → schedule & log results.
-
-<!-- Speaker notes (short): -->
-Say:
-"We propose a small pilot: feed 3 months of failures + metadata to an LLM/RAG pipeline. Outcome: 5 high-value, engineer-validated test templates ready for HIL. Success metrics: number of uncovered edge cases, planning time saved, and lab hours avoided.
-At BMW and Tesla, AI shifted testing from reactive (fix after failure) to predictive (anticipate risks). A 3-month data pilot can yield 5-10 validated test templates with measurable ROI in weeks.
-Example prompt: *From these 50 failure reports and 500 test logs, propose 3 critical scenario families for wet-surface braking, with speed, brake force, and temperature ranges. Return as JSON with technical rationale.*
-Caveats: Always validate AI-generated scenarios with physics-based models and HIL tests before real-world deployment."
-<!-- End of notes -->
-
-**Example LLMs (practical choices)**
-- Cloud/high-quality reasoning: OpenAI GPT-4 family (strong instruction following, function-calling for JSON outputs), Anthropic Claude (explanative reasoning; enterprise support).
-- Large-context / multimodal: Google Gemini / PaLM (long-context RAG workflows).
-- On-prem / private: LLaMA 2 (fine-tunable), Mistral/Falcon families (data sovereignty).
-- Lightweight / prototyping: Vicuna / Alpaca forks (fast local iteration; fine-tune for domain language).
 
 ---
 
@@ -2071,13 +2006,14 @@ Automated inspection system allows 100% test coverage of brake pads.
 
 # Key Value for OEMs & Suppliers
 
+<custom-element data-json="%7B%22type%22%3A%22table-metadata%22%2C%22attributes%22%3A%7B%22title%22%3A%22Comparative%20Synthesis%3A%20Traditional%20Processes%20vs.%20AI-Augmented%20Workflows%22%7D%7D" />
 
-| Metric               | Traditional Process | AI-Augmented Workflow |
-|----------------------|---------------------|-----------------------|
-| Time to Market       | 18–24 months        | **6–12 months**       |
-| Prototyping Cost     | €2M–€5M             | **€500K–€1M**         |
-| NVH Complaint Rate   | 12–15%              | **<5%**               |
-| Thermal Fade Testing | 300+ physical tests | **50 tests + AI validation** |
+| Metric                 | Traditional Process                        | AI-Augmented Workflow                        | Main Source(s)                                                                                                                                                                                                 |
+|------------------------|--------------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Time to Market         | 12–24 months (varies by complexity)        | 13–25% reduction (e.g., Renault –25%)       | [Renault/La Libre](https://www.lalibre.be/economie/entreprises-startup/2025/07/07/design-ia-et-crash-tests-virtuels-en-accelere-renault-nous-devoile-ses-secrets-de-fabrication-RWGFR34UL5HIPE263XUUXEZOBI/)                     |
+| Prototyping Cost       | High costs due to physical prototypes      | 20–53% reduction via AI simulation           | [Renault/La Libre](https://www.lalibre.be/economie/entreprises-startup/2025/07/07/design-ia-et-crash-tests-virtuels-en-accelere-renault-nous-devoile-ses-secrets-de-fabrication-RWGFR34UL5HIPE263XUUXEZOBI/)                     |
+| NVH Complaint Rate     | Higher complaint rates, late detection     | Up to 60% reduction through predictive analysis | [Automotive Quality](https://www.automotivequal.com/artificial-intelligence-in-quality-management-case-studies/), [SAE International](https://www.sae.org/publications/technical-papers/content/2024-01-2927/)                                                      |
+| Thermal Fade Testing   | Many physical tests, time-consuming & costly | 50–80% reduction in physical tests, >95% correlation | [SAE International](https://www.sae.org/publications/technical-papers/content/2025-01-0130/), [EikoSim](https://eikosim.com/category/etudes-cas/feed/), [CORDIS/EU](https://cordis.europa.eu/article/id/444119-advanced-algorithms-improve-electric-vehicle-efficiency/fr) |
 
 ---
 
@@ -2095,7 +2031,7 @@ Automated inspection system allows 100% test coverage of brake pads.
 
 **Quick Start Pilot:**
 - Collect existing tribometer data, SEM images, and complaint logs.
-- Train a Random Forest model to predict wear rate (target: <10% error).
+- Train a model to predict wear rate (target: <10% error).
 - Validate top 5 AI-recommended formulations with physical tests.
 
 **Tech Stack:**
