@@ -497,9 +497,9 @@ A famous example of this is the analogy:
 
 ## Mathematical Representation:
 If `v(King)`, `v(Man)`, and `v(Woman)` are the embeddings for "King," "Man," and "Woman," then:
-```
-v(King) - v(Man) + v(Woman) ≈ v(Queen)
-```
+
+$v(King) - v(Man) + v(Woman) ≈ v(Queen)$
+
 
 ## Why This Works:
 - Embeddings encode semantic and syntactic relationships.
@@ -509,7 +509,9 @@ v(King) - v(Man) + v(Woman) ≈ v(Queen)
 
   <div style="flex: 1;">
 
-![Image](https://dfzljdn9uc3pi.cloudfront.net/2022/cs-964/1/fig-6-2x.jpg)
+<div style="text-align: center;">
+  <img src="https://dfzljdn9uc3pi.cloudfront.net/2022/cs-964/1/fig-6-2x.jpg" alt="image" style="width: 75%;">
+</div>
 
   </div>
 </div>
@@ -636,46 +638,53 @@ Large Language Models (LLMs) are artificial intelligence models, pre-trained on 
 ---
 # Data Requirements for Training Large Models
 
-## Key Data Needs:
-
-**Volume:**
+## Volume
 - Large-scale datasets are essential to train models with billions of parameters.
 - Example: GPT-4 was trained on hundreds of terabytes of text data.
 
-**Diversity:**
+---
+## Data Requirements for Training Large Models
+
+# Diversity
 - Data should cover a wide range of topics, languages, and domains.
 - Example: Text, images, audio, and code for multimodal models.
 
-**Quality:**
+---
+## Data Requirements for Training Large Models
+
+# Quality
 - High-quality, clean, and well-annotated data ensures better model performance.
 - Example: Removing duplicates, correcting errors, and ensuring balanced representation.
 
-**Relevance:**
+---
+## Data Requirements for Training Large Models
+
+#Relevance
 - Domain-specific data is critical for fine-tuning models for specialized applications.
 - Example: Automotive manuals, sensor logs, and traffic data for autonomous driving.
 
 ---
-# Data Requirements for Training Large Models
+## Data Requirements for Training Large Models
 
-## Sources of Data:
+# Sources of Data:
 
 - **Public Datasets:** Common Crawl, Wikipedia, ImageNet.
 - **Proprietary Data:** Internal documents, customer interactions, telemetry data.
 - **Synthetic Data:** Generated data to augment training sets and cover edge cases.
 
 ---
-# Data Requirements for Training Large Models
+## Data Requirements for Training Large Models
 
-## Challenges:
+# Challenges:
 
 - **Bias and Fairness:** Ensuring data is representative and unbiased.
 - **Privacy:** Complying with regulations like GDPR when using sensitive data.
 - **Scalability:** Managing and processing massive datasets efficiently.
 
 ---
-# Data Requirements for Training Large Models
+## Data Requirements for Training Large Models
 
-## Example in Automotive:
+# Example in Automotive:
 
 - **Data Types:** Sensor data, traffic patterns, driver behavior logs.
 - **Use Case:** Training models for predictive maintenance, autonomous driving, and voice assistants.
@@ -692,9 +701,9 @@ Training a large language model (LLM) demands advanced infrastructure and signif
 
 ---
 
-# Infrastructure Requirements for Training LLMs
+## Infrastructure Requirements for Training LLMs
 
-## Energy Consumption
+# Energy Consumption
 - **Global Impact:** 20% of the world's energy is projected to be consumed by AI systems (source: DeepLearning.ai).
 
 ---
@@ -722,7 +731,7 @@ source: [Our contribution to a global environmental standard for AI](https://mis
 
 ---
 
-# Concrete Applications of LLMs (2025)
+# Concrete Applications of LLMs
 
 ## 📝 Text Generation
 - News & financial reports in real time  
@@ -731,35 +740,43 @@ source: [Our contribution to a global environmental standard for AI](https://mis
 
 ---
 
-# Concrete Applications of LLMs (2025)
+## Concrete Applications of LLMs
 
-## 💻 Code Completion
+# 💻 Code Completion
 - Full app generation from natural specs  
 - Security flaw detection & fixes  
 - Custom automation scripts (SQL, Python, RPA)  
 
 ---
 
-# Concrete Applications of LLMs (2025)
+## Concrete Applications of LLMs
 
-## 🤖 Chatbots & Assistants
+# 🤖 Chatbots & Assistants
 - 24/7 customer support (80–90% automated)  
 - Smart personal assistants (scheduling, admin, comparisons)  
 - Healthcare support: symptom pre-analysis, treatment reminders  
 
 ---
 
-# Concrete Applications of LLMs (2025)
+## Concrete Applications of LLMs
 
-## 🌍 Other Applications
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
+# 🌍 Other Applications
 - Context-aware translations (legal, cultural)  
 - Document analysis & insights extraction  
 - Adaptive tutoring & personalized learning  
 - Business workflows: meeting summaries, decision tracking  
 
+</div>
 
-<img src="../AISeminar/IMGs/LLMs.png" alt="LLMs Overview" style="width:10%;">
+  <div style="flex: 1;">
 
+<img src="../AISeminar/IMGs/LLMs.png" alt="LLMs Overview" style="width:100%;">
+
+</div>
 ---
 
 # Attention Mechanism: Enhancing Neural Networks
@@ -768,25 +785,28 @@ source: [Our contribution to a global environmental standard for AI](https://mis
 
   <div style="flex: 1;">
 
-## Publication and Evolution
+## Publication 2017
 - **2017:** Vaswani et al. proposed **"Attention is All You Need,"** introducing the Transformer architecture.
-  - **Impact:** Became the foundation for modern LLMs like GPT and BERT, replacing RNNs in many applications.
+- **Impact:** Became the foundation for modern LLMs like GPT and BERT, replacing RNNs in many applications.
+
 
 ## Key Features
 - **Selective Focus:** Assigns weights to input elements, emphasizing the most relevant parts.
 - **Interpretability:** Highlights which parts of the input influence the output, aiding in model transparency.
 
+<!--  -->
 ## Applications
 - **Natural Language Processing:** Machine translation, summarization, and question answering.
 - **Computer Vision:** Image captioning and object detection.
 - **Automotive Industry:** Predicting brake fade, analyzing driver behavior, and optimizing ADAS systems.
 
-
 </div>
 
   <div style="flex: 1;">
 
-![Attention Mechanism](https://0.academia-photos.com/attachment_thumbnails/84202720/mini_magick20220415-14619-1w85ue4.png)
+<div style="text-align: center;">
+  <img src="https://0.academia-photos.com/attachment_thumbnails/84202720/mini_magick20220415-14619-1w85ue4.png" alt="Attention Mechanism" style="width: 50%;">
+</div>
 
   </div>
 
@@ -843,7 +863,7 @@ This mechanism allows the model to **focus on the most relevant parts** of the i
 </div>
 ---
 
-# Attention Mechanism and Detection of critical events in long test campaigns  
+## Attention Mechanism and Detection of critical events in long test campaigns  
 
 - Automatic spotting of significant epochs (hard stops, long heat-ups) to prioritize HIL / bench validation.
 
@@ -934,6 +954,13 @@ flowchart TD
 - Suggest ingredients and techniques that are more **authentic** to French cuisine.  
 - Adhere to the **gastronomic and precise** style of Michelin-starred recipes.
 
+  </div>
+
+  <div style="flex: 1;"> 
+
+  <img src="https://s.france24.com/media/display/8d788430-1f7c-11e9-852c-005056bff430/w:1280/p:16x9/dominique_crenn_-_m.jpg" alt="Dominique Crenn" style="width: 100%;">
+
+  </div>
 
 ---
 # Example on French Gastronomy
@@ -1304,6 +1331,17 @@ AI deployment strategies should align with specific automotive use cases, balanc
 </div>
 ---
 
+# YOLO in action
+
+<video controls preload="auto" width="100%">
+  <source src="Labs/Media/HitachiAstemoWinterTest_SmartBrakeMovie2022_yolo_detected_1.mp4" type="video/mp4">
+  Votre navigateur ne supporte pas la balise vidéo.
+</video>
+
+---
+
+
+
 # YOLO Use-Cases in Automotive / Traffic Domain
 | Use Case | YOLO Variant / Approach | Description | Source |
 |----------|--------------------------|-------------|--------|
@@ -1316,11 +1354,13 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-# YOLO Use-Cases in Automotive / Traffic Domain
+## YOLO Use-Cases in Automotive / Traffic Domain
 
 # Video: Object Detection in Action
 
-[![Reinforcement Learning in Action](https://img.youtube.com/vi/FdZvMoP0dRU/0.jpg)](https://www.youtube.com/watch?v=FdZvMoP0dRU&autoplay=1 "Reinforcement Learning in Action")
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <iframe width="90%" height="90%" src="https://www.youtube.com/embed/FdZvMoP0dRU?autoplay=1" title="Reinforcement Learning in Action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="font-size: 1.5em;"></iframe>
+</div>
 
 ---
 
@@ -1334,7 +1374,6 @@ AI deployment strategies should align with specific automotive use cases, balanc
 | **Real-time Use**     | Limited                               | Suitable                            |
 
 ---
-
 
 # Computer Vision Use Cases in Automotive
 
