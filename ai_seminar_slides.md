@@ -1,3 +1,4 @@
+
 # AI Seminar for Automotive Experts
 
 ---
@@ -136,7 +137,7 @@ Similarities and differences with biological neurons?
 <div style="display: flex; align-items: center; gap: 20px;">
   <div style="flex: 1;">
 
-  ![Artificial Neuron Structure](https://en.wikipedia.org/wiki/File:Artificial_neuron_structure.svg)  
+  ![Artificial Neuron Structure](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Artificial_neuron_structure.svg/1024px-Artificial_neuron_structure.svg.png)  
   *Illustration of an artificial neuron*
   </div>
 </div>
@@ -317,7 +318,7 @@ Gradient Descent is an optimization algorithm used to minimize a function by ite
 
   </div>
 
-  <div style="flex: 1;">
+  <div style="flex: 1; align=right;">
 
 ```mermaid
 graph TD
@@ -554,37 +555,36 @@ $v(King) - v(Man) + v(Woman) ≈ v(Queen)$
 
 **Probability Distribution:**
 - The model computes a probability distribution over the vocabulary for the next word. For "Paris is the city of ...", the probabilities might look like:
-  - "love": 0.65
+  - **"love"**: 0.65
   - "light": 0.20    
   - "art": 0.10
   - Other words: 0.05
 
 **Prediction:**
-- The word with the highest probability ("love") is selected as the next word.
+- The word with the highest probability is selected as the next word.
 
 
 ---
-# Predicting the Next Word: "Paris is the city of ..."
+## Predicting the Next Word: "Paris is the city of ..."
 
-## Why This Works:
+# Why This Works:
 
-- **Training Data:** The model has seen similar phrases during training, such as "Paris is the city of love."
+- **Training Data:** The model has seen similar phrases during training, such as "Paris is the city of **love**."
 - **Context Understanding:** The embeddings ensure the model considers the entire sentence context.
 
 ---
 
-# Predicting the Next Word: "Paris is the city of ..."
-
+## Predicting the Next Word: "Paris is the city of ..."
+Chart
 ```mermaid
 graph LR
   A["Paris is the city of ..."] --> B["Tokenization"]
   B --> C["Contextual Embedding"]
   C --> D["Probability Distribution"]
-  D --> D1["- 'love': 0.65"]
-  D --> D2["- 'light': 0.20"]
-  D --> D3["- 'art': 0.10"]
-  D --> D4["- Other words: 0.05"]
-  D --> E["Prediction: 'love'"]
+  D --> D1["love: 0.65"]
+  D --> D2["light: 0.20"]
+  D --> D3["art: 0.10"]
+  D --> D4["Other words: 0.05"]
 ```
 ---
 
@@ -741,11 +741,10 @@ source: [Our contribution to a global environmental standard for AI](https://mis
 
 
 ---
-# Environmental impact of training Mistral Large 2
 
-<img src="https://cms.mistral.ai/assets/ee83637f-9f22-4e54-b63f-86277bea2a69.jpg" alt="Mistral AI Environmental Impact" width="20%">
+<img src="https://cms.mistral.ai/assets/ee83637f-9f22-4e54-b63f-86277bea2a69.jpg" alt="Mistral AI Environmental Impact" width="50%" style="display: block; margin: 0 auto;">
 
-<small>Environmental impact of training Mistral Large 2, including carbon emissions, water usage, and resource depletion.</small>
+<small style="font-size: smaller;">Environmental impact of training Mistral Large 2, including carbon emissions, water usage, and resource depletion.</small>
 
 ---
 
@@ -792,7 +791,7 @@ source: [Our contribution to a global environmental standard for AI](https://mis
 
   <div style="flex: 1;">
 
-<img src="../AISeminar/IMGs/LLMs.png" alt="LLMs Overview" style="width:100%;">
+<img src="https://media.licdn.com/dms/image/v2/D4D12AQHpYvUjqjFIgg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1738606568800?e=1760572800&v=beta&t=kx2JCU6pebZi9M6tBZXI8WiSWZ8DNZfnnFUAksnu1YI" alt="LLMs Overview" style="width:100%;">
 
 </div>
 ---
@@ -899,7 +898,7 @@ This mechanism allows the model to **focus on the most relevant parts** of the i
 
 ---
 
-# Fine-tuning
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Fine-tuning</div>
 
 ---
 
@@ -1093,8 +1092,8 @@ flowchart TD
   </div>
   <div style="flex: 1;">
   
-![Image](https://tse1.mm.bing.net/th/id/OIP.XlBlbDxLG7pmyhSCbH1twgHaFj?rs=1&pid=ImgDetMain&o=7&rm=3)
-
+![Image](https://miro.medium.com/v2/resize:fit:970/1*TFadQrVWmT6FsYlIG5HDnw.jpeg)
+  
   </div>
 </div>
 
@@ -1105,6 +1104,9 @@ flowchart TD
 - **Examples:**
   - **NVIDIA DGX Systems** for on-site AI model training.
 
+<div style="text-align: center;">
+  <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/dgx-a100/data-denter-dgx-a100-tour-1cN-D@2x.jpg" alt="DGX Systems" style="width: 50%;">
+</div>
 ---
 
 # AI on Edge
@@ -1175,7 +1177,7 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-## Which AI deployment strategy is ideal for autonomous vehicles and IoT devices?
+# Which AI deployment strategy is ideal for autonomous vehicles and IoT devices?
 - A) Cloud
 - B) Sovereign / National
 - C) On-Premises
@@ -1183,7 +1185,7 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-## What is a primary challenge of on-premises AI deployment?
+# What is a primary challenge of on-premises AI deployment?
 - A) Dependence on internet connectivity
 - B) Limited computing resources
 - C) High upfront investment and in-house expertise requirements
@@ -1191,7 +1193,7 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-# AI ACT and EU Regulations
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">AI ACT and EU Regulations</div>
 
 ---
 
@@ -1206,7 +1208,7 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-# Foundation Models: The Backbone of AI Innovation
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Foundation Models: The Backbone of AI Innovation</div>
 
 ---
 
@@ -1271,11 +1273,12 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-# Computer Vision & Multimodality
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Computer Vision & Multimodality</div>
 
 ---
 
-# Object Detection (YOLO/R-CNN)
+## Object Detection (YOLO/R-CNN)
+![Object Detection](https://cv-tricks.com/wp-content/uploads/2017/12/Object-Detection-for-outdoor-cv-tricks.jpg)
 
 ---
 
@@ -1352,11 +1355,8 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 # YOLO in action
 
-<video controls>
-  <source src="/AISeminar/IMGs/HitachiAstemoWinterTest_SmartBrakeMovie2022_yolo_detected.mov" type="video/quicktime">
-  Votre navigateur ne supporte pas la balise vidéo.
-</video>
-
+Hitachi Astemo Winter Test - Smart Brake with YOLO
+<iframe width="640" height="480" src="https://www.youtube.com/embed/8FkGvBHhfcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
@@ -1366,7 +1366,7 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-<iframe src="/AISeminar/Labs/yolo_live_stream.html?autostart=false" 
+<iframe src="Labs/yolo_live_stream.html?autostart=false" 
         style="width: 100vw; height: 100vh; border: none; margin: 0; padding: 0;"
         allowfullscreen>
 </iframe>
@@ -1402,9 +1402,7 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 # Video: Object Detection in Action
 
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  <iframe width="90%" height="90%" src="https://www.youtube.com/embed/FdZvMoP0dRU?autoplay=1" title="Reinforcement Learning in Action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="font-size: 1.5em;"></iframe>
-</div>
+  <iframe width=640 height=480 src="https://www.youtube.com/embed/FdZvMoP0dRU?autoplay=1" title="Reinforcement Learning in Action" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="font-size: 1.5em;"></iframe>
 
 ---
 
@@ -1430,12 +1428,13 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 
 ---
-<video controls autoplay width="100%" height="100%" style="position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:9999;">
+## Tesla Vision-based Driver Monitoring
+
+<video controls autoplay width="640" height="480">
   <source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/network.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-Tesla Vision-based Driver Monitoring
 
 ---
 
@@ -1469,15 +1468,12 @@ Tesla Vision-based Driver Monitoring
 # STT (Speech-to-Text)
 
 **Leading Models:**
-- **OpenAI Whisper:** Robust to noise, supports 99 languages, offline capable.
-- **Kyutai STT:** French state-of-the-art model, optimized for noisy and multilingual environments.
+- **[OpenAI Whisper](https://openai.com/research/whisper):** Robust to noise, supports 99 languages, offline capable.
+- **[Kyutai STT](https://kyutai.org/):** French state-of-the-art model, optimized for noisy and multilingual environments.
 
 **Performance:**
 - Whisper (large-v3): 98% accuracy on English.
 
-**Sources:**
-- [OpenAI Whisper](https://openai.com/research/whisper)
-- [Kyutai STT](https://kyutai.org/)
 
 ---
 
@@ -1735,7 +1731,7 @@ Tesla Vision-based Driver Monitoring
 
 ---
 
-# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Legacy Code – Retrieval, Documentation & Improvement (e.g., PBC SW)</div>
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Legacy Code (e.g., PBC SW)</div>
 
 ---
 
@@ -1870,6 +1866,30 @@ A particularly promising technique is a retrieval-augmented generation (RAG) app
 
 ---
 
+# Role of Attention Mechanism
+- **Focuses on critical cycles** that most influence friction loss  
+- Allows the model to **reuse important information from long sequences**  
+- **Enhances interpretability**:  
+  - Identifies which cycles, temperatures, pressures, or speeds drive fading  
+  - Useful for **R&D validation and brake design**  
+- Improves **prediction accuracy** when fading depends on **distant past cycles**  
+- Considerations:  
+  - Adds **computational complexity** → check real-time feasibility  
+  - Most beneficial for **long sequences with cumulative effects**  
+
+---
+
+# 🔍 Attention Mechanism in Predictive Maintenance & Thermal Monitoring
+| Article | Domain | Role of Attention | Source |
+|---|--------|--------------------|------|
+| *CNN-LSTM based on attention mechanism for brake pad remaining life prediction* | Brake pad life | Highlights relevant past time steps. | [Wang et al.](https://journals.viserdata.com/index.php/mes/article/view/9085) |
+| *A deep attention based approach for predictive maintenance applications in IoT scenarios* | IoT maintenance | Multi-head attention for RUL estimation. | [De Luca et al.](https://www.emerald.com/insight/content/doi/10.1108/jmtm-02-2022-0093/full/html) |
+| *Enhanced Thermal Modeling of Electric Vehicle Motors Using a Multihead Attention Mechanism* | EV motors | Captures complex thermal dynamics. | [MDPI Energies](https://doi.org/10.3390/en17122976) |
+| *Thermal fault prognosis of lithium-ion batteries in real-world electric vehicles using self-attention mechanism networks* | EV batteries | Predicts thermal anomalies. | [Applied Thermal Eng.](https://doi.org/10.1016/j.applthermaleng.2023.120304) |
+| *A Two-Stage Attention-Based Hierarchical Transformer for Turbofan Engine Remaining Useful Life Prediction* | Turbofan engines | Temporal and sensor-wise attention. | [MDPI Sensors](https://www.mdpi.com/1424-8220/24/3/824) |
+
+---
+
 <div style="display: flex; align-items: center; gap: 20px;">
 
   <div style="flex: 1;">
@@ -1879,7 +1899,7 @@ A particularly promising technique is a retrieval-augmented generation (RAG) app
   </div>
 
   <div style="flex: 1;">
-    <img src="https://image.slidesharecdn.com/attentionisallyouneed-180911075353/95/attention-is-all-you-need-1-638.jpg?cb=1536652582" alt="Attention is All You Need" style="width: 100%;">
+    <img src="https://image.slidesharecdn.com/attentionisallyouneed-180911075353/95/attention-is-all-you-need-1-638.jpg" alt="Attention is All You Need" style="width: 100%;">
   </div>
 
 </div>
@@ -1893,55 +1913,55 @@ A particularly promising technique is a retrieval-augmented generation (RAG) app
 
 # Material Characterization & Prediction with AI
 
+[AI-Powered Prediction of Friction and Wear in Functionalized Epoxy-MWCNT Composites - ScienceDirect 2025](https://www.sciencedirect.com/science/article/pii/S0043164825006027)
+
 **Technologies:**
 - **Artificial Intelligence** (Neural Networks, Generative Models, Autoencoders)
-  - Predicts friction coefficient (μ), wear rate, and thermal fading resistance
-  - Enables simulation of thousands of virtual formulations before physical testing
+  - Advanced artificial intelligence methods were employed to predict key tribological parameters coefficient of friction (COF) and wear rate as well as to classify wear mechanisms
 
-**Results:**
-- **Tenneco:** 50–70% reduction in material screening time using AI to simulate over 8,000 virtual formulations, reducing reliance on physical prototypes and accelerating innovation in automotive friction materials:refs[1-6].
+- **AI** models predict friction and wear in functionalised epoxy-MWCNT composites.
+
+- **ANN** achieves high accuracy predicting coefficient of friction and wear rate.
+
+- **RNN-LSTM** models capture time-dependent friction under varied wear mechanisms.
+
+- **CNN** classifies abrasive, adhesive, fatigue, and delamination wear.
 
 **Data Sources:**
 - Tribometer logs (friction and wear data)
-- SEM images (microstructural analysis)
+- Scanning Electron Microscope images (Hitachi SU-70) for (microstructural analysis)
 - Chemical composition
-- Real-time telemetry (embedded sensors)
 
-<small>[Tenneco Digital Transformation of the Year 2024](https://www.digitalengineeringawards.com/winners/2024) :refs[3-6]</small>
-<small>[AI-Powered Prediction of Friction and Wear in Functionalized Epoxy-MWCNT Composites - ScienceDirect 2025](https://www.sciencedirect.com/science/article/pii/S0043164825006027) :refs[5-12]</small>
-
----
-
-# The Challenge: Complex Trade-offs in Brake Materials
-
-**Key Conflicts:**
-- Friction vs. wear
-- Thermal fading vs. performance
-- Moisture sensitivity vs. consistency
-- Noise/resonance vs. comfort
-
-**Traditional Testing:**
-- 1,000+ physical prototypes per material
-- 12–18 months development cycle
-- €2M–€5M cost per formulation
-- **Example:** Brembo tests ~500 dynamometer + 200 track validations per formulation
-  <small>[Brembo R&D, 2022](https://www.brembo.com/en/company/innovation)</small>
 
 ---
 
 # Brake Composites Optimization with AI
 
-**Technologies:**
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
 - Neural networks for predicting friction material performance.
 - Generative AI (foundation models) for compound recipe design and iteration.
 - Neural network-based computer vision for brake pad surface classification.
+
+  </div>
+
+  <div style="flex: 1;">
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231207095717/logmel.png" alt="Brake Pad Surface Classification" style="width: 66%; border: 1px solid #ccc; border-radius: 8px;">
+  </div>
+
+</div>
+---
+
+# Brake Composites Optimization with AI
 
 **Results (from industry cases):**
 
 | Study / Case | Company | Description | Key Results | Source |
 |--------------|---------|-------------|-------------|--------|
-| *AI-driven R&D for Friction Materials* (2025) | **TMD Friction** | Uses in-house neural networks to virtually test and optimize new brake-friction material formulas. | Reduced dyno testing costs and time; AI models accurately predict ingredient effect on performance. | [The BRAKE Report, 2025](https://thebrakereport.com/tmd-friction-revolutionizes-rd-with-ai/) |
-| *ALCHEMIX – Generative AI for Brake Compounds* (2024) | **Brembo** | Uses Microsoft Azure OpenAI to generate and evaluate novel brake pad recipes virtually. | Cut compound development time from days to minutes; AI explores unconventional formulations and flags errors. | [Brembo Press Release, 2024](https://www.brembogroup.com/en/media/news/alchemix-microsoft) |
+| *Revolutionising R&D: TMD Friction’s AI-driven path to the perfect friction formula* (2025) | **TMD Friction** | Uses in-house neural networks to virtually test and optimize new brake-friction material formulas. | Reduced dyno testing costs and time; AI models accurately predict ingredient effect on performance. | [Presse Release, TMD friction June 27th, 2025](https://tmdfriction.com/wp-content/uploads/2025/06/Press_release_AI_at-TMD_Friction.pdf) |
+| *ALCHEMIX – Generative AI for Brake Compounds* (2024) | **Brembo** | Uses Microsoft Azure OpenAI to generate and evaluate novel brake pad recipes virtually. | Cut compound development time from days to minutes; AI explores unconventional formulations and flags errors. | [Brembo Press Release, 2024](https://brem-p-001.sitecorecontenthub.cloud/api/public/content/34df2592fb7542809cc94ce974b62e2b?v=c06d176b) |
 | *AI Vision for Brake Pad Quality Inspection* (2020s) | **E.P.F. Elettrotecnica** | Siemens Simatic NPU runs a neural network to classify pad surface structures during production. | 80% less manual inspection; 100% pads automatically checked with higher consistency. | [Siemens Case Study](https://references.siemens.com/en/reference?id=23301) |
 
 ---
@@ -1980,15 +2000,12 @@ Automated inspection system allows 100% test coverage of brake pads.
 
 | Study / Case | Description | Key Results | Source |
 |--------------|-------------|-------------|--------|
-| *Brake NVH Noise Detection using Faster R-CNN* (Applus IDIADA, 2021) | Detection of squeal events on brake dyno acoustic data, training on ~30,000 labeled noise samples. | Achieved ~**0.55 mAP** for squeal event detection. | [The BRAKE Report – IDIADA](https://thebrakereport.com/machine-learning-for-brake-nvh-noise-detection/) |
+| *Brake NVH Noise Detection using Faster R-CNN* (Applus IDIADA, 2021) | Detection of squeal events on brake dyno acoustic data| Achieved ~**0.55 mAP** for squeal event detection. | [The BRAKE Report – IDIADA](https://thebrakereport.com/ai-as-a-means-of-detecting-brake-noise-part-2-of-3/) |
 | *AI-Assisted NVH Classification* (Renumics, 2022) | CNN (ResNet-style) on spectrograms to distinguish squeal vs. moan, reducing false positives in durability and NVH tests. | Demonstrated higher classification accuracy vs. rule-based triggers (no % published). | [Renumics Blog – NVH Analysis](https://renumics.com/blog/ai-nvh-analysis/) |
 
 ---
 
 # Generative / Optimization AI for Brake Composites — Industry
-
-**Scope:** Industry use cases only; AI techniques **excluding** machine-learning (no neural nets / statistical ML).  
-**Included techniques:** generative design / topology optimization, genetic algorithms (GA), multi-objective evolutionary algorithms (NSGA-II), DOE / Taguchi, rule-based optimisation, physics-based numerical optimisation.
 
 | Technology (AI, non-ML) | Industry Case / Company | Description & Role | Key Results / Notes | Source (URL) |
 |-------------------------|-------------------------|--------------------|---------------------|--------------|
@@ -1998,9 +2015,9 @@ Automated inspection system allows 100% test coverage of brake pads.
 | **Design of Experiments (DOE) / Taguchi for materials/process optimisation** | **Industrial friction labs / suppliers (various)** | DOE and Taguchi methods remain standard in R&D for formulation tuning (curing time, pressure, filler ratios). They are often used alongside AI optimisation loops to seed/evaluate candidate formulations. | Industry reports use DOE to reduce test matrix size and identify robust process windows (widely referenced in friction materials literature). | Example: Optimization of Process Parameters for Friction Materials (MDPI, 2021) https://www.mdpi.com/2227-9717/9/9/1570  |
 | **Physics-based surrogate optimisation & virtual testing (non-ML solvers)** | **Tier-1 R&D workflows (conceptual / vendor case studies)** | Use physics solvers (FEM thermal/tribological models) coupled to optimisation engines (gradient/free-form optimizers, GA) to evaluate candidates virtually before dyno tests. | Reported industrial benefit: fewer dyno cycles and faster iteration (case studies from supplier whitepapers). Quantitative gains depend on setup. | Example overview: Generative Design & Topology Optimization (Autodesk) https://www.autodesk.com/design-make/articles/generative-design-in-manufacturing  |
 
-**Notes & limitations:**
+<!--**Notes & limitations:**
 - There are *many* academic papers applying GA / NSGA-II / TO to brake components (calipers, discs, pedals) and process parameters; industrial deployment is often proof-of-concept or R&D-centered rather than mass production for friction **formulation** (pad chemistry) specifically.  
-- For **friction composite chemistry (pad formulations)**, most recent industrial advancements combine physics simulations + ML surrogates; true industry examples that use *only* non-ML AI for automatic compound generation are rare in public literature. Suppliers (TMD Friction, Brembo, Fras-le) report “AI & virtual testing” in R&D, but often do not disclose whether ML or optimisation algorithms are used internally. See Brembo ALCHEMIX (uses Azure OpenAI — ML) and TMD Friction press items (R&D AI) for industry traction (these are ML-centric and were intentionally **excluded** from the table above because you asked to exclude ML). | Brembo ALCHEMIX news: https://www.brembogroup.com/en/media/news/alchemix-microsoft (note: uses Azure OpenAI — ML)  |
+- For **friction composite chemistry (pad formulations)**, most recent industrial advancements combine physics simulations + ML surrogates; true industry examples that use *only* non-ML AI for automatic compound generation are rare in public literature. Suppliers (TMD Friction, Brembo, Fras-le) report “AI & virtual testing” in R&D, but often do not disclose whether ML or optimisation algorithms are used internally. See Brembo ALCHEMIX (uses Azure OpenAI — ML) and TMD Friction press items (R&D AI) for industry traction (these are ML-centric and were intentionally **excluded** from the table above because you asked to exclude ML). | Brembo ALCHEMIX news: https://www.brembogroup.com/en/media/news/alchemix-microsoft (note: uses Azure OpenAI — ML)  |-->
 
 ---
 
@@ -2015,15 +2032,6 @@ Automated inspection system allows 100% test coverage of brake pads.
 | NVH Complaint Rate     | Higher complaint rates, late detection     | Up to 60% reduction through predictive analysis | [Automotive Quality](https://www.automotivequal.com/artificial-intelligence-in-quality-management-case-studies/), [SAE International](https://www.sae.org/publications/technical-papers/content/2024-01-2927/)                                                      |
 | Thermal Fade Testing   | Many physical tests, time-consuming & costly | 50–80% reduction in physical tests, >95% correlation | [SAE International](https://www.sae.org/publications/technical-papers/content/2025-01-0130/), [EikoSim](https://eikosim.com/category/etudes-cas/feed/), [CORDIS/EU](https://cordis.europa.eu/article/id/444119-advanced-algorithms-improve-electric-vehicle-efficiency/fr) |
 
----
-
-# Industrial Adoption
-
-**Leaders:**
-- **Bosch:** 5,000+ virtual formulations in global AI database
-- **ZF:** "Digital Material Passport" links AI predictions to supplier quality control → **30% fewer recalls**
-- **Startups:** Tribosonics uses ultrasonic AI sensors for real-time wear prediction
-  <small>[Tribosonics, 2024](https://tribosonics.com/ai-friction-testing)</small>
 
 ---
 
@@ -2045,7 +2053,7 @@ Automated inspection system allows 100% test coverage of brake pads.
 
 ---
 
-<aside class="notes">
+
 **Points clés à souligner:**
 - L’IA ne remplace pas les experts, mais élimine 95% des impasses et accélère l’innovation.
 - Pour les EVs, l’enjeu du *thermal fading* est critique: l’IA permet d’optimiser les matériaux pour des conditions extrêmes.
@@ -2095,53 +2103,3 @@ Automated inspection system allows 100% test coverage of brake pads.
   - Risk of **unpredicted fade** affecting safety  
   - **High R&D costs** for material optimization and testing  
 
----
-
-# Advantages of RNNs / LSTM / GRU
-- **Capture temporal dependencies**: model how friction evolves over multiple braking cycles  
-- **Handle complex nonlinear relationships** automatically:  
-  - Temperature ↔ friction  
-  - Pressure ↔ speed ↔ friction  
-  - Cumulative thermal effects over cycles  
-- **Predictive simulations** reduce number of required bench tests  
-- Can enable **real-time monitoring and adaptive braking strategies** (ABS, ESC, brake-by-wire)  
-- Facilitate **material optimization**: test “virtual formulations” under simulated fading conditions  
-
----
-
-# Role of Attention Mechanism
-- **Focuses on critical cycles** that most influence friction loss  
-- Allows the model to **reuse important information from long sequences**  
-- **Enhances interpretability**:  
-  - Identifies which cycles, temperatures, pressures, or speeds drive fading  
-  - Useful for **R&D validation and brake design**  
-- Improves **prediction accuracy** when fading depends on **distant past cycles**  
-- Considerations:  
-  - Adds **computational complexity** → check real-time feasibility  
-  - Most beneficial for **long sequences with cumulative effects**  
-
----
-
-# 🔍 Attention Mechanism in Predictive Maintenance & Thermal Monitoring
-| Article | Domain | Role of Attention | Source |
-|---|--------|--------------------|------|
-| *CNN-LSTM based on attention mechanism for brake pad remaining life prediction* | Brake pad life | Highlights relevant past time steps. | [Wang et al.](https://journals.viserdata.com/index.php/mes/article/view/9085) |
-| *A deep attention based approach for predictive maintenance applications in IoT scenarios* | IoT maintenance | Multi-head attention for RUL estimation. | [De Luca et al.](https://www.emerald.com/insight/content/doi/10.1108/jmtm-02-2022-0093/full/html) |
-| *Enhanced Thermal Modeling of Electric Vehicle Motors Using a Multihead Attention Mechanism* | EV motors | Captures complex thermal dynamics. | [MDPI Energies](https://doi.org/10.3390/en17122976) |
-| *Thermal fault prognosis of lithium-ion batteries in real-world electric vehicles using self-attention mechanism networks* | EV batteries | Predicts thermal anomalies. | [Applied Thermal Eng.](https://doi.org/10.1016/j.applthermaleng.2023.120304) |
-| *A Two-Stage Attention-Based Hierarchical Transformer for Turbofan Engine Remaining Useful Life Prediction* | Turbofan engines | Temporal and sensor-wise attention. | [MDPI Sensors](https://www.mdpi.com/1424-8220/24/3/824) |
-
-
-
-# Image: Object Detection Approaches
-
-
-## Key Points to Remember
-
-- **Core Message:**
-  - "Object detection using YOLO and R-CNN provides essential capabilities for autonomous driving and ADAS (Advanced Driver-Assistance Systems), balancing accuracy and speed."
-  - Real-time processing capability of YOLO.
-
-
-- **Call to Action:**
-  - "Adopt a tailored approach to object detection, leveraging R-CNN for accuracy-critical tasks and YOLO for real-time applications to enhance safety and performance in automotive systems."
