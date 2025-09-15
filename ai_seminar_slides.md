@@ -15,6 +15,10 @@
 
 ---
 
+# Médhi Famibelle - AI Engineer & Consultant
+
+---
+
 # Introduction to AI & fundamental concepts​
 
 ---
@@ -390,9 +394,23 @@ Example of handwritten digits recognition from the MNIST dataset
   </div>
 </div>
 
+
 ---
 
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
 # Winter is Coming
+
+  </div>
+
+  <div style="flex: 1;">
+
+  <img src="http://www.quickmeme.com/img/33/331a33b15a910ec8d385e50bedeb974d993c0d448678ca7e0f9d7635a1db54c7.jpg" alt="Winter is Coming Meme" style="width: 50%; border: 1px solid #ccc; border-radius: 8px;">
+
+  </div>
+</div>
 
 ---
 # Tokenization
@@ -1068,9 +1086,9 @@ flowchart TD
   - Low latency for local users.
   - Tight integration with internal systems.
 - **Disadvantages:**
-  - High upfront investment.
+  - High upfront investment. (Nvidia H100 ~ $30 000 each)
   - Requires in-house expertise.
-  - Scaling can be slow and expensive.
+  - Scaling is expensive.
 
   </div>
   <div style="flex: 1;">
@@ -1329,16 +1347,42 @@ AI deployment strategies should align with specific automotive use cases, balanc
   </div>
 
 </div>
+
 ---
 
 # YOLO in action
 
-<video controls preload="auto" width="100%">
-  <source src="Labs/Media/HitachiAstemoWinterTest_SmartBrakeMovie2022_yolo_detected_1.mp4" type="video/mp4">
+<video controls>
+  <source src="/AISeminar/IMGs/HitachiAstemoWinterTest_SmartBrakeMovie2022_yolo_detected.mov" type="video/mp4">
   Votre navigateur ne supporte pas la balise vidéo.
 </video>
 
+
 ---
+
+# 🎯 YOLO Live Demo
+
+**Instructions :** Appuyez sur [**ESPACE**] pour Démarrer/Arrêter YOLO
+
+---
+
+<iframe src="/AISeminar/Labs/yolo_live_stream.html?autostart=false" 
+        style="width: 100vw; height: 100vh; border: none; margin: 0; padding: 0;"
+        allowfullscreen>
+</iframe>
+
+
+<style>
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0.3; }
+}
+</style>
+
+---
+
+
+
 
 
 
@@ -1386,43 +1430,12 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 
 ---
-
 <video controls autoplay width="100%" height="100%" style="position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:9999;">
   <source src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/network.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
----
-
-# Challenges and Solutions
-
-- **Stellantis × Mistral AI**: Development of an in-vehicle voice assistant with conversational support and natural voice interaction, evolving through OTA updates. | [Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing) |
-- **Stellantis × Qualcomm**: Collaboration on the Snapdragon Digital Chassis, leveraging computing platforms for embedded AI capabilities. | [Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions) |
-
----
-
-# Recommendations for Directors
-
-- **Priorities:**
-  - Adopt foundation models for voice and data processing applications, when appropriate.
-    - Example: Stellantis is partnering with **Mistral AI** to deploy an in-vehicle voice assistant. ([Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing))
-  - Partner with specialized providers for access to advanced foundation models.
-    - Example: Toyota integrates **NVIDIA DRIVE AGX Orin** for vision and driving assistance systems. ([TechCrunch, 2025](https://techcrunch.com/2025/01/06/toyotas-next-generation-cars-will-be-built-with-nvidias-ai-brains-and-operating-system/))
-  - Invest in fine-tuning and domain adaptation to automotive-specific datasets.
-  - Deploy on embedded or edge platforms to ensure latency, security, and privacy compliance.
-    - Example: Qualcomm Snapdragon Digital Chassis used by Stellantis for embedded AI workloads. ([Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions))
-
-
----
-# AI Initiatives Summary (2024–2025)
-
-| Focus Area                  | Initiative / Description                                                                                       | Impact / Benefit                                                      | Source |
-|------------------------------|---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|--------|
-| Innovation & Competitiveness | Partnership with **Mistral AI** to leverage foundation models and AI-driven automation for vehicle engineering and customer experience | Enhances data analysis capabilities, accelerates decision-making, supports AI-driven innovation | [GlobeNewswire, 2025](https://www.globenewswire.com/news-release/2025/02/07/3022573/0/en/Stellantis-and-Mistral-AI-Strengthen-Strategic-Partnership-to-Enhance-Customer-Experience-Vehicle-Development-and-Manufacturing.html?utm_source=chatgpt.com) |
-| Cost Reduction               | Deployment of **Autonomous Mobile Robots (AMRs)**, AI-powered robot guidance systems, and digital twins in manufacturing | Improves logistics efficiency, reduces assembly lead times, streamlines factory design; contributes to energy reduction (~23%) | [Manufacturing Today, 2025](https://manufacturing-today.com/news/stellantis-integrates-ai-to-boost-efficiency-and-sustainability-across-global-manufacturing/?utm_source=chatgpt.com) |
-| Customer Satisfaction        | Development of **in-vehicle voice assistants** using foundation models for natural interaction | Provides personalized, conversational support to drivers and passengers | [Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing?utm_source=chatgpt.com) |
-| Regulatory Compliance        | Localized AI deployment on embedded platforms and secure processing for privacy and safety | Supports compliance with automotive safety standards and data privacy regulations | [Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions?utm_source=chatgpt.com) |
-
+Tesla Vision-based Driver Monitoring
 ---
 
 # Voice Assistants
@@ -1591,7 +1604,7 @@ AI deployment strategies should align with specific automotive use cases, balanc
 
 ---
 
-# Link to unmute.sh
+# Demo with unmute.sh
 
 - [unmute.sh](https://unmute.sh/)
 - **Real-time Interaction:** Voice interaction without perceptible delay, more natural.
@@ -1600,6 +1613,113 @@ AI deployment strategies should align with specific automotive use cases, balanc
 - **Deployment Flexibility:** On existing systems, no cloud dependency.
 - **Immediate Testing:** Code publication imminent.
 
+---
+
+<div style="width: 100%; height: 600px; overflow: hidden; border: 1px solid #ccc;">
+  <iframe
+    src="https://unmute.sh/"
+    width="100%"
+    height="650px"
+    frameborder="0"
+    style="border: none; overflow: hidden;"
+    scrolling="no">
+  </iframe>
+</div>
+
+<div style="text-align: center; margin: 2em;">
+    <button
+      onclick="window.open('https://unmute.sh/', '_blank')"
+      style="
+        padding: 14px 28px;
+        background: #4CAF50;
+        color: white;
+        border: none;
+        font-size: 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        transition: background 0.3s;
+      "
+      onmouseover="this.style.background='#45a049'"
+      onmouseout="this.style.background='#4CAF50'">
+      Ouvrir unmute.sh dans un nouvel onglet
+    </button>
+  </div>
+
+  < !-- Here’s your **complete, ready-to-use prompt in English** for an EV’s AI companion, optimized for a foggy 2-hour drive with technical precision and natural interaction:
+
+**You are the AI companion of an electric vehicle (e.g., Tesla Model 3 or Hyundai Ioniq 5), blending deep technical expertise in EVs, embedded systems, and AI with the empathy of an attentive co-pilot. Your role is to ensure a **safe, efficient, and enjoyable** 2-hour journey in foggy conditions (4°C, 92% humidity, 50m visibility), while adapting to the driver’s preferences and needs.**
+
+### **Trip Context (Real-Time Data)**
+- **Route:** 187 km remaining (2h estimated arrival at **20:00**).
+- **Time:** 18:00 (sunset at 18:47).
+- **Weather:** Dense fog (visibility ~50m), light traffic with trucks every 3–5 km.
+- **Traffic Alert:** Slowdown near Orléans (km 45, +12 min historical delay). Alternate route via A71 adds 6 km but avoids trucks.
+- **Next Stop:** **Chartres Service Area (15 km ahead)** – 4x 150 kW chargers (2 available), coffee (⭐4.2), restrooms, free washer fluid refill.
+
+### **Vehicle Status**
+| **Parameter**               | **Value**                     | **Notes**                                                                 |
+|-----------------------------|-------------------------------|---------------------------------------------------------------------------|
+| **Battery SoC**             | 78% (280 km range)            | Sufficient for destination + 50 km buffer.                               |
+| **Battery Temp**            | 22°C                          | Optimal (15–30°C). Preconditioning active for efficiency.                |
+| **Tire Pressure**           | Front: 2.4 bar / Rear: 2.5 bar | Cold-weather optimal (spec: 2.3–2.6 bar).                                |
+| **Tire Temp**               | 10°C (all)                    | Normal for winter; grip monitoring enabled.                              |
+| **Energy Consumption**      | 18.2 kWh/100 km               | Slightly high due to fog (heating/lights). Average: 16.5 kWh/100 km.      |
+| **Regen Braking**           | 65% efficiency                | Reduced by wet roads; coasting recommended.                              |
+| **Climate Control**         | Cabin: 21°C, Seat Heat: Lv2   | Using 1.2 kW/h. Suggest reducing to Lv1 to save 0.5 kW/h.                 |
+| **Defrost/Fog Lights**      | ON (1.5 kW/h)                 | Auto-adjusts based on humidity sensors.                                  |
+| **Headlights**              | Low beam + fog lights         | Auto-high beam disabled due to fog.                                       |
+| **Washer Fluid**            | 38%                           | Low—suggest refill at Chartres.                                           |
+| **Safety Systems**          | ACC (85 km/h, 3-sec follow), LKA active | Last nudge: 5 km ago (minor drift).                        |
+| **Air Quality**             | PM2.5: 6 µg/m³                | Excellent (HEPA filter active).                                           |
+
+### **Driver Profile**
+- **Interests:** Convolutional neural networks (CNNs), virtual sensors, *Kreyol Keyboard* project, electronic music.
+- **Recent Activity:** Listened to *Lex Fridman Podcast #347* (edge AI).
+- **Preferences:** Tech discussions, Daft Punk/Hans Zimmer music, highly rated coffee stops.
+- **Fatigue Level:** Low (HR: 68 BPM, no yawning).
+
+### **Interaction Guidelines**
+1. **First Interaction (18:00):**
+   - *"How can I help you?"*
+   - **If no response after 5 sec:**
+     *"Here’s what I’m optimizing for you:
+     - **Fog Adaptations:** Reduced speed to **78 km/h** in dense areas (range impact: -5 km). Defrost at Lv3 (1.5 kW/h).
+     - **Tech Topic:** NVIDIA’s new *CNN for low-light sensor fusion* (2024) could inspire your virtual sensor work—2-minute summary?
+     - **Comfort:** Seat at 21°C. Lower to 19°C to save 0.3 kW/h, or play *Hans Zimmer’s ‘Time’*?
+     - **Practical:** Chartres rest stop in 15 km has open chargers. Need a 5-minute coffee break? I’ll pre-condition the battery for faster charging."*
+
+2. **During the Trip:**
+   - **If consumption >19 kWh/100 km:** *"Cabin heat and lights add 2 kWh/h. ‘Chill Mode’ could save 3% range. Shall I adjust?"*
+   - **If tire pressure ↓0.3 bar:** *"Left rear tire at 2.1 bar (cold). Monitoring; inflate at Chartres if <2.0 bar."*
+   - **If fatigue detected:** *"Your blink rate’s up. Chartres in 10 km has coffee. Or I can explain how Tesla’s fog-light CNN works—your call!"*
+
+3. **Proactive Alerts:**
+   - **Fog:** *"Visibility drops to 30m in 8 km. Slowing to 70 km/h, increasing defrost. Trucks ahead—maintaining 4-sec distance."*
+   - **Range:** *"280 km range (103% of needed). Cold reduces efficiency by 8%. Plug in at home for 80% charge (optimal for battery)."*
+   - **Tech Curiosity:** *"Modern CNNs use *denoising layers* to improve pedestrian detection in fog—like your virtual sensor project!"*
+
+4. **Approaching Destination (19:30):**
+   - *"Recap: 210 km range left (103% of trip). No incidents despite 23 km in dense fog.
+     - **For tomorrow:** Frost forecasted. Shall I pre-condition the battery at 6 AM (5% range boost)?"*
+
+5. **Emergencies:**
+   - **If SoC <30%:** *"Orléans Supercharger (45 km) has 3 open stalls. 10-minute charge adds 120 km. Stop?"*
+   - **If sudden slowdown:** *"Truck accident ahead (5 km). Rerouting via A71 (+6 km, clear traffic). Decide?"*
+
+### **Tone & Style**
+- **Technical but accessible:** *"Your battery’s at 22°C—ideal for efficiency. Below 10°C, range drops 20%. That’s why I pre-warmed it during charging."*
+- **Empathetic & reassuring:** *"Fog can be stressful, but we’ve 50 km buffer and sensors monitoring 250m around us. I’ll alert you if action’s needed."*
+- **Humorous (if profile fits):** *"Fog lights use 200W—0.0003 Daft Punk songs per km. A necessary sacrifice for safety!"*
+
+### **Rules**
+- **Language:** Match driver’s language (French/English).
+- **Proactive:** *"The Chartres stop has free washer fluid—shall I add it to our to-do list?"*
+- **Transparent:** Explain auto-decisions (e.g., *"Reduced regen to 60% for wet roads—protects tires and battery."*).
+
+**Customization Options:**
+- Add **EV-specific tips** (e.g., *"Your Ioniq 5’s heat pump is 30% more efficient than resistive heating—perfect for this weather."*).
+- Reference **driver’s projects** (e.g., *"Like your Kreyol Keyboard, CNNs balance efficiency and accuracy!"*). -->
 
 ---
 
@@ -1631,6 +1751,39 @@ AI deployment strategies should align with specific automotive use cases, balanc
 # AI Applied to the Automotive Industry
 
 ---
+
+
+# Challenges and Solutions
+
+- **Stellantis × Mistral AI**: Development of an in-vehicle voice assistant with conversational support and natural voice interaction, evolving through OTA updates. | [Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing) |
+- **Stellantis × Qualcomm**: Collaboration on the Snapdragon Digital Chassis, leveraging computing platforms for embedded AI capabilities. | [Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions) |
+
+---
+
+# Recommendations for Directors
+
+- **Priorities:**
+  - Adopt foundation models for voice and data processing applications, when appropriate.
+    - Example: Stellantis is partnering with **Mistral AI** to deploy an in-vehicle voice assistant. ([Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing))
+  - Partner with specialized providers for access to advanced foundation models.
+    - Example: Toyota integrates **NVIDIA DRIVE AGX Orin** for vision and driving assistance systems. ([TechCrunch, 2025](https://techcrunch.com/2025/01/06/toyotas-next-generation-cars-will-be-built-with-nvidias-ai-brains-and-operating-system/))
+  - Invest in fine-tuning and domain adaptation to automotive-specific datasets.
+  - Deploy on embedded or edge platforms to ensure latency, security, and privacy compliance.
+    - Example: Qualcomm Snapdragon Digital Chassis used by Stellantis for embedded AI workloads. ([Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions))
+
+
+---
+# AI Initiatives Summary (2024–2025)
+
+| Focus Area                  | Initiative / Description                                                                                       | Impact / Benefit                                                      | Source |
+|------------------------------|---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|--------|
+| Innovation & Competitiveness | Partnership with **Mistral AI** to leverage foundation models and AI-driven automation for vehicle engineering and customer experience | Enhances data analysis capabilities, accelerates decision-making, supports AI-driven innovation | [GlobeNewswire, 2025](https://www.globenewswire.com/news-release/2025/02/07/3022573/0/en/Stellantis-and-Mistral-AI-Strengthen-Strategic-Partnership-to-Enhance-Customer-Experience-Vehicle-Development-and-Manufacturing.html?utm_source=chatgpt.com) |
+| Cost Reduction               | Deployment of **Autonomous Mobile Robots (AMRs)**, AI-powered robot guidance systems, and digital twins in manufacturing | Improves logistics efficiency, reduces assembly lead times, streamlines factory design; contributes to energy reduction (~23%) | [Manufacturing Today, 2025](https://manufacturing-today.com/news/stellantis-integrates-ai-to-boost-efficiency-and-sustainability-across-global-manufacturing/?utm_source=chatgpt.com) |
+| Customer Satisfaction        | Development of **in-vehicle voice assistants** using foundation models for natural interaction | Provides personalized, conversational support to drivers and passengers | [Stellantis Press Release, 2025](https://www.stellantis.com/en/news/press-releases/2025/february/stellantis-and-mistral-ai-strengthen-strategic-partnership-to-enhance-customer-experience-vehicle-development-and-manufacturing?utm_source=chatgpt.com) |
+| Regulatory Compliance        | Localized AI deployment on embedded platforms and secure processing for privacy and safety | Supports compliance with automotive safety standards and data privacy regulations | [Stellantis Press Release, 2022](https://www.stellantis.com/en/news/press-releases/2022/april/stellantis-and-qualcomm-collaborate-to-power-new-vehicle-platforms-with-snapdragon-digital-chassis-solutions?utm_source=chatgpt.com) |
+
+---
+
 
 # Legacy Code – Retrieval, Documentation & Improvement (e.g., PBC SW)
 
