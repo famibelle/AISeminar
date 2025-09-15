@@ -1353,7 +1353,7 @@ AI deployment strategies should align with specific automotive use cases, balanc
 # YOLO in action
 
 <video controls>
-  <source src="/AISeminar/IMGs/HitachiAstemoWinterTest_SmartBrakeMovie2022_yolo_detected.mov" type="video/mp4">
+  <source src="/AISeminar/IMGs/HitachiAstemoWinterTest_SmartBrakeMovie2022_yolo_detected.mov" type="video/quicktime">
   Votre navigateur ne supporte pas la balise vidéo.
 </video>
 
