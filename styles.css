@@ -1,0 +1,133 @@
+/* Styles personnalisés pour AI Seminar */
+
+/* Classe pour réduire la taille des slides */
+.smaller {
+  font-size: 0.7em;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+/* Configuration des slides */
+.reveal .slides section {
+  text-align: left;
+  overflow: hidden; /* Cache les débordements au lieu de les faire défiler */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.reveal p,
+.reveal ul,
+.reveal ol,
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  text-align: left;
+}
+
+/* Évite les conflits entre highlight.js et mermaid */
+.mermaid {
+  all: unset;
+  display: block;
+}
+
+/* Bouton de basculement de thème */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: scale(1.05);
+}
+
+/* Styles pour le mode clair */
+.reveal.light-theme {
+  background: white;
+  color: #333;
+}
+
+.reveal.light-theme .slides section {
+  color: #333;
+}
+
+.reveal.light-theme h1,
+.reveal.light-theme h2,
+.reveal.light-theme h3,
+.reveal.light-theme h4,
+.reveal.light-theme h5,
+.reveal.light-theme h6 {
+  color: #333;
+}
+
+.reveal.light-theme .theme-toggle {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border-color: #333;
+}
+
+.reveal.light-theme .theme-toggle:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Style pour les vidéos et iframes */
+.reveal video,
+.reveal iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Amélioration de l'affichage des codes */
+.reveal pre {
+  font-size: 0.55em;
+  line-height: 1.2;
+}
+
+.reveal code {
+  font-family: 'Fira Code', 'Monaco', 'Menlo', monospace;
+}
+
+/* Style pour les listes et tableaux */
+.reveal ul, .reveal ol {
+  margin-left: 1em;
+}
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+
+/* Responsive design pour petits écrans */
+@media (max-width: 768px) {
+  .smaller {
+    font-size: 0.6em;
+  }
+  
+  .theme-toggle {
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}

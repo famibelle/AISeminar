@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>AI Seminar for Automotive Experts</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reset.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/monokai.css">
+		<style>
+			.smaller {
+				font-size: 0.7em;
+    				line-height: 1.4;
+    				word-wrap: break-word;
+  			}
+		</style>
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+		<style>
+		.reveal .slides section {
+			text-align: left;
+			overflow: hidden; /* Cache les débordements au lieu de les faire défiler */
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			height: 100%;
+			box-sizing: border-box;
+		}
+		.reveal p,
+		.reveal ul,
+		.reveal ol,
+		.reveal h1,
+		.reveal h2,
+		.reveal h3 {
+			text-align: left;
+		}
+		/* Évite les conflits entre highlight.js et mermaid */
+		.mermaid {
+			all: unset;
+			display: block;
+		}
+		
+		/* Bouton de basculement de thème */
+		.theme-toggle {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			z-index: 1000;
+			background: rgba(0, 0, 0, 0.7);
+			color: white;
+			border: 2px solid #ccc;
+			border-radius: 25px;
+			padding: 10px 15px;
+			cursor: pointer;
+			font-size: 14px;
+			transition: all 0.3s ease;
+		}
+		
+		.theme-toggle:hover {
+			background: rgba(0, 0, 0, 0.9);
+			transform: scale(1.05);
+		}
+		
+		/* Styles pour le mode clair */
+		.reveal.light-theme {
+			background: white;
+			color: #333;
+		}
+		
+		.reveal.light-theme .slides section {
+			color: #333;
+		}
+		
+		.reveal.light-theme h1,
+		.reveal.light-theme h2,
+		.reveal.light-theme h3,
+		.reveal.light-theme h4,
+		.reveal.light-theme h5,
+		.reveal.light-theme h6 {
+			color: #333;
+		}
+		
+		.reveal.light-theme .theme-toggle {
+			background: rgba(255, 255, 255, 0.9);
+			color: #333;
+			border-color: #333;
+		}
+		
+		.reveal.light-theme .theme-toggle:hover {
+			background: rgba(255, 255, 255, 1);
+		}
+		</style>
+
+	</head>
+	<body>
+		<!-- Bouton de basculement de thème -->
+		<button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+		
+		<div class="reveal">
+			<div class="slides">
+			  <section class="smaller" data-markdown="ai_seminar_slides.md"
+					   data-separator="^---$"
+					   data-separator-vertical="^--$"
+					   data-charset="utf-8">
+			  </section>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.min.js"></script>
+		<script>
+		  // Fonction pour ajuster dynamiquement la taille du texte pour qu'il s'adapte au slide
+		  function adjustFontSize() {
+		    document.querySelectorAll('.slides section').forEach(slide => {
+		      let fontSize = 100; // Commence à 100%
+		      slide.style.fontSize = fontSize + '%';
+		      
+		      // Réduit la taille jusqu'à ce que le contenu s'ajuste complètement
+		      while (slide.scrollHeight > slide.clientHeight && fontSize > 10) {
+		        fontSize -= 2;
+		        slide.style.fontSize = fontSize + '%';
+		      }
+		    });
+		  }
+		  
+		  // Fonction pour basculer entre les thèmes
+		  function toggleTheme() {
+		    const reveal = document.querySelector('.reveal');
+		    const isLightTheme = reveal.classList.contains('light-theme');
+		    
+		    if (isLightTheme) {
+		      // Passer au mode sombre
+		      reveal.classList.remove('light-theme');
+		      localStorage.setItem('reveal-theme', 'dark');
+		      updateMermaidTheme('dark');
+		    } else {
+		      // Passer au mode clair
+		      reveal.classList.add('light-theme');
+		      localStorage.setItem('reveal-theme', 'light');
+		      updateMermaidTheme('light');
+		    }
+		  }
+		  
+		  // Stockage global pour les définitions Mermaid originales
+		  let mermaidDefinitions = new Map();
+		  
+		  // Fonction pour mettre à jour le thème Mermaid
+		  function updateMermaidTheme(theme) {
+		    // Ne pas essayer de re-rendre si aucun diagramme n'existe
+		    const mermaidElements = document.querySelectorAll('.mermaid');
+		    if (mermaidElements.length === 0) return;
+		    
+		    // Configuration du thème
+		    const mermaidConfig = {
+		      startOnLoad: false,
+		      logLevel: 'error', // Réduire les logs pour éviter le spam
+		      securityLevel: 'loose',
+		      flowchart: { 
+		        htmlLabels: false,
+		        useMaxWidth: true
+		      }
+		    };
+		    
+		    if (theme === 'light') {
+		      mermaidConfig.theme = 'default';
+		      mermaidConfig.themeVariables = {
+		        primaryColor: '#333333',
+		        primaryTextColor: '#333333',
+		        primaryBorderColor: '#333333',
+		        lineColor: '#333333'
+		      };
+		    } else {
+		      mermaidConfig.theme = 'dark';
+		      mermaidConfig.themeVariables = {
+		        primaryColor: '#ffffff',
+		        primaryTextColor: '#ffffff',
+		        primaryBorderColor: '#ffffff',
+		        lineColor: '#ffffff'
+		      };
+		    }
+		    
+		    // Réinitialiser Mermaid avec la nouvelle configuration
+		    mermaid.initialize(mermaidConfig);
+		    
+		    // Re-rendre chaque diagramme individuellement
+		    mermaidElements.forEach((element, index) => {
+		      const originalDefinition = mermaidDefinitions.get(element.id);
+		      if (originalDefinition) {
+		        // Nettoyer l'élément
+		        element.innerHTML = '';
+		        element.removeAttribute('data-processed');
+		        
+		        // Re-créer le contenu
+		        element.textContent = originalDefinition;
+		        
+		        // Re-rendre avec un délai pour éviter les conflits
+		        setTimeout(() => {
+		          try {
+		            mermaid.init(undefined, `#${element.id}`);
+		          } catch (error) {
+		            console.warn('Erreur lors du re-rendu Mermaid:', error);
+		            // En cas d'erreur, restaurer le texte original
+		            element.textContent = originalDefinition;
+		          }
+		        }, index * 50); // Délai progressif pour chaque diagramme
+		      }
+		    });
+		    
+		    // Re-rendre MathJax après le changement de thème
+		    setTimeout(() => {
+		      if (window.MathJax) {
+		        MathJax.typesetPromise();
+		      }
+		    }, (mermaidElements.length * 50) + 200);
+		  }
+		  
+		  // Restaurer le thème sauvegardé au chargement
+		  function restoreTheme() {
+		    const savedTheme = localStorage.getItem('reveal-theme') || 'dark';
+		    const reveal = document.querySelector('.reveal');
+		    
+		    if (savedTheme === 'light') {
+		      reveal.classList.add('light-theme');
+		    }
+		  }
+		  
+		  document.querySelectorAll('.slides section').forEach(slide => {
+		    slide.classList.add('smaller');
+		  });
+		  
+		  // Ajuste au chargement et lors du redimensionnement
+		  window.addEventListener('resize', adjustFontSize);
+		  
+		  // Restaurer le thème au chargement de la page
+		  document.addEventListener('DOMContentLoaded', restoreTheme);
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/markdown/markdown.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/highlight.js"></script>
+		<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<script>
+  // Configuration de MathJax pour détecter les équations LaTeX
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+      ignoreHtmlClass: 'tex2jax_ignore',
+      processHtmlClass: 'tex2jax_process'
+    },
+    startup: {
+      ready: () => {
+        console.log('MathJax is loaded, but not yet initialized');
+        MathJax.startup.defaultReady();
+        console.log('MathJax is initialized, and the initial typeset is queued');
+      }
+    }
+  };
+</script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				width: "100%",
+				height: "100%",
+				margin: 0.05, // Marges réduites pour plus d'espace
+				minScale: 0.1, // Échelle minimale plus petite
+				maxScale: 1.0, // Échelle maximale limitée
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			
+			// Configuration de Mermaid après l'initialisation de Reveal
+			mermaid.initialize({
+				startOnLoad: false, // Désactivé pour éviter les conflits
+				theme: 'dark', // Correspond au thème noir de Reveal.js
+				logLevel: 'debug',
+				securityLevel: 'loose', // Permet plus de flexibilité
+				flowchart: { 
+					htmlLabels: false,
+					useMaxWidth: true
+				},
+				themeVariables: {
+					primaryColor: '#ffffff',
+					primaryTextColor: '#ffffff',
+					primaryBorderColor: '#ffffff',
+					lineColor: '#ffffff'
+				}
+			});
+			
+			// Fonction pour traiter les diagrammes Mermaid
+			function processMermaidDiagrams() {
+				// Cherche différents sélecteurs possibles pour les blocs Mermaid
+				const selectors = [
+					'code.language-mermaid',
+					'code[class*="mermaid"]',
+					'pre code.language-mermaid',
+					'pre code[class*="mermaid"]'
+				];
+				
+				let processed = 0;
+				selectors.forEach(selector => {
+					document.querySelectorAll(selector).forEach((element, index) => {
+						const graphDefinition = element.textContent.trim();
+						if (graphDefinition && !element.dataset.processed) {
+							const graphDiv = document.createElement('div');
+							graphDiv.className = 'mermaid';
+							graphDiv.id = 'mermaid-' + processed;
+							graphDiv.textContent = graphDefinition;
+							
+							// Stocker la définition originale pour le changement de thème
+							mermaidDefinitions.set(graphDiv.id, graphDefinition);
+							
+							// Marque l'élément comme traité
+							element.dataset.processed = 'true';
+							
+							// Remplace le code par le div mermaid
+							const parentPre = element.closest('pre');
+							if (parentPre) {
+								parentPre.parentNode.replaceChild(graphDiv, parentPre);
+							} else {
+								element.parentNode.replaceChild(graphDiv, element);
+							}
+							processed++;
+						}
+					});
+				});
+				
+				// Initialise Mermaid après avoir créé les divs
+				if (processed > 0) {
+					setTimeout(() => {
+						try {
+							mermaid.init(undefined, '.mermaid');
+						} catch (error) {
+							console.warn('Erreur lors de l\'initialisation Mermaid:', error);
+						}
+					}, 100);
+				}
+			}
+			
+			// Ajuste la taille après l'initialisation de Reveal
+			Reveal.addEventListener('ready', function() {
+				setTimeout(() => {
+					processMermaidDiagrams();
+					adjustFontSize();
+					// Re-rendre MathJax après le chargement complet
+					if (window.MathJax) {
+						MathJax.typesetPromise();
+					}
+				}, 500);
+			});
+			
+			Reveal.addEventListener('slidechanged', function() {
+				setTimeout(() => {
+					adjustFontSize();
+					// Re-rendre MathJax lors du changement de slide
+					if (window.MathJax) {
+						MathJax.typesetPromise();
+					}
+				}, 100);
+			});		</script>
+	</body>
+</html>

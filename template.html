@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>{{{title}}}</title>
+
+		{{{themeCSS}}}
+		{{{highlightThemeCSS}}}
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="styles.css">
+		
+		<!-- Mermaid CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+		
+		<!-- Styles intégrés du template original -->
+		<style>
+			.smaller {
+				font-size: 0.7em;
+    				line-height: 1.4;
+    				word-wrap: break-word;
+  			}
+			
+			.reveal .slides section {
+				text-align: left;
+				overflow: hidden;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				height: 100%;
+				box-sizing: border-box;
+			}
+			.reveal p,
+			.reveal ul,
+			.reveal ol,
+			.reveal h1,
+			.reveal h2,
+			.reveal h3 {
+				text-align: left;
+			}
+			/* Évite les conflits entre highlight.js et mermaid */
+			.mermaid {
+				all: unset;
+				display: block;
+			}
+			
+			/* Bouton de basculement de thème - PRIORITÉ ABSOLUE */
+			.theme-toggle {
+				position: fixed !important;
+				top: 20px !important;
+				right: 20px !important;
+				z-index: 9999 !important;
+				background: rgba(0, 0, 0, 0.8) !important;
+				color: white !important;
+				border: 2px solid #ccc !important;
+				border-radius: 25px !important;
+				padding: 10px 15px !important;
+				cursor: pointer !important;
+				font-size: 14px !important;
+				transition: all 0.3s ease !important;
+				display: block !important;
+				visibility: visible !important;
+			}
+			
+			.theme-toggle:hover {
+				background: rgba(0, 0, 0, 0.9) !important;
+				transform: scale(1.05) !important;
+			}
+			
+			/* Styles pour le mode clair */
+			.reveal.light-theme {
+				background: white;
+				color: #333;
+			}
+			
+			.reveal.light-theme .slides section {
+				color: #333;
+			}
+			
+			.reveal.light-theme h1,
+			.reveal.light-theme h2,
+			.reveal.light-theme h3,
+			.reveal.light-theme h4,
+			.reveal.light-theme h5,
+			.reveal.light-theme h6 {
+				color: #333;
+			}
+			
+			.reveal.light-theme .theme-toggle {
+				background: rgba(255, 255, 255, 0.9);
+				color: #333;
+				border-color: #333;
+			}
+			
+			.reveal.light-theme .theme-toggle:hover {
+				background: rgba(255, 255, 255, 1);
+			}
+		</style>
+
+	</head>
+	<body>
+		<!-- Bouton de basculement de thème - VISIBLE EN PRIORITÉ -->
+		<button class="theme-toggle" onclick="toggleTheme()" style="position: fixed; top: 20px; right: 20px; z-index: 9999; background: rgba(0, 0, 0, 0.8); color: white; border: 2px solid #ccc; border-radius: 25px; padding: 10px 15px; cursor: pointer; font-size: 14px;">🌓</button>
+		
+		<div class="reveal">
+			<div class="slides">{{{slides}}}</div>
+		</div>
+
+		<script src="{{{revealJSPath}}}"></script>
+		
+		<!-- Configuration MathJax -->
+		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<script>
+		  window.MathJax = {
+		    tex: {
+		      inlineMath: [['$', '$'], ['\\(', '\\)']],
+		      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+		      processEscapes: true,
+		      processEnvironments: true
+		    },
+		    options: {
+		      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+		      ignoreHtmlClass: 'tex2jax_ignore',
+		      processHtmlClass: 'tex2jax_process'
+		    },
+		    startup: {
+		      ready: () => {
+		        console.log('MathJax is loaded, but not yet initialized');
+		        MathJax.startup.defaultReady();
+		        console.log('MathJax is initialized, and the initial typeset is queued');
+		      }
+		    }
+		  };
+		</script>
+
+		<!-- Fonction de basculement de thème INLINE -->
+		<script>
+		  function toggleTheme() {
+		    console.log('Toggle theme clicked!');
+		    const reveal = document.querySelector('.reveal');
+		    const isLightTheme = reveal.classList.contains('light-theme');
+		    
+		    if (isLightTheme) {
+		      reveal.classList.remove('light-theme');
+		      localStorage.setItem('reveal-theme', 'dark');
+		      console.log('Switched to dark theme');
+		    } else {
+		      reveal.classList.add('light-theme');
+		      localStorage.setItem('reveal-theme', 'light');
+		      console.log('Switched to light theme');
+		    }
+		  }
+		  
+		  // Restaurer le thème au chargement
+		  document.addEventListener('DOMContentLoaded', function() {
+		    const savedTheme = localStorage.getItem('reveal-theme') || 'dark';
+		    const reveal = document.querySelector('.reveal');
+		    
+		    if (savedTheme === 'light') {
+		      reveal.classList.add('light-theme');
+		    }
+		    
+		    console.log('Theme restored:', savedTheme);
+		  });
+		</script>
+
+		<!-- Custom JavaScript -->
+		<script src="scripts.js"></script>
+		
+		<script>
+		  // Configuration Reveal.js
+		  {{{revealConfig}}}
+		</script>
+	</body>
+</html>

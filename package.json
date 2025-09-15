@@ -1,0 +1,8 @@
+{
+  "name": "ai-seminar",
+  "version": "1.0.0",
+  "description": "Présentation reveal.js portable",
+  "scripts": {
+    "start": "npx reveal-md ai_seminar_slides.md --watch"
+  }
+}
