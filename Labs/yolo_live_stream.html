@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOLO Live Stream</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+        #container {
+            position: relative;
+            max-width: 100%;
+            max-height: 100vh;
+            border: 3px solid #00ff00;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+            background: transparent;
+        }
+        
+        #yolo-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        #status {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #00ff00;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        #info {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #00ff00;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        
+        .blink {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="yolo-image" 
+             src="yolo_captures/yolo_live.jpg" 
+             alt="YOLO Detection en temps réel">
+        <div id="status">
+            <span class="blink">🔴</span> YOLO MAX SPEED @ 27 FPS (RTX 4060)
+        </div>
+        <div id="info">
+            Status: <span id="status">⏳ Démarrage...</span> | 
+            Refresh: <span id="refresh-count">0</span> | 
+            <span id="timestamp">--:--:--</span> |
+            FPS: <span id="fps-display">0</span>
+        </div>
+    </div>
+
+    <script>
+        let refreshCount = 0;
+        let lastImageSize = 0;
+        let fpsCounter = 0;
+        let fpsStartTime = Date.now();
+        let refreshInterval = null;
+        let errorCount = 0;
+        let isActive = true;
+        
+        function refreshYOLOImage() {
+            if (!isActive) return;
+            
+            const img = document.getElementById('yolo-image');
+            const refreshCountElement = document.getElementById('refresh-count');
+            const timestampElement = document.getElementById('timestamp');
+            const fpsElement = document.getElementById('fps-display');
+            const statusElement = document.getElementById('status');
+            
+            if (img) {
+                // Créer une nouvelle image pour forcer le rechargement
+                const newImg = new Image();
+                const timestamp = Date.now();
+                const randomId = Math.random().toString(36).substring(2, 8);
+                
+                newImg.onload = function() {
+                    // Reset error count on successful load
+                    errorCount = 0;
+                    
+                    // Vérifier si l'image a changé (taille différente)
+                    const newSize = newImg.naturalWidth * newImg.naturalHeight;
+                    if (newSize !== lastImageSize) {
+                        lastImageSize = newSize;
+                        console.log('Image mise à jour:', newSize);
+                    }
+                    
+                    // Remplacer l'image
+                    img.src = newImg.src;
+                    
+                    // Mettre à jour les stats
+                    refreshCount++;
+                    refreshCountElement.textContent = refreshCount;
+                    timestampElement.textContent = new Date().toLocaleTimeString();
+                    
+                    // Calculer FPS de rafraîchissement
+                    fpsCounter++;
+                    const currentTime = Date.now();
+                    const elapsed = currentTime - fpsStartTime;
+                    if (elapsed >= 1000) {
+                        const fps = Math.round((fpsCounter * 1000) / elapsed);
+                        fpsElement.textContent = fps;
+                        fpsCounter = 0;
+                        fpsStartTime = currentTime;
+                    }
+                    
+                    // Status actif
+                    statusElement.innerHTML = '<span class="blink">🔴</span> YOLO MAX SPEED @ 27 FPS (RTX 4060)';
+                };
+                
+                newImg.onerror = function() {
+                    errorCount++;
+                    console.warn(`Erreur chargement image YOLO (${errorCount}/5)`);
+                    
+                    // Arrêter après 5 erreurs consécutives
+                    if (errorCount >= 5) {
+                        console.log('Script Python probablement arrêté - Arrêt du refresh automatique');
+                        stopRefresh();
+                        statusElement.innerHTML = '⏸️ YOLO ARRÊTÉ - Script Python non disponible';
+                        fpsElement.textContent = '0';
+                    }
+                };
+                
+                // Forcer le rechargement avec paramètres anti-cache maximaux
+                newImg.src = `yolo_captures/yolo_live.jpg?t=${timestamp}&r=${randomId}&v=${refreshCount}&nocache=1`;
+            }
+        }
+        
+        function startRefresh() {
+            if (refreshInterval) return;
+            isActive = true;
+            errorCount = 0;
+            refreshInterval = setInterval(refreshYOLOImage, 37);
+            console.log('YOLO refresh démarré - 27 FPS');
+        }
+        
+        function stopRefresh() {
+            if (refreshInterval) {
+                clearInterval(refreshInterval);
+                refreshInterval = null;
+            }
+            isActive = false;
+            console.log('YOLO refresh arrêté');
+        }
+        
+        // Boutons de contrôle
+        document.addEventListener('keydown', function(event) {
+            if (event.key === ' ') { // Barre d'espace
+                event.preventDefault();
+                if (isActive) {
+                    stopRefresh();
+                } else {
+                    startRefresh();
+                }
+            }
+        });
+        
+        // Vérifier si on est dans un iframe et si autostart=false
+        const urlParams = new URLSearchParams(window.location.search);
+        const isInIframe = window.parent !== window;
+        const autostart = urlParams.get('autostart') !== 'false';
+        
+        // Refresh initial seulement si pas dans iframe ou si autostart explicite
+        if (!isInIframe || autostart) {
+            refreshYOLOImage();
+            startRefresh();
+        } else {
+            console.log('YOLO en mode iframe - Démarrage manuel requis (barre d\'espace)');
+            statusElement.innerHTML = '⏸️ YOLO EN ATTENTE - Appuyez sur [ESPACE] pour démarrer';
+        }
+        
+        console.log('YOLO MAX SPEED Stream démarré - 27 FPS (RTX 4060 optimisé)');
+    </script>
+</body>
+</html>
