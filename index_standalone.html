@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>AI Seminar for Automotive Experts</title>
+		<link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reset.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
@@ -158,8 +159,16 @@
 		      startOnLoad: false,
 		      logLevel: 'error', // Réduire les logs pour éviter le spam
 		      securityLevel: 'loose',
+		      suppressErrors: true, // Supprimer les erreurs de rendu
 		      flowchart: { 
 		        htmlLabels: false,
+		        useMaxWidth: true,
+		        curve: 'linear'
+		      },
+		      er: {
+		        useMaxWidth: true
+		      },
+		      gitgraph: {
 		        useMaxWidth: true
 		      }
 		    };
@@ -199,11 +208,13 @@
 		        // Re-rendre avec un délai pour éviter les conflits
 		        setTimeout(() => {
 		          try {
-		            mermaid.init(undefined, `#${element.id}`);
+		            mermaid.run({nodes: document.querySelectorAll(`#${element.id}`), suppressErrors: true});
 		          } catch (error) {
 		            console.warn('Erreur lors du re-rendu Mermaid:', error);
 		            // En cas d'erreur, restaurer le texte original
 		            element.textContent = originalDefinition;
+		            element.style.whiteSpace = 'pre';
+		            element.style.fontFamily = 'monospace';
 		          }
 		        }, index * 50); // Délai progressif pour chaque diagramme
 		      }
@@ -285,10 +296,18 @@
 			mermaid.initialize({
 				startOnLoad: false, // Désactivé pour éviter les conflits
 				theme: 'dark', // Correspond au thème noir de Reveal.js
-				logLevel: 'debug',
+				logLevel: 'error', // Réduire les logs pour éviter les warnings
 				securityLevel: 'loose', // Permet plus de flexibilité
+				suppressErrors: true, // Supprimer les erreurs de rendu non critiques
 				flowchart: { 
 					htmlLabels: false,
+					useMaxWidth: true,
+					curve: 'linear' // Utiliser des courbes simples
+				},
+				er: {
+					useMaxWidth: true
+				},
+				gitgraph: {
 					useMaxWidth: true
 				},
 				themeVariables: {
@@ -341,9 +360,25 @@
 				if (processed > 0) {
 					setTimeout(() => {
 						try {
-							mermaid.init(undefined, '.mermaid');
+							const mermaidElements = document.querySelectorAll('.mermaid');
+							if (mermaidElements.length > 0) {
+								mermaid.run({nodes: mermaidElements, suppressErrors: true});
+							}
 						} catch (error) {
 							console.warn('Erreur lors de l\'initialisation Mermaid:', error);
+							// En cas d'erreur, essayer de rendre individuellement
+							document.querySelectorAll('.mermaid').forEach((element, index) => {
+								setTimeout(() => {
+									try {
+										mermaid.run({nodes: [element], suppressErrors: true});
+									} catch (individualError) {
+										console.warn(`Erreur diagramme ${index}:`, individualError);
+										// Afficher le contenu original en cas d'erreur
+										element.style.whiteSpace = 'pre';
+										element.style.fontFamily = 'monospace';
+									}
+								}, index * 200);
+							});
 						}
 					}, 100);
 				}

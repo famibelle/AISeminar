@@ -90,6 +90,9 @@
         let errorCount = 0;
         let isActive = true;
         
+        // Éléments DOM globaux
+        const statusElement = document.getElementById('status');
+        
         function refreshYOLOImage() {
             if (!isActive) return;
             
@@ -97,7 +100,6 @@
             const refreshCountElement = document.getElementById('refresh-count');
             const timestampElement = document.getElementById('timestamp');
             const fpsElement = document.getElementById('fps-display');
-            const statusElement = document.getElementById('status');
             
             if (img) {
                 // Créer une nouvelle image pour forcer le rechargement
