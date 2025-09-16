@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>AI Workshops for Automotive Experts</title>
+		<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reset.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/black.css">
+
+		<!-- Theme utilisé pour le code -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/monokai.css">
+		
+		<!-- MathJax -->
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		
+		<!-- Mermaid -->
+		<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+
+		<style>
+			/* Styles personnalisés pour les workshops */
+			.reveal .slides section {
+				text-align: left;
+				font-size: 0.9em;
+			}
+			
+			.reveal h1, .reveal h2, .reveal h3 {
+				text-align: center;
+				color: #42affa;
+			}
+			
+			.reveal .workshop-objective {
+				background: rgba(66, 175, 250, 0.1);
+				border-left: 4px solid #42affa;
+				padding: 20px;
+				margin: 20px 0;
+				border-radius: 5px;
+			}
+			
+			.reveal .workshop-list {
+				list-style-type: none;
+				padding-left: 0;
+			}
+			
+			.reveal .workshop-list li {
+				background: rgba(255, 255, 255, 0.05);
+				margin: 10px 0;
+				padding: 15px;
+				border-radius: 5px;
+				border-left: 3px solid #00ff00;
+				transition: all 0.3s ease;
+			}
+			
+			.reveal .workshop-list li:hover {
+				background: rgba(255, 255, 255, 0.1);
+				transform: translateX(5px);
+			}
+			
+			.reveal .workshop-function {
+				font-style: italic;
+				color: #888;
+				margin-left: 20px;
+				font-size: 0.9em;
+			}
+			
+			.reveal .debrief-section {
+				background: rgba(255, 193, 7, 0.1);
+				border: 2px solid #ffc107;
+				padding: 20px;
+				border-radius: 10px;
+				margin-top: 30px;
+			}
+			
+			.theme-toggle {
+				position: fixed;
+				top: 20px;
+				right: 20px;
+				z-index: 1000;
+				background: rgba(255, 255, 255, 0.1);
+				border: none;
+				border-radius: 50%;
+				width: 50px;
+				height: 50px;
+				font-size: 24px;
+				cursor: pointer;
+				transition: all 0.3s ease;
+			}
+			
+			.theme-toggle:hover {
+				background: rgba(255, 255, 255, 0.2);
+				transform: rotate(180deg);
+			}
+			
+			/* Thème clair */
+			.reveal.light-theme {
+				background: #ffffff;
+				color: #333333;
+			}
+			
+			.reveal.light-theme .slides section {
+				background: transparent;
+			}
+			
+			.reveal.light-theme h1, 
+			.reveal.light-theme h2, 
+			.reveal.light-theme h3 {
+				color: #2c5aa0;
+			}
+			
+			.reveal.light-theme .workshop-objective {
+				background: rgba(44, 90, 160, 0.1);
+				border-left-color: #2c5aa0;
+			}
+			
+			.reveal.light-theme .workshop-list li {
+				background: rgba(0, 0, 0, 0.05);
+				color: #333333;
+				border-left-color: #28a745;
+			}
+			
+			.reveal.light-theme .workshop-list li:hover {
+				background: rgba(0, 0, 0, 0.1);
+			}
+			
+			.reveal.light-theme .debrief-section {
+				background: rgba(255, 193, 7, 0.2);
+				border-color: #e6ac00;
+			}
+			
+			.reveal.light-theme .theme-toggle {
+				background: rgba(0, 0, 0, 0.1);
+				color: #333333;
+			}
+			
+			.reveal.light-theme .theme-toggle:hover {
+				background: rgba(0, 0, 0, 0.2);
+			}
+		</style>
+	</head>
+
+	<body>
+		<button class="theme-toggle" onclick="toggleTheme()" title="Changer de thème">🎨</button>
+		
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown="workshops_slides.md" data-separator="^---$" data-separator-vertical="^--$">
+				</section>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/markdown/markdown.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/highlight.js"></script>
+
+		<script>
+			// Configuration de Reveal.js
+			Reveal.initialize({
+				hash: true,
+				transition: 'slide',
+				transitionSpeed: 'default',
+				backgroundTransition: 'fade',
+				controls: true,
+				progress: true,
+				center: true,
+				touch: true,
+				loop: false,
+				rtl: false,
+				navigationMode: 'default',
+				shuffle: false,
+				fragments: true,
+				fragmentInURL: false,
+				embedded: false,
+				help: true,
+				pause: true,
+				showNotes: false,
+				autoPlayMedia: null,
+				preloadIframes: null,
+				autoAnimate: true,
+				autoAnimateMatcher: null,
+				autoAnimateEasing: 'ease',
+				autoAnimateDuration: 1.0,
+				autoAnimateUnmatched: true,
+				autoSlide: false,
+				autoSlideStoppable: true,
+				autoSlideMethod: null,
+				defaultTiming: null,
+				mouseWheel: false,
+				previewLinks: false,
+				postMessage: true,
+				postMessageEvents: false,
+				focusBodyOnPageVisibilityChange: true,
+				keyboard: true,
+				overview: true,
+				disableLayout: false,
+				touch: true,
+				loop: false,
+				rtl: false,
+				navigationMode: 'default',
+				shuffle: false,
+				fragments: true,
+				fragmentInURL: false,
+				embedded: false,
+				help: true,
+				pause: true,
+				showNotes: false,
+				
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			
+			// Configuration de Mermaid
+			mermaid.initialize({
+				startOnLoad: false,
+				theme: 'dark',
+				logLevel: 'error',
+				securityLevel: 'loose',
+				suppressErrors: true,
+				flowchart: { 
+					htmlLabels: false,
+					useMaxWidth: true,
+					curve: 'linear'
+				},
+				themeVariables: {
+					primaryColor: '#ffffff',
+					primaryTextColor: '#ffffff',
+					primaryBorderColor: '#ffffff',
+					lineColor: '#ffffff'
+				}
+			});
+			
+			// Fonction pour traiter les diagrammes Mermaid
+			function processMermaidDiagrams() {
+				let processed = 0;
+				
+				document.querySelectorAll('code.language-mermaid').forEach((codeElement, index) => {
+					const mermaidCode = codeElement.textContent;
+					
+					if (mermaidCode.trim()) {
+						const graphDiv = document.createElement('div');
+						graphDiv.classList.add('mermaid');
+						graphDiv.id = `mermaid-${index}`;
+						graphDiv.textContent = mermaidCode;
+						
+						const parentPre = codeElement.parentNode;
+						if (parentPre && parentPre.tagName === 'PRE') {
+							parentPre.parentNode.replaceChild(graphDiv, parentPre);
+						} else {
+							codeElement.parentNode.replaceChild(graphDiv, codeElement);
+						}
+						processed++;
+					}
+				});
+				
+				if (processed > 0) {
+					setTimeout(() => {
+						try {
+							const mermaidElements = document.querySelectorAll('.mermaid');
+							if (mermaidElements.length > 0) {
+								mermaid.run({nodes: mermaidElements, suppressErrors: true});
+							}
+						} catch (error) {
+							console.warn('Erreur lors de l\'initialisation Mermaid:', error);
+						}
+					}, 100);
+				}
+			}
+			
+			// Fonction de basculement de thème
+			function toggleTheme() {
+				const reveal = document.querySelector('.reveal');
+				const isLight = reveal.classList.contains('light-theme');
+				
+				if (isLight) {
+					reveal.classList.remove('light-theme');
+					localStorage.setItem('workshop-theme', 'dark');
+					updateMermaidTheme('dark');
+				} else {
+					reveal.classList.add('light-theme');
+					localStorage.setItem('workshop-theme', 'light');
+					updateMermaidTheme('light');
+				}
+			}
+			
+			// Fonction pour mettre à jour le thème Mermaid
+			function updateMermaidTheme(theme) {
+				const mermaidConfig = {
+					startOnLoad: false,
+					logLevel: 'error',
+					securityLevel: 'loose',
+					suppressErrors: true,
+					flowchart: { 
+						htmlLabels: false,
+						useMaxWidth: true,
+						curve: 'linear'
+					}
+				};
+				
+				if (theme === 'light') {
+					mermaidConfig.theme = 'default';
+					mermaidConfig.themeVariables = {
+						primaryColor: '#333333',
+						primaryTextColor: '#333333',
+						primaryBorderColor: '#333333',
+						lineColor: '#333333'
+					};
+				} else {
+					mermaidConfig.theme = 'dark';
+					mermaidConfig.themeVariables = {
+						primaryColor: '#ffffff',
+						primaryTextColor: '#ffffff',
+						primaryBorderColor: '#ffffff',
+						lineColor: '#ffffff'
+					};
+				}
+				
+				mermaid.initialize(mermaidConfig);
+				
+				// Re-rendre les diagrammes
+				document.querySelectorAll('.mermaid').forEach((element, index) => {
+					setTimeout(() => {
+						try {
+							mermaid.run({nodes: [element], suppressErrors: true});
+						} catch (error) {
+							console.warn('Erreur lors du re-rendu Mermaid:', error);
+						}
+					}, index * 50);
+				});
+			}
+			
+			// Restaurer le thème sauvegardé
+			function restoreTheme() {
+				const savedTheme = localStorage.getItem('workshop-theme') || 'dark';
+				const reveal = document.querySelector('.reveal');
+				
+				if (savedTheme === 'light') {
+					reveal.classList.add('light-theme');
+				}
+			}
+			
+			// Initialisation
+			Reveal.addEventListener('ready', function() {
+				setTimeout(() => {
+					processMermaidDiagrams();
+					restoreTheme();
+					
+					// MathJax
+					if (window.MathJax) {
+						MathJax.typesetPromise();
+					}
+				}, 500);
+			});
+			
+			// Restaurer le thème au chargement
+			document.addEventListener('DOMContentLoaded', restoreTheme);
+		</script>
+	</body>
+</html>

@@ -1276,6 +1276,14 @@ AI deployment strategies should align with specific automotive use cases, balanc
 # <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Computer Vision & Multimodality</div>
 
 ---
+# YOLO
+
+## **Y**ou
+## **O**nly
+## **L**ook
+## **O**nce
+---
+
 
 ## Object Detection (YOLO/R-CNN)
 ![Object Detection](https://cv-tricks.com/wp-content/uploads/2017/12/Object-Detection-for-outdoor-cv-tricks.jpg)
@@ -2021,85 +2029,98 @@ Automated inspection system allows 100% test coverage of brake pads.
 
 ---
 
-# Key Value for OEMs & Suppliers
+# The Impact of AI on Automotive Testing, Simulation, and Performance
 
-<custom-element data-json="%7B%22type%22%3A%22table-metadata%22%2C%22attributes%22%3A%7B%22title%22%3A%22Comparative%20Synthesis%3A%20Traditional%20Processes%20vs.%20AI-Augmented%20Workflows%22%7D%7D" />
-
-| Metric                 | Traditional Process                        | AI-Augmented Workflow                        | Main Source(s)                                                                                                                                                                                                 |
-|------------------------|--------------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Time to Market         | 12–24 months (varies by complexity)        | 13–25% reduction (e.g., Renault –25%)       | [Renault/La Libre](https://www.lalibre.be/economie/entreprises-startup/2025/07/07/design-ia-et-crash-tests-virtuels-en-accelere-renault-nous-devoile-ses-secrets-de-fabrication-RWGFR34UL5HIPE263XUUXEZOBI/)                     |
-| Prototyping Cost       | High costs due to physical prototypes      | 20–53% reduction via AI simulation           | [Renault/La Libre](https://www.lalibre.be/economie/entreprises-startup/2025/07/07/design-ia-et-crash-tests-virtuels-en-accelere-renault-nous-devoile-ses-secrets-de-fabrication-RWGFR34UL5HIPE263XUUXEZOBI/)                     |
-| NVH Complaint Rate     | Higher complaint rates, late detection     | Up to 60% reduction through predictive analysis | [Automotive Quality](https://www.automotivequal.com/artificial-intelligence-in-quality-management-case-studies/), [SAE International](https://www.sae.org/publications/technical-papers/content/2024-01-2927/)                                                      |
-| Thermal Fade Testing   | Many physical tests, time-consuming & costly | 50–80% reduction in physical tests, >95% correlation | [SAE International](https://www.sae.org/publications/technical-papers/content/2025-01-0130/), [EikoSim](https://eikosim.com/category/etudes-cas/feed/), [CORDIS/EU](https://cordis.europa.eu/article/id/444119-advanced-algorithms-improve-electric-vehicle-efficiency/fr) |
+| Metric                     | Traditional Process                        | AI-Augmented Workflow                                      | Main Source(s)                                                                                                                                                                                                 |
+|----------------------------|--------------------------------------------|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| NVH Complaint Rate         | Higher complaint rates, late detection     | Up to 60% reduction through predictive analysis             | [Automotive Quality](https://www.automotivequal.com/artificial-intelligence-in-quality-management-case-studies/), [SAE International](https://www.sae.org/publications/technical-papers/content/2024-01-2927/)                                                      |
+| Crash Simulation Accuracy  | Physics-driven solvers, time-consuming     | Reduction in simulation time by 3 orders of magnitude, >98% accuracy | [CORDIS/EU - UPSCALE Project](https://cordis.europa.eu/article/id/444119-advanced-algorithms-improve-electric-vehicle-efficiency/fr)                                                                                     |
 
 
 ---
+# AI as a Lever for Innovation in the Automotive Industry
 
-# Practical Implementation
+**Key Opportunities:**
+- **Process Optimization:** Cost and time reduction (e.g., 50% faster prototyping).
+- **Safety Enhancement:** Predictive maintenance, traffic sign recognition, and voice-assisted driving.
+- **User Experience:** Personalized in-car interactions and comfort (e.g., advanced voice assistants).
+- **Sustainability:** Material optimization and waste reduction through AI-driven design.
 
-**Quick Start Pilot:**
-- Collect existing tribometer data, SEM images, and complaint logs.
-- Train a model to predict wear rate (target: <10% error).
-- Validate top 5 AI-recommended formulations with physical tests.
+---
+# Challenges and Future Outlook
 
-**Tech Stack:**
-- Python (scikit-learn, TensorFlow)
-- COMSOL Multiphysics (digital twins)
-- AWS SageMaker (scalable ML)
+**Current Challenges:**
+- Data quality and system interoperability.
+- User acceptance and ethical considerations (e.g., algorithm transparency).
+- Integration with existing production lines.
 
-**Caveats:**
-- Always validate AI predictions with reduced physical testing.
-- Focus on safety-critical applications (e.g., EV regenerative braking).
+**Future Perspectives:**
+- Autonomous and connected vehicles.
+- Collaboration between automakers and tech startups.
+- Regulatory frameworks and standardization.
+
+---
+# Call to Action: Launching Your AI Project in Automotive
+
+<div>
+
+**Where to Start?**
+1. **Define a Clear Problem:**
+   - Focus on a specific pain point (e.g., reducing brake pad wear, improving voice recognition accuracy).
+   - Ensure the problem is measurable and aligned with business goals.
+
+2. **Secure High-Quality Data:**
+   - Collect relevant, clean, and labeled data in sufficient volume.
+   - Leverage existing datasets or invest in data collection/annotation.
+
+3. **Build or Partner:**
+   - Develop in-house expertise or collaborate with AI specialists.
+   - Use open-source tools or cloud platforms (e.g., AWS SageMaker, Google Vertex AI).
+
+**Pro Tip:**
+*"Success in AI starts with a well-defined problem and high-quality data—scale comes later."*
+
+**Resources:**
+- Data platforms: Kaggle, internal databases, IoT sensors
+- AI tools: TensorFlow, PyTorch, Hugging Face
+- Cloud services: AWS, Google Cloud, Azure
 
 ---
 
+# 🛠️ Practical Workshops
 
-**Points clés à souligner:**
-- L’IA ne remplace pas les experts, mais élimine 95% des impasses et accélère l’innovation.
-- Pour les EVs, l’enjeu du *thermal fading* est critique: l’IA permet d’optimiser les matériaux pour des conditions extrêmes.
-- **Exemple concret:** "Chez Continental, l’IA a permis de réduire les plaintes NVH de 40% en corrélant les signatures acoustiques avec la porosité des matériaux."
+## Ready for Hands-on Experience?
 
-**Réponses aux objections:**
-- "Et si les prédictions sont fausses?" → Toujours valider avec un sous-ensemble de tests physiques.
-- "Quel est le ROI?" → Réduction de 50% du temps de développement et des coûts de prototypage.
+### **Part 2 – Interactive Workshops (1h30)**
 
-**Outils recommandés:**
-- Logiciels: ANSYS Granta, Materialise Magics, COMSOL
-- Cloud: AWS SageMaker, Google Vertex AI
-</aside>
+**Access the workshops:**
+📋 **[AI Workshops Interface](workshops_standalone.html)**
 
-## Voice Comfort & Driver Experience: Leveraging AI Models like Kyutai for Next-Gen In-Car Interaction
+**Available workshops:**
+- 🔍 RAG and Technical Documentation
+- 💻 Legacy Code: Documentation & Maintenance  
+- ⚙️ AI-assisted Mechanical Design
+- 📊 Software Specifications & Deviation Matrices
+- 🌡️ Virtual Sensors & Indirect Estimation
+- 🚗 Thermal Monitoring & Vehicle Dynamics
+- 🧪 Testing Optimization & Simulation Enhancement
 
----
-
-# Goal: Enhance In-Car Interaction and Driver Comfort
-
-**Key Components:**
-- **Voice Assistants:** Natural language interfaces for navigation, climate, and infotainment control.
-- **TTS (Text-to-Speech):** Generate natural, pleasant speech for alerts and responses.
-- **STT (Speech-to-Text):** Accurately recognize driver commands and queries.
-- **Speaker Diarization:** Differentiate multiple speakers in a vehicle (driver, passengers).
-
-**Benefits:**
-- Hands-free control
-- Improved safety
-- Personalized experience
-
+**Format:** Small groups (3-5 participants) • Objective-driven • Practical solutions
 
 ---
 
-# Predicting Brake Pad Friction & Fading Using Neural Networks
+# Q&A: Your Turn to Drive the Conversation
 
+**Let’s discuss:**
+- What AI challenges are you facing in your projects?
+- How do you see AI transforming your role in the automotive industry?
+- Any specific use cases you’d like to explore further?
+
+*"No question is too small—let’s make AI work for you!"*
 ---
+# Thank You!
+**Contact:**
 
-# Challenges in Friction Prediction
-- Friction coefficient depends on **temperature, pressure, speed, wear, and braking history**  
-- **Thermal fade**: progressive drop in friction after repeated high-energy braking cycles  
-- Physical tests (dynamometers, vehicle tests) are **time-consuming and expensive**  
-- Traditional models:  
-  - Simplified physics often miss **nonlinear interactions**  
-  - Regression/statistical models struggle with **sequence-dependent effects**  
-- Consequences:  
-  - Risk of **unpredicted fade** affecting safety  
-  - **High R&D costs** for material optimization and testing  
+## [💼 LinkedIn Famibelle](https://www.linkedin.com/in/famibelle/)
 
+## [🚀 GitHub Repository for the Seminar](https://github.com/famibelle/AISeminar)

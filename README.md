@@ -1,7 +1,5 @@
 # 🎯 AI Seminar for Automotive Experts
 
-![AI Seminar](favicon.svg)
-
 Une présentation interactive sur l'Intelligence Artificielle appliquée à l'industrie automobile, incluant des démonstrations en temps réel avec YOLO, des diagrammes Mermaid, et des équations MathJax.
 
 ## 📋 Table des matières
@@ -31,6 +29,15 @@ cd AISeminar
 
 La présentation s'ouvrira automatiquement dans votre navigateur à l'adresse : **http://127.0.0.1:8080/index_standalone.html**
 
+### Accès aux workshops pratiques
+
+```bash
+# Lancer l'interface des ateliers
+.\start_workshops.bat
+```
+
+Interface workshops accessible à : **http://127.0.0.1:8080/workshops_standalone.html**
+
 ## 📖 Contenu de la présentation
 
 **Durée** : 2 heures (14:00-16:00)
@@ -48,6 +55,22 @@ La présentation s'ouvrira automatiquement dans votre navigateur à l'adresse : 
 - 📊 **Diagrammes Mermaid** : Visualisations interactives
 - 🧮 **Équations MathJax** : Formules mathématiques
 - 🎨 **Thèmes multiples** : Mode sombre/clair
+
+## 🛠️ Ateliers pratiques (Partie 2)
+
+**Durée** : 1h30 • **Groupes** : 3-5 participants
+
+### Ateliers disponibles :
+- 🔍 **RAG et Documentation Technique** (STT + recherche sémantique)
+- 💻 **Code Legacy** : Documentation, maintenance, transposition
+- ⚙️ **Conception Mécanique Assistée par IA**
+- 📊 **Spécifications Logicielles et Matrices de Déviation**
+- 🌡️ **Capteurs Virtuels et Estimation Indirecte** (température, pression, couple)
+- 🚗 **Surveillance Thermique et Vehicle Dynamics Control**
+- 🧪 **Tests** : Nouveaux scénarios, réduction des tests
+- 🔬 **Simulation** : Complémenter les activités de simulation par l'IA
+
+**Format** : Objectif concret • Solution pratique • Débriefing collectif
 
 ## 🔧 Prérequis
 
@@ -89,6 +112,13 @@ npm install
 .\start_standalone.bat
 ```
 
+### Mode workshops pratiques
+
+```bash
+# Interface dédiée aux ateliers pratiques
+.\start_workshops.bat
+```
+
 **Fonctionnalités activées :**
 - ✅ Serveur HTTP sur port 8080
 - ✅ CORS activé pour les ressources locales
@@ -110,6 +140,7 @@ npm install
 | Script | Description | Usage |
 |--------|-------------|-------|
 | `start_standalone.bat` | **Principal** - Présentation autonome | Production |
+| `start_workshops.bat` | **Workshops** - Interface ateliers pratiques | Ateliers |
 | `start_standalone_live.bat` | Avec auto-reload | Développement |
 | `start_yolo_reveal.bat` | Configuration YOLO complète | Première fois |
 | `start_yolo_quick.bat` | Lancement YOLO rapide | Usage répété |
@@ -137,6 +168,15 @@ npm install
 - 🌐 **CDN** : Reveal.js, Mermaid, MathJax via CDN
 - 🔒 **Sécurité** : Configuration CORS appropriée
 - 📦 **Standalone** : Fonctionne sans connexion internet (sauf CDN)
+- 🔧 **Modulaire** : Contenu markdown séparé pour faciliter la maintenance
+
+### 📝 Avantages de la structure modulaire
+
+Les workshops utilisent désormais une approche modulaire :
+- `workshops_slides.md` : Contenu des slides uniquement
+- `workshops_standalone.html` : Interface et configuration
+- Facilite la modification du contenu sans toucher au code HTML
+- Permet la réutilisation du contenu dans d'autres contextes
 
 ## 🐛 Dépannage
 
@@ -182,9 +222,13 @@ taskkill /f /im node.exe
 AISeminar/
 ├── 📄 README.md                    # Ce fichier
 ├── 🎯 ai_seminar_slides.md         # Contenu de la présentation
+├── 🛠️ workshops.md                 # Contenu original des ateliers
+├── 📝 workshops_slides.md          # Slides workshops (modulaire)
 ├── 🌐 index_standalone.html        # Interface principale
+├── 🎪 workshops_standalone.html    # Interface workshops (charge workshops_slides.md)
 ├── 🎨 favicon.svg                  # Icône du site
 ├── 🚀 start_standalone.bat         # Script de lancement principal
+├── 🛠️ start_workshops.bat          # Script de lancement workshops
 ├── ⚡ start_standalone_live.bat    # Version avec auto-reload
 ├── 📊 IMGs/                        # Images et médias
 ├── 🔬 Labs/                        # Laboratoires et démos
