@@ -1,18 +1,19 @@
 
-# AI Seminar for Automotive Experts
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">AI Seminar for Automotive Experts</div>
 
 ---
-14:00-14:30 Introduction to AI & fundamental concepts​
 
-14:30-14:50 Presentation Natural Language Processing (NLP) & Large Language Model (LLM)​
+**14:30-15:00** Introduction to AI & fundamental concepts
 
-14:50-15:10 Computer Vision and Multimodality​
+**15:00-15:20** Presentation Natural Language Processing (NLP) & Large Language Model (LLM)
 
-15:10-15:30 Data, Technical Documentation and Legacy Code​
+**15:20-15:40** Computer Vision and Multimodality
 
-15:30-15:50 AI applied to the automative industry​
+**15:40-16:00** Data, Technical Documentation and Legacy Code
 
-15:50-16:00 Summary
+**16:00-16:20** AI applied to the automotive industry
+
+**16:20-16:30** Summary
 
 ---
 
@@ -40,6 +41,8 @@ Using Labeled Data​
 
 Classification and Regression Tasks​
 
+![Supervised Learning](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/07/Supervised-Learning-in-ML.jpg)
+
 ---
 
 # ML: Supervised Learning​
@@ -54,6 +57,8 @@ Classification and Regression Tasks​
 Discovering hidden structures​
 
 Clustering and dimensionality reduction techniques​
+
+![Unsupervised Learning](https://media.licdn.com/dms/image/v2/D4D12AQHvfxlwDYDETw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1703001533708?e=2147483647&v=beta&t=_F7OfRMaoFgrOCusbxIyYHNaxGFRChXVzRMAegpggWg)
 
 ---
 # ML: Unsupervised Learning​
@@ -1088,6 +1093,8 @@ flowchart TD
   - High upfront investment. (Nvidia H100 ~ $30 000 each)
   - Requires in-house expertise.
   - Scaling is expensive.
+
+  **ask Rémy**
 
   </div>
   <div style="flex: 1;">
@@ -2124,3 +2131,17 @@ Automated inspection system allows 100% test coverage of brake pads.
 ## [💼 LinkedIn Famibelle](https://www.linkedin.com/in/famibelle/)
 
 ## [🚀 GitHub Repository for the Seminar](https://github.com/famibelle/AISeminar)
+
+
+---
+
+
+# Anecdote: Les Motards Toujours en Avance
+
+Il est bien connu que les motards ont une relation particulière avec le temps. Lors de nombreux séminaires et événements, il n'est pas rare de voir les motards arriver bien avant l'heure prévue. Pourquoi ? Parce qu'ils anticipent toujours les imprévus : un détour imprévu, une météo capricieuse, ou simplement le plaisir de profiter de la route un peu plus longtemps. 
+
+Une anecdote amusante : lors d'un précédent séminaire, un groupe de motards est arrivé avec une heure d'avance. Non seulement ils avaient déjà exploré les environs, mais ils avaient aussi trouvé un café local où ils ont convaincu le propriétaire de venir assister à la présentation. Résultat : des participants supplémentaires et une ambiance encore plus conviviale !
+
+Moralité : si vous voulez être sûr que tout est prêt avant l'heure, invitez des motards !
+
+
