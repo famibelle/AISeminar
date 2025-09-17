@@ -3,17 +3,13 @@
 
 ---
 
-**14:30-15:00** Introduction to AI & fundamental concepts
-
-**15:00-15:20** Presentation Natural Language Processing (NLP) & Large Language Model (LLM)
-
-**15:20-15:40** Computer Vision and Multimodality
-
-**15:40-16:00** Data, Technical Documentation and Legacy Code
-
-**16:00-16:20** AI applied to the automotive industry
-
-**16:20-16:30** Summary
+## Agenda
+**14:00-14:30** : Introduction à l'IA & concepts fondamentaux
+**14:30-14:50** : Natural Language Processing (NLP) & Large Language Models (LLM)
+**14:50-15:10** : Computer Vision et Multimodalité
+**15:10-15:30** : Data, Documentation Technique et Code Legacy
+**15:30-15:50** : IA appliquée à l'industrie automobile
+**15:50-16:00** : Résumé
 
 ---
 
@@ -187,10 +183,10 @@ In neural networks, **parameters** refer to the adjustable values that the model
 
   <div style="flex: 1;">
 **Example:**
+
 - In a simple neural network, if the input is `x`, the weight is `w`, and the bias is `b`, the output of a neuron is calculated as:
-  ```
-  output = activation_function(w * x + b)
-  ```
+$$\text{output} = \text{activation\_function}(w \cdot x + b)$$
+
   </div>
 </div>
 ---
@@ -1094,7 +1090,7 @@ flowchart TD
   - Requires in-house expertise.
   - Scaling is expensive.
 
-  **ask Rémy**
+  **ask your IT guy**
 
   </div>
   <div style="flex: 1;">
@@ -1930,6 +1926,11 @@ A particularly promising technique is a retrieval-augmented generation (RAG) app
 
 [AI-Powered Prediction of Friction and Wear in Functionalized Epoxy-MWCNT Composites - ScienceDirect 2025](https://www.sciencedirect.com/science/article/pii/S0043164825006027)
 
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
 **Technologies:**
 - **Artificial Intelligence** (Neural Networks, Generative Models, Autoencoders)
   - Advanced artificial intelligence methods were employed to predict key tribological parameters coefficient of friction (COF) and wear rate as well as to classify wear mechanisms
@@ -1942,12 +1943,15 @@ A particularly promising technique is a retrieval-augmented generation (RAG) app
 
 - **CNN** classifies abrasive, adhesive, fatigue, and delamination wear.
 
+  </div>
+  <div style="flex: 1;">
+
 **Data Sources:**
 - Tribometer logs (friction and wear data)
 - Scanning Electron Microscope images (Hitachi SU-70) for (microstructural analysis)
 - Chemical composition
-
-
+  </div>
+</div>
 ---
 
 # Brake Composites Optimization with AI
@@ -2043,7 +2047,6 @@ Automated inspection system allows 100% test coverage of brake pads.
 | NVH Complaint Rate         | Higher complaint rates, late detection     | Up to 60% reduction through predictive analysis             | [Automotive Quality](https://www.automotivequal.com/artificial-intelligence-in-quality-management-case-studies/), [SAE International](https://www.sae.org/publications/technical-papers/content/2024-01-2927/)                                                      |
 | Crash Simulation Accuracy  | Physics-driven solvers, time-consuming     | Reduction in simulation time by 3 orders of magnitude, >98% accuracy | [CORDIS/EU - UPSCALE Project](https://cordis.europa.eu/article/id/444119-advanced-algorithms-improve-electric-vehicle-efficiency/fr)                                                                                     |
 
-
 ---
 # AI as a Lever for Innovation in the Automotive Industry
 
@@ -2069,8 +2072,6 @@ Automated inspection system allows 100% test coverage of brake pads.
 ---
 # Call to Action: Launching Your AI Project in Automotive
 
-<div>
-
 **Where to Start?**
 1. **Define a Clear Problem:**
    - Focus on a specific pain point (e.g., reducing brake pad wear, improving voice recognition accuracy).
@@ -2087,32 +2088,36 @@ Automated inspection system allows 100% test coverage of brake pads.
 **Pro Tip:**
 *"Success in AI starts with a well-defined problem and high-quality data—scale comes later."*
 
-**Resources:**
-- Data platforms: Kaggle, internal databases, IoT sensors
-- AI tools: TensorFlow, PyTorch, Hugging Face
-- Cloud services: AWS, Google Cloud, Azure
-
 ---
 
 # 🛠️ Practical Workshops
 
-## Ready for Hands-on Experience?
-
-### **Part 2 – Interactive Workshops (1h30)**
+## **Part 2 – Interactive Workshops (1h30)**
 
 **Access the workshops:**
 📋 **[AI Workshops Interface](workshops_standalone.html)**
 
+---
+
 **Available workshops:**
-- 🔍 RAG and Technical Documentation
-- 💻 Legacy Code: Documentation & Maintenance  
-- ⚙️ AI-assisted Mechanical Design
-- 📊 Software Specifications & Deviation Matrices
-- 🌡️ Virtual Sensors & Indirect Estimation
-- 🚗 Thermal Monitoring & Vehicle Dynamics
-- 🧪 Testing Optimization & Simulation Enhancement
+
+🔍 RAG and Technical Documentation
+
+💻 Legacy Code: Documentation & Maintenance  
+
+⚙️ AI-assisted Mechanical Design
+
+📊 Software Specifications & Deviation Matrices
+
+🌡️ Virtual Sensors & Indirect Estimation
+
+🚗 Thermal Monitoring & Vehicle Dynamics
+
+🧪 Testing Optimization & Simulation Enhancement
 
 **Format:** Small groups (3-5 participants) • Objective-driven • Practical solutions
+
+📋 **[AI Workshops Interface](workshops_standalone.html)**
 
 ---
 
@@ -2125,23 +2130,41 @@ Automated inspection system allows 100% test coverage of brake pads.
 
 *"No question is too small—let’s make AI work for you!"*
 ---
-# Thank You!
+
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Thank You!</div>
+
 **Contact:**
 
 ## [💼 LinkedIn Famibelle](https://www.linkedin.com/in/famibelle/)
 
-## [🚀 GitHub Repository for the Seminar](https://github.com/famibelle/AISeminar)
-
-
 ---
 
-
-# Anecdote: Les Motards Toujours en Avance
-
-Il est bien connu que les motards ont une relation particulière avec le temps. Lors de nombreux séminaires et événements, il n'est pas rare de voir les motards arriver bien avant l'heure prévue. Pourquoi ? Parce qu'ils anticipent toujours les imprévus : un détour imprévu, une météo capricieuse, ou simplement le plaisir de profiter de la route un peu plus longtemps. 
-
-Une anecdote amusante : lors d'un précédent séminaire, un groupe de motards est arrivé avec une heure d'avance. Non seulement ils avaient déjà exploré les environs, mais ils avaient aussi trouvé un café local où ils ont convaincu le propriétaire de venir assister à la présentation. Résultat : des participants supplémentaires et une ambiance encore plus conviviale !
-
-Moralité : si vous voulez être sûr que tout est prêt avant l'heure, invitez des motards !
+## 💻 Available Resources for the Seminar
 
 
+<div style="display: flex; align-items: center; justify-content: space-around;">
+
+<div>
+
+🔗 [GitHub Repository](https://github.com/famibelle/AISeminar)
+
+
+📝 [Slides](https://github.com/famibelle/AISeminar/blob/1db270e2e298202205c81305eb3ee3bdfbccdb44/ai_seminar_slides.md)
+
+
+📖 [AI Labs](https://github.com/famibelle/AISeminar/tree/1db270e2e298202205c81305eb3ee3bdfbccdb44/Labs)  
+
+
+🛠️ [YOLO Tools](https://github.com/famibelle/AISeminar/blob/1db270e2e298202205c81305eb3ee3bdfbccdb44/Labs/yolo_reveal_auto.py)
+
+</div>
+
+<div>
+
+![GitHub Repository QR Code](https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=https://github.com/famibelle/AISeminar/)
+
+**📱 Scan to access**
+
+</div>
+
+</div>
