@@ -1,11 +1,16 @@
 Labs/yolov8n.pt
 Labs/Media/HitachiAstemoWinterTest_SmartBrakeMovie2022_yolo_detected_1.mpeg
+
 Labs/yolo_captures/yolo_live.jpg
-IMGs/test_video.mov
 Labs/Media/HitachiAstemoWinterTest_SmartBrakeMovie2022_yolo_detected.mp4
 Labs/Media/HitachiAstemoWinterTest_SmartBrakeMovie2022.mp4
+
 IMGs/HitachiAstemoWinterTest_SmartBrakeMovie2022_yolo_detected.mp4
+IMGs/HitachiAstemoWinterTest_SmartBrakeMovie2022_yolo_detected.mov
+IMGs/test_video.mov
+
 test_404.bat
 image.png
 fire&forget.txt
 package-lock.json
+ai_seminar_slides.pptx

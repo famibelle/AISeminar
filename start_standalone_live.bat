@@ -8,7 +8,7 @@ if %ERRORLEVEL% equ 0 (
     npx live-server --version >nul 2>&1
     
     echo [INFO] Lancement du serveur avec live-reload...
-    echo [INFO] Ouverture sur http://localhost:8080/index_standalone.html
+    echo [INFO] Ouverture sur http://localhost:8080/index.html
     echo [INFO] Toutes les fonctionnalites activees:
     echo [INFO] - Bouton de theme 🌓 en haut a droite
     echo [INFO] - Diagrammes Mermaid integres
@@ -18,7 +18,7 @@ if %ERRORLEVEL% equ 0 (
     echo.
     echo [AVANTAGE] Les modifications du fichier .md sont automatiquement visibles
     echo.
-    npx live-server --port=8080 --open=index_standalone.html --no-css-inject
+    npx live-server --port=8080 --open=index.html --no-css-inject
 ) else (
     echo [ERREUR] Node.js est requis.
     pause

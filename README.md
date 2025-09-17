@@ -27,7 +27,7 @@ cd AISeminar
 .\start_standalone.bat
 ```
 
-La présentation s'ouvrira automatiquement dans votre navigateur à l'adresse : **http://127.0.0.1:8080/index_standalone.html**
+La présentation s'ouvrira automatiquement dans votre navigateur à l'adresse : **http://127.0.0.1:8080/index.html**
 
 ### Accès aux workshops pratiques
 
@@ -224,7 +224,7 @@ AISeminar/
 ├── 🎯 ai_seminar_slides.md         # Contenu de la présentation
 ├── 🛠️ workshops.md                 # Contenu original des ateliers
 ├── 📝 workshops_slides.md          # Slides workshops (modulaire)
-├── 🌐 index_standalone.html        # Interface principale
+├── 🌐 index.html                   # Interface principale
 ├── 🎪 workshops_standalone.html    # Interface workshops (charge workshops_slides.md)
 ├── 🎨 favicon.svg                  # Icône du site
 ├── 🚀 start_standalone.bat         # Script de lancement principal
