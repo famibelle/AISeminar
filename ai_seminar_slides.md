@@ -5,25 +5,32 @@
 
 ## Typical Agenda
 
-**14:00-14:30** : Introduction à l'IA & concepts fondamentaux
+**14:00-14:30**: Introduction to AI & Fundamental Concepts
 
-**14:30-14:50** : Natural Language Processing (NLP) & Large Language Models (LLM)
+**14:30-14:50**: Natural Language Processing (NLP) & Large Language Models (LLM)
 
-**14:50-15:10** : Computer Vision et Multimodalité
+**14:50-15:10**: Computer Vision and Multimodality
 
-**15:10-15:30** : Data, Documentation Technique et Code Legacy
+**15:10-15:30**: Data, Technical Documentation, and Legacy Code
 
-**15:30-15:50** : IA appliquée à l'industrie automobile
+**15:30-15:50**: AI Applied to the Automotive Industry
 
-**15:50-16:00** : Résumé
-
----
-
-# Médhi Famibelle - AI Engineer & Consultant
+**15:50-16:00**: Summary
 
 ---
 
-# Introduction to AI & fundamental concepts​
+# Médhi Famibelle - AI Engineer
+
+<div style="text-align: right; font-size: small;">
+
+<a href="https://www.linkedin.com/in/famibelle/" target="_blank" rel="noopener noreferrer">💼 LinkedIn Famibelle</a>
+
+</div>
+
+---
+
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Introduction to AI & fundamental concepts​
+</div>
 
 ---
 
