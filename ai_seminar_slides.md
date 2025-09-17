@@ -1,15 +1,20 @@
 
-# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">AI Seminar for Automotive Experts</div>
+# <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">AI Seminar for Industry Decision Makers</div>
 
 ---
 
-## Agenda
+## Typical Agenda
 
 **14:00-14:30** : Introduction à l'IA & concepts fondamentaux
+
 **14:30-14:50** : Natural Language Processing (NLP) & Large Language Models (LLM)
+
 **14:50-15:10** : Computer Vision et Multimodalité
+
 **15:10-15:30** : Data, Documentation Technique et Code Legacy
+
 **15:30-15:50** : IA appliquée à l'industrie automobile
+
 **15:50-16:00** : Résumé
 
 ---
@@ -21,41 +26,76 @@
 # Introduction to AI & fundamental concepts​
 
 ---
+
 # AI VS GENERATIVE AI​
-ARTIFICIAL INTELLIGENCE Artificial Intelligence is a field of computer science that aims to create systems capable of imitating or simulating human intelligence.​
 
-MACHINE LEARNING Machine Learning focuses on building systems that learn and improve from experience without being explicitly programmed.​
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
 
-DEEP LEARNING Deep Learning uses neural networks with many layers to model complex patterns in data.​
+**ARTIFICIAL INTELLIGENCE** is a field of computer science that aims to create systems capable of imitating or simulating human intelligence.​
 
-GENERATIVE AI Generative AI can create or generate new content, ideas, or data that resemble human creativity.​
+**MACHINE LEARNING** focuses on building systems that learn and improve from experience without being explicitly programmed.​
 
+**DEEP LEARNING** uses neural networks with many layers to model complex patterns in data.​
+
+**GENERATIVE AI** can create or generate new content, ideas, or data that resemble human creativity.​
+
+  </div>
+
+  <div style="flex: 1;">
+
+![AI, ML, DL, and Generative AI Face-Off](https://synoptekmark.b-cdn.net/wp-content/uploads/2023/07/ai-ml-dl-and-generative-ai-face-off.webp)
+
+  </div>
+</div>
 ---
 
 # ML: Supervised Learning​
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
 
 Using Labeled Data​
 
 Classification and Regression Tasks​
 
+  </div>
+
+  <div style="flex: 1;">
+
 ![Supervised Learning](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/07/Supervised-Learning-in-ML.jpg)
 
+  </div>
+</div>
 ---
 
 # ML: Supervised Learning​
+
 - Predictive maintenance for vehicle components (e.g., brake pads, tires).
 - Driver behavior analysis and risk assessment.
 - Traffic sign recognition and classification.
 - Lane departure warning systems.
 
+
 ---
 
 # ML: Unsupervised Learning​
+
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
+
 Discovering hidden structures​
 
 Clustering and dimensionality reduction techniques​
+  </div>
 
-![Unsupervised Learning](https://media.licdn.com/dms/image/v2/D4D12AQHvfxlwDYDETw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1703001533708?e=2147483647&v=beta&t=_F7OfRMaoFgrOCusbxIyYHNaxGFRChXVzRMAegpggWg)
+  <div style="flex: 1;">
+
+![Unsupervised Learning](https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2020/07/Unsupervised-Learning-in-ML.jpg)
+
+  </div>
+  
+</div>
 
 ---
 # ML: Unsupervised Learning​
@@ -83,10 +123,22 @@ Reward systems​
 ---
 
 # ML: Reinforcement Learning​
+<div style="display: flex; align-items: center; gap: 20px;">
+  <div style="flex: 1;">
+
 - Autonomous driving systems learning optimal driving strategies through simulation.
 - Adaptive cruise control systems optimizing fuel efficiency and safety.
 - Parking assistance systems learning to navigate complex parking scenarios.
 
+  </div>
+  <div style="flex: 1;">  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KPLYhRBCcvk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**Source:** [AlphaStar: Grandmaster level in StarCraft II using multi-agent reinforcement learning](https://deepmind.google/discover/blog/alphastar-grandmaster-level-in-starcraft-ii-using-multi-agent-reinforcement-learning/)
+
+  </div>
+</div>
 ---
 
 # Supervised Learning, Unsupervised Learning, Reinforcement Learning
@@ -180,14 +232,14 @@ In neural networks, **parameters** refer to the adjustable values that the model
 
 **Why They Matter:**
 
-- Weights and biases are the core components that enable neural networks to learn patterns and make predictions. By iteratively updating these values using optimization algorithms like gradient descent, the network improves its performance on the given task.
+- **Weights and biases** are the core components that enable neural networks to learn patterns and make predictions. By iteratively updating these values using optimization algorithms like gradient descent, the network improves its performance on the given task.
   </div>
 
   <div style="flex: 1;">
 **Example:**
 
-- In a simple neural network, if the input is `x`, the weight is `w`, and the bias is `b`, the output of a neuron is calculated as:
-$$\text{output} = \text{activation\_function}(w \cdot x + b)$$
+- In a simple neural network, if the input is `X`, the weight is `W`, and the bias is `B`, the output of a neuron is calculated as:
+$$\text{output} = \text{activation\_function}(W \cdot X + B)$$
 
   </div>
 </div>
@@ -287,6 +339,26 @@ Gradient Descent is an optimization algorithm used to minimize a function by ite
 ![Gradient Descent](https://blog.datumbox.com/wp-content/uploads/2013/10/gradient-descent.png)
   </div>
 
+</div>
+
+---
+## Neural Network in action
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
+The animation shows the process of handwritten digit recognition using a neural network. 
+
+It visualizes how the model processes input images, extracts features, and predicts the corresponding digit.
+
+  </div>
+
+  <div style="flex: 1;">
+
+![Neural Network in action](https://i.makeagif.com/media/3-22-2022/boUeR6.gif)
+
+  </div>
 </div>
 
 ---
@@ -1556,9 +1628,9 @@ Hitachi Astemo Winter Test - Smart Brake with YOLO
 
 - **Audio Capture** (microphone array).
 - **Signal Cleaning** (noise/music suppression).
+ **Diarization** (who is speaking? driver or passenger?).
 - **STT** (e.g., Whisper or Kyutai) → Text.
-- **Diarization** (who is speaking? driver or passenger?).
-- **NLP** (intent understanding).
+-- **NLP** (intent understanding).
 - **Action** (e.g., change temperature).
 - **TTS** (natural voice response).
 
