@@ -2133,9 +2133,11 @@ Automated inspection system allows 100% test coverage of brake pads.
 
 # <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Thank You!</div>
 
-**Contact:**
+<div style="text-align: right; font-size: small;">
 
-## [💼 LinkedIn Famibelle](https://www.linkedin.com/in/famibelle/)
+<a href="https://www.linkedin.com/in/famibelle/" target="_blank" rel="noopener noreferrer">💼 LinkedIn Famibelle</a>
+
+</div>
 
 ---
 
@@ -2157,6 +2159,8 @@ Automated inspection system allows 100% test coverage of brake pads.
 
 🛠️ [YOLO Tools](https://github.com/famibelle/AISeminar/blob/1db270e2e298202205c81305eb3ee3bdfbccdb44/Labs/yolo_reveal_auto.py)
 
+📋 [AI Workshops Interface](workshops_standalone.html)
+
 </div>
 
 <div>
@@ -2166,5 +2170,11 @@ Automated inspection system allows 100% test coverage of brake pads.
 **📱 Scan to access**
 
 </div>
+
+</div>
+
+<div style="text-align: right; font-size: small;">
+
+<a href="https://www.linkedin.com/in/famibelle/" target="_blank" rel="noopener noreferrer">💼 LinkedIn Famibelle</a>
 
 </div>
