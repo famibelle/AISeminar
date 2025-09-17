@@ -2280,3 +2280,47 @@ Automated inspection system allows 100% test coverage of brake pads.
 <a href="https://www.linkedin.com/in/famibelle/" target="_blank" rel="noopener noreferrer">💼 LinkedIn Famibelle</a>
 
 </div>
+
+
+---
+
+Addendum:
+
+# Large LLMs by Providers - Hugging Face Links
+
+| Provider      | Model  | Size   | Hugging Face Link |
+|---------------|--------|--------|-------------------|
+| **Meta** | Llama 2 | 7B, 13B, 70B | https://huggingface.co/meta-llama/Llama-2-7b-hf |
+| | Llama 3.1 | 8B, 70B, 405B | https://huggingface.co/meta-llama/Meta-Llama-3.1-8B |
+| **Mistral AI** | Mistral 7B | 7B | https://huggingface.co/mistralai/Mistral-7B-v0.1 |
+| | Mixtral 8x22B | 8x22B MoE | https://huggingface.co/mistralai/Mixtral-8x22B-v0.1 |
+| | Codestral | 22B | https://huggingface.co/mistralai/Codestral-22B-v0.1 |
+| **Google** | Gemma | 2B, 7B | https://huggingface.co/google/gemma-7b |
+| | Gemma 2 | 9B, 27B | https://huggingface.co/google/gemma-2-9b |
+| | CodeGemma | 7B | https://huggingface.co/google/codegemma-7b |
+| **Microsoft** | Phi-3 Mini | 3.8B | https://huggingface.co/microsoft/Phi-3-mini-4k-instruct |
+| | Phi-3 Medium | 14B | https://huggingface.co/microsoft/Phi-3-medium-4k-instruct |
+| | DialoGPT | 117M, 345M, 762M | https://huggingface.co/microsoft/DialoGPT-medium |
+| **BigScience** | BLOOM | 560M à 176B | https://huggingface.co/bigscience/bloom |
+| | BLOOMZ | 560M à 176B | https://huggingface.co/bigscience/bloomz |
+| **EleutherAI** | GPT-NeoX | 20B | https://huggingface.co/EleutherAI/gpt-neox-20b |
+| | Pythia | 70M à 12B | https://huggingface.co/EleutherAI/pythia-12b |
+| **Hugging Face** | StarCoder | 15.5B | https://huggingface.co/bigcode/starcoder |
+| | StarCoder2 | 3B, 7B, 15B | https://huggingface.co/bigcode/starcoder2-15b |
+| **Alibaba** | Qwen | 1.8B à 72B | https://huggingface.co/Qwen/Qwen-72B |
+| | Qwen2 | 0.5B à 72B | https://huggingface.co/Qwen/Qwen2-72B |
+| | CodeQwen | 7B | https://huggingface.co/Qwen/CodeQwen1.5-7B |
+| **Baichuan** | Baichuan2 | 7B, 13B | https://huggingface.co/baichuan-inc/Baichuan2-7B-Base |
+| **01.AI** | Yi | 6B, 34B | https://huggingface.co/01-ai/Yi-34B |
+| **DeepSeek** | DeepSeek LLM | 7B, 67B | https://huggingface.co/deepseek-ai/deepseek-llm-7b-base |
+| | DeepSeek Coder | 1.3B, 6.7B, 33B | https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-base |
+| | DeepSeek Math | 7B | https://huggingface.co/deepseek-ai/deepseek-math-7b-base |
+| | DeepSeek MoE | 16B (2.8B actif) | https://huggingface.co/deepseek-ai/deepseek-moe-16b-base |
+| **TII** | Falcon | 7B, 40B, 180B | https://huggingface.co/tiiuae/falcon-40b |
+| **Stability AI** | StableLM | 3B, 7B | https://huggingface.co/stabilityai/stablelm-base-alpha-7b |
+| | StableCode | 3B | https://huggingface.co/stabilityai/stablecode-completion-alpha-3b |
+| **OpenAI** | GPT-2 | 117M, 345M, 762M, 1.5B | https://huggingface.co/gpt2 |
+| | GPT-OSS | 20B, 120B | https://huggingface.co/openai/gpt-oss-20b |
+| | Whisper | Tiny à Large-v3 | https://huggingface.co/openai/whisper-large-v3 |
+| | CLIP | ViT-B/32, ViT-L/14 | https://huggingface.co/openai/clip-vit-base-patch32 |
+| **Anthropic** | Claude | - | *Non disponible sur HF* |
