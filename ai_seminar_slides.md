@@ -4,6 +4,7 @@
 ---
 
 ## Agenda
+
 **14:00-14:30** : Introduction à l'IA & concepts fondamentaux
 **14:30-14:50** : Natural Language Processing (NLP) & Large Language Models (LLM)
 **14:50-15:10** : Computer Vision et Multimodalité
@@ -87,6 +88,7 @@ Reward systems​
 - Parking assistance systems learning to navigate complex parking scenarios.
 
 ---
+
 # Supervised Learning, Unsupervised Learning, Reinforcement Learning
 
 | Mode            | Labeled Training Data | Definition                                                                                     | Use Cases                                                                                     |
@@ -366,6 +368,7 @@ graph TD
   - D) It does not use reward systems.
 
 ---
+
 # MNIST Dataset: Handwritten Digit Recognition
 
 <div style="display: flex; align-items: center; gap: 20px;">
@@ -415,6 +418,7 @@ Example of handwritten digits recognition from the MNIST dataset
 </div>
 
 ---
+
 # Tokenization
 
 Tokens in natural language processing (NLP) are like syllables in poetry. Just as syllables are the building blocks of rhythm and structure in a poem, tokens are the fundamental units that allow AI models to process and understand text. 
@@ -424,6 +428,7 @@ Tokens in natural language processing (NLP) are like syllables in poetry. Just a
 - **Tokens in NLP:** ["Win", "##ter", "is", "Com", "##ing"].
 
 ---
+
 # Token in AI Models
 
 The token limit defines the maximum number of tokens a model can process in a single input. Higher token limits enable handling longer contexts, making models more effective for tasks like summarization, code analysis, and document generation.
@@ -435,6 +440,7 @@ The token limit defines the maximum number of tokens a model can process in a si
 | Mistral Large  | 64,000             | ~256                    |
 
 ---
+
 # Embedding
 
 ## Transforming Tokens into Numerical Representations
@@ -453,6 +459,7 @@ Embedding transforms tokens into vectors, which serve as the true input points f
 
   </div>
 </div>
+
 ---
 
 # How Tokenization and Embedding Work Together:
@@ -566,6 +573,7 @@ $v(King) - v(Man) + v(Woman) ≈ v(Queen)$
 
 
 ---
+
 ## Predicting the Next Word: "Paris is the city of ..."
 
 # Why This Works:
@@ -587,6 +595,7 @@ graph LR
   D --> D3["art: 0.10"]
   D --> D4["Other words: 0.05"]
 ```
+
 ---
 
 # Predicting the Next Word: "Paris is the city of ..."
@@ -610,6 +619,7 @@ This process demonstrates how language models use context and learned patterns t
 - D) To generate embeddings for tokens.
 
 ---
+
 # How do embeddings help in understanding the meaning of tokens?
 - A) By splitting tokens into smaller parts.
 - B) By mapping tokens to high-dimensional vectors that capture semantic relationships.
@@ -655,6 +665,7 @@ Large Language Models (LLMs) are artificial intelligence models, pre-trained on 
 - Tackling unseen tasks through **zero-shot learning**.
 
 ---
+
 # Data Requirements for Training Large Models
 
 ## Volume
@@ -662,6 +673,7 @@ Large Language Models (LLMs) are artificial intelligence models, pre-trained on 
 - Example: GPT-4 was trained on hundreds of terabytes of text data.
 
 ---
+
 ## Data Requirements for Training Large Models
 
 # Diversity
@@ -669,6 +681,7 @@ Large Language Models (LLMs) are artificial intelligence models, pre-trained on 
 - Example: Text, images, audio, and code for multimodal models.
 
 ---
+
 ## Data Requirements for Training Large Models
 
 # Quality
@@ -676,6 +689,7 @@ Large Language Models (LLMs) are artificial intelligence models, pre-trained on 
 - Example: Removing duplicates, correcting errors, and ensuring balanced representation.
 
 ---
+
 ## Data Requirements for Training Large Models
 
 #Relevance
@@ -683,6 +697,7 @@ Large Language Models (LLMs) are artificial intelligence models, pre-trained on 
 - Example: Automotive manuals, sensor logs, and traffic data for autonomous driving.
 
 ---
+
 ## Data Requirements for Training Large Models
 
 # Sources of Data:
@@ -692,6 +707,7 @@ Large Language Models (LLMs) are artificial intelligence models, pre-trained on 
 - **Synthetic Data:** Generated data to augment training sets and cover edge cases.
 
 ---
+
 ## Data Requirements for Training Large Models
 
 # Challenges:
@@ -701,6 +717,7 @@ Large Language Models (LLMs) are artificial intelligence models, pre-trained on 
 - **Scalability:** Managing and processing massive datasets efficiently.
 
 ---
+
 ## Data Requirements for Training Large Models
 
 # Example in Automotive:
@@ -912,6 +929,7 @@ Training a large language model or neural network from scratch is computationall
 - **Time:** Training can take weeks or months, even on large-scale infrastructure.
 
 ---
+
 # Fine-Tuning as a Solution
 
 Fine-tuning leverages pre-trained models and adapts them to specific tasks or domains. This approach:
@@ -921,12 +939,14 @@ Fine-tuning leverages pre-trained models and adapts them to specific tasks or do
 - **Increases Accessibility:** Enables smaller teams to build specialized applications without extensive resources.
 
 ---
+
 # Fine-Tuning
 
 **Example:**
 - Fine-tuning GPT or Mistral on automotive datasets (e.g., technical manuals, sensor logs) can create a specialized model for predictive maintenance or driver assistance systems at a fraction of the cost of full training.
 
 ---
+
 # Example on French Gastronomy
 
 ## Pre-training
@@ -937,6 +957,7 @@ The base model (e.g., GPT or Mistral) is trained on a **general corpus**:
 
 
 ---
+
 ## Example on French Gastronomy
 
 <div style="display: flex; align-items: center; gap: 20px;">
@@ -981,6 +1002,7 @@ flowchart TD
   </div>
 
 ---
+
 # Example on French Gastronomy
 
 <div style="display: flex; align-items: center; gap: 20px;">
@@ -1032,6 +1054,7 @@ flowchart TD
   - Risk of vendor lock-in.
 
 ---
+
 # AI on Cloud
 
 - **Examples:**
@@ -1040,6 +1063,7 @@ flowchart TD
   - **Microsoft Azure AI** for cognitive services.
 
 ---
+
 # Sovereign AI
 
 <div style="display: flex; align-items: center; gap: 20px;">
@@ -1065,6 +1089,7 @@ flowchart TD
 </div>
 
 ---
+
 # Sovereign AI
 
 ## Typical Use Cases: Government projects, defense, healthcare requiring strict data residency.
@@ -1074,6 +1099,7 @@ flowchart TD
 
 
 ---
+
 # AI On-Prem
 
 <div style="display: flex; align-items: center; gap: 20px;">
@@ -1102,6 +1128,7 @@ flowchart TD
 
 
 ---
+
 # AI On-Prem
 - **Typical Use Cases:** Internal analytics, finance, R&D labs.
 - **Examples:**
@@ -1162,6 +1189,7 @@ flowchart TD
 </div>
 
 ---
+
 # AI deployment strategies in a wrap
 
 AI deployment strategies should align with specific automotive use cases, balancing performance, cost, and regulatory compliance.
@@ -1239,6 +1267,7 @@ AI deployment strategies should align with specific automotive use cases, balanc
 ![Foundation Models Explained](https://humanloop.com/blog/foundation-models/foundation-models-explained.jpeg)
 
 ---
+
 # Foundation Models
 
 | **Domain** | **Foundation Models (examples)** |
@@ -1279,14 +1308,15 @@ AI deployment strategies should align with specific automotive use cases, balanc
 # <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Computer Vision & Multimodality</div>
 
 ---
+
 # YOLO
 
 ## **Y**ou
 ## **O**nly
 ## **L**ook
 ## **O**nce
----
 
+---
 
 ## Object Detection (YOLO/R-CNN)
 ![Object Detection](https://cv-tricks.com/wp-content/uploads/2017/12/Object-Detection-for-outdoor-cv-tricks.jpg)
@@ -1392,11 +1422,6 @@ Hitachi Astemo Winter Test - Smart Brake with YOLO
 
 ---
 
-
-
-
-
-
 # YOLO Use-Cases in Automotive / Traffic Domain
 | Use Case | YOLO Variant / Approach | Description | Source |
 |----------|--------------------------|-------------|--------|
@@ -1439,6 +1464,7 @@ Hitachi Astemo Winter Test - Smart Brake with YOLO
 
 
 ---
+
 ## Tesla Vision-based Driver Monitoring
 
 <video controls autoplay width="640" height="480">
@@ -1495,6 +1521,7 @@ Hitachi Astemo Winter Test - Smart Brake with YOLO
 
 **Use Cases:**
 - Uses diarization to distinguish between driver and passengers.
+
 ---
 
 # Benefits of Voice Technologies
@@ -2006,7 +2033,6 @@ Automated inspection system allows 100% test coverage of brake pads.
   </div>
 </div>
 
-
 ---
 
 # Brake Noise Analysis with CNNs
@@ -2048,6 +2074,7 @@ Automated inspection system allows 100% test coverage of brake pads.
 | Crash Simulation Accuracy  | Physics-driven solvers, time-consuming     | Reduction in simulation time by 3 orders of magnitude, >98% accuracy | [CORDIS/EU - UPSCALE Project](https://cordis.europa.eu/article/id/444119-advanced-algorithms-improve-electric-vehicle-efficiency/fr)                                                                                     |
 
 ---
+
 # AI as a Lever for Innovation in the Automotive Industry
 
 **Key Opportunities:**
@@ -2057,6 +2084,7 @@ Automated inspection system allows 100% test coverage of brake pads.
 - **Sustainability:** Material optimization and waste reduction through AI-driven design.
 
 ---
+
 # Challenges and Future Outlook
 
 **Current Challenges:**
@@ -2070,6 +2098,7 @@ Automated inspection system allows 100% test coverage of brake pads.
 - Regulatory frameworks and standardization.
 
 ---
+
 # Call to Action: Launching Your AI Project in Automotive
 
 **Where to Start?**
@@ -2129,6 +2158,7 @@ Automated inspection system allows 100% test coverage of brake pads.
 - Any specific use cases you’d like to explore further?
 
 *"No question is too small—let’s make AI work for you!"*
+
 ---
 
 # <div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; font-size: 10vw; font-weight: bold; width: 100%;">Thank You!</div>
