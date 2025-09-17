@@ -1202,13 +1202,24 @@ flowchart TD
 ---
 
 # AI On-Prem
+
+<div style="display: flex; align-items: center; gap: 20px;">
+
+  <div style="flex: 1;">
+
 - **Typical Use Cases:** Internal analytics, finance, R&D labs.
 - **Examples:**
   - **NVIDIA DGX Systems** for on-site AI model training.
 
-<div style="text-align: center;">
-  <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/dgx-a100/data-denter-dgx-a100-tour-1cN-D@2x.jpg" alt="DGX Systems" style="width: 50%;">
+  </div>
+
+  <div style="flex: 1;">
+
+    <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/dgx-a100/data-denter-dgx-a100-tour-1cN-D@2x.jpg" alt="DGX Systems" style="width: 50%;">
+
+  </div>
 </div>
+
 ---
 
 # AI on Edge
